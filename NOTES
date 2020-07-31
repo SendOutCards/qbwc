@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?>
+<QBXML>
+    <QBXMLMsgsRq onError="stopOnError">
+        <CheckModRq>
+            <CheckMod>
+                <TxnID>559430-1588216568</TxnID>
+                <EditSequence>1588216568</EditSequence>
+                <AccountRef>
+                    <FullName>SOC Distributor Bonus Account:SOC Bonus Cleared</FullName>
+                </AccountRef>
+            </CheckMod>
+        </CheckModRq>
+        <CheckModRq>
+            <CheckMod>
+                <TxnID>5591AA-1588192033</TxnID>
+                <EditSequence>1588192033</EditSequence>
+                <AccountRef>
+                    <FullName>SOC Distributor Bonus Account:SOC Bonus Cleared</FullName>
+                </AccountRef>
+            </CheckMod>
+        </CheckModRq>
+    </QBXMLMsgsRq>
+</QBXML>
+
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?>
+<QBXML>
+    <QBXMLMsgsRq onError="stopOnError">
+        <CheckQueryRq>
+        </CheckQueryRq>
+    </QBXMLMsgsRq>
+</QBXML>
+
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?>
+<QBXML>
+    <QBXMLMsgsRq>
+        <CheckQueryRq>
+            <RefNumber>609352</RefNumber><RefNumber>609338</RefNumber></CheckQueryRq></QBXMLMsgsRq></QBXML>
