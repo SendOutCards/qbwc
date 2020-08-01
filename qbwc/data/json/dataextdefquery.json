@@ -1,0 +1,29 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "DataExtDefQueryRq": {
+        "@metaData": "ENUMTYPE",
+        "OwnerID": "GUIDTYPE",
+        "AssignToObject": "ENUMTYPE",
+        "IncludeRetElement": "STRTYPE"
+      },
+      "DataExtDefQueryRs": {
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "DataExtDefRet": {
+          "OwnerID": "GUIDTYPE",
+          "DataExtID": "INTTYPE",
+          "DataExtName": "STRTYPE",
+          "DataExtType": "ENUMTYPE",
+          "AssignToObject": "ENUMTYPE",
+          "DataExtListRequire": "BOOLTYPE",
+          "DataExtTxnRequire": "BOOLTYPE",
+          "DataExtFormatString": "STRTYPE"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "BillPaymentCreditCardAddRq": {
+        "BillPaymentCreditCardAdd": {
+          "@defMacro": "MACROTYPE",
+          "PayeeEntityRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "APAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TxnDate": "DATETYPE",
+          "CreditCardAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "RefNumber": "STRTYPE",
+          "Memo": "STRTYPE",
+          "ExchangeRate": "FLOATTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "AppliedToTxnAdd": {
+            "TxnID": {
+              "@useMacro": "MACROTYPE",
+              "#text": "IDTYPE"
+            },
+            "PaymentAmount": "AMTTYPE",
+            "SetCredit": {
+              "CreditTxnID": {
+                "@useMacro": "MACROTYPE",
+                "#text": "IDTYPE"
+              },
+              "AppliedAmount": "AMTTYPE",
+              "Override": "BOOLTYPE"
+            },
+            "DiscountAmount": "AMTTYPE",
+            "DiscountAccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "DiscountClassRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            }
+          }
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "BillPaymentCreditCardAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "BillPaymentCreditCardRet": {
+          "TxnID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "TxnNumber": "INTTYPE",
+          "PayeeEntityRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "APAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TxnDate": "DATETYPE",
+          "CreditCardAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Amount": "AMTTYPE",
+          "CurrencyRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ExchangeRate": "FLOATTYPE",
+          "AmountInHomeCurrency": "AMTTYPE",
+          "RefNumber": "STRTYPE",
+          "Memo": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "AppliedToTxnRet": {
+            "TxnID": "IDTYPE",
+            "TxnType": "ENUMTYPE",
+            "TxnDate": "DATETYPE",
+            "RefNumber": "STRTYPE",
+            "BalanceRemaining": "AMTTYPE",
+            "Amount": "AMTTYPE",
+            "DiscountAmount": "AMTTYPE",
+            "DiscountAccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "DiscountClassRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "LinkedTxn": {
+              "TxnID": "IDTYPE",
+              "TxnType": "ENUMTYPE",
+              "TxnDate": "DATETYPE",
+              "RefNumber": "STRTYPE",
+              "LinkType": "ENUMTYPE",
+              "Amount": "AMTTYPE"
+            }
+          },
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

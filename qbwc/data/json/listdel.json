@@ -1,0 +1,20 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "ListDelRq": {
+        "ListDelType": "ENUMTYPE",
+        "ListID": "IDTYPE"
+      },
+      "ListDelRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "ListDelType": "ENUMTYPE",
+        "ListID": "IDTYPE",
+        "TimeDeleted": "DATETIMETYPE",
+        "FullName": "STRTYPE"
+      }
+    }
+  }
+}

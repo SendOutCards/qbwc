@@ -1,0 +1,16 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "TxnDisplayModRq": {
+        "TxnDisplayModType": "ENUMTYPE",
+        "TxnID": "IDTYPE"
+      },
+      "TxnDisplayModRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE"
+      }
+    }
+  }
+}

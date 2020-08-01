@@ -1,0 +1,56 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "TransferQueryRq": {
+        "@iterator": "ENUMTYPE",
+        "@iteratorID": "UUIDTYPE",
+        "@metaData": "ENUMTYPE",
+        "TxnID": "IDTYPE",
+        "MaxReturned": "INTTYPE",
+        "ModifiedDateRangeFilter": {
+          "FromModifiedDate": "DATETIMETYPE",
+          "ToModifiedDate": "DATETIMETYPE"
+        },
+        "TxnDateRangeFilter": {
+          "FromTxnDate": "DATETYPE",
+          "ToTxnDate": "DATETYPE",
+          "DateMacro": "ENUMTYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "TransferQueryRs": {
+        "@iteratorID": "UUIDTYPE",
+        "@iteratorRemainingCount": "INTTYPE",
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "TransferRet": {
+          "TxnID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "TxnNumber": "INTTYPE",
+          "TxnDate": "DATETYPE",
+          "TransferFromAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "FromAccountBalance": "AMTTYPE",
+          "TransferToAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ToAccountBalance": "AMTTYPE",
+          "ClassRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Amount": "AMTTYPE",
+          "Memo": "STRTYPE"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "TemplateQueryRq": {
+        "@metaData": "ENUMTYPE",
+        "IncludeRetElement": "STRTYPE"
+      },
+      "TemplateQueryRs": {
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "TemplateRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "TemplateType": "ENUMTYPE"
+        }
+      }
+    }
+  }
+}

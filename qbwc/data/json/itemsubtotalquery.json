@@ -1,0 +1,54 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "ItemSubtotalQueryRq": {
+        "@iterator": "ENUMTYPE",
+        "@iteratorID": "UUIDTYPE",
+        "@metaData": "ENUMTYPE",
+        "ListID": "IDTYPE",
+        "FullName": "STRTYPE",
+        "MaxReturned": "INTTYPE",
+        "ActiveStatus": "ENUMTYPE",
+        "FromModifiedDate": "DATETIMETYPE",
+        "ToModifiedDate": "DATETIMETYPE",
+        "NameFilter": {
+          "MatchCriterion": "ENUMTYPE",
+          "Name": "STRTYPE"
+        },
+        "NameRangeFilter": {
+          "FromName": "STRTYPE",
+          "ToName": "STRTYPE"
+        },
+        "IncludeRetElement": "STRTYPE",
+        "OwnerID": "GUIDTYPE"
+      },
+      "ItemSubtotalQueryRs": {
+        "@iteratorID": "UUIDTYPE",
+        "@iteratorRemainingCount": "INTTYPE",
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "ItemSubtotalRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "BarCodeValue": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "ItemDesc": "STRTYPE",
+          "SpecialItemType": "ENUMTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        }
+      }
+    }
+  }
+}

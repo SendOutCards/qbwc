@@ -1,0 +1,119 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "PreferencesQueryRq": {
+        "IncludeRetElement": "STRTYPE"
+      },
+      "PreferencesQueryRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "PreferencesRet": {
+          "AccountingPreferences": {
+            "IsUsingAccountNumbers": "BOOLTYPE",
+            "IsRequiringAccounts": "BOOLTYPE",
+            "IsUsingClassTracking": "BOOLTYPE",
+            "AssignClassesTo": "ENUMTYPE",
+            "IsUsingAuditTrail": "BOOLTYPE",
+            "IsAssigningJournalEntryNumbers": "BOOLTYPE",
+            "ClosingDate": "DATETYPE"
+          },
+          "FinanceChargePreferences": {
+            "AnnualInterestRate": "PERCENTTYPE",
+            "MinFinanceCharge": "AMTTYPE",
+            "GracePeriod": "INTTYPE",
+            "FinanceChargeAccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "IsAssessingForOverdueCharges": "BOOLTYPE",
+            "CalculateChargesFrom": "ENUMTYPE",
+            "IsMarkedToBePrinted": "BOOLTYPE"
+          },
+          "JobsAndEstimatesPreferences": {
+            "IsUsingEstimates": "BOOLTYPE",
+            "IsUsingProgressInvoicing": "BOOLTYPE",
+            "IsPrintingItemsWithZeroAmounts": "BOOLTYPE"
+          },
+          "MultiCurrencyPreferences": {
+            "IsMultiCurrencyOn": "BOOLTYPE",
+            "HomeCurrencyRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            }
+          },
+          "MultiLocationInventoryPreferences": {
+            "IsMultiLocationInventoryAvailable": "BOOLTYPE",
+            "IsMultiLocationInventoryEnabled": "BOOLTYPE"
+          },
+          "PurchasesAndVendorsPreferences": {
+            "IsUsingInventory": "BOOLTYPE",
+            "DaysBillsAreDue": "INTTYPE",
+            "IsAutomaticallyUsingDiscounts": "BOOLTYPE",
+            "DefaultDiscountAccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            }
+          },
+          "ReportsPreferences": {
+            "AgingReportBasis": "ENUMTYPE",
+            "SummaryReportBasis": "ENUMTYPE"
+          },
+          "SalesAndCustomersPreferences": {
+            "DefaultShipMethodRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "DefaultFOB": "STRTYPE",
+            "DefaultMarkup": "PERCENTTYPE",
+            "IsTrackingReimbursedExpensesAsIncome": "BOOLTYPE",
+            "IsAutoApplyingPayments": "BOOLTYPE",
+            "PriceLevels": {
+              "IsUsingPriceLevels": "BOOLTYPE",
+              "IsRoundingSalesPriceUp": "BOOLTYPE"
+            }
+          },
+          "SalesTaxPreferences": {
+            "DefaultItemSalesTaxRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "PaySalesTax": "ENUMTYPE",
+            "DefaultTaxableSalesTaxCodeRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "DefaultNonTaxableSalesTaxCodeRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "IsUsingVendorTaxCode": "BOOLTYPE",
+            "IsUsingCustomerTaxCode": "BOOLTYPE",
+            "IsUsingAmountsIncludeTax": "BOOLTYPE"
+          },
+          "TimeTrackingPreferences": {
+            "FirstDayOfWeek": "ENUMTYPE"
+          },
+          "CurrentAppAccessRights": {
+            "IsAutomaticLoginAllowed": "BOOLTYPE",
+            "AutomaticLoginUserName": "STRTYPE",
+            "IsPersonalDataAccessAllowed": "BOOLTYPE"
+          },
+          "ItemsAndInventoryPreferences": {
+            "EnhancedInventoryReceivingEnabled": "BOOLTYPE",
+            "IsTrackingSerialOrLotNumber": "ENUMTYPE",
+            "isTrackingOnSalesTransactionsEnabled": "BOOLTYPE",
+            "isTrackingOnPurchaseTransactionsEnabled": "BOOLTYPE",
+            "isTrackingOnInventoryAdjustmentEnabled": "BOOLTYPE",
+            "isTrackingOnBuildAssemblyEnabled": "BOOLTYPE",
+            "FIFOEnabled": "BOOLTYPE",
+            "FIFOEffectiveDate": "DATETYPE",
+            "IsRSBEnabled": "BOOLTYPE",
+            "IsBarcodeEnabled": "BOOLTYPE"
+          }
+        }
+      }
+    }
+  }
+}

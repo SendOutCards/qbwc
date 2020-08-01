@@ -1,0 +1,133 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "InventoryAdjustmentAddRq": {
+        "InventoryAdjustmentAdd": {
+          "@defMacro": "MACROTYPE",
+          "AccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TxnDate": "DATETYPE",
+          "RefNumber": "STRTYPE",
+          "InventorySiteRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "CustomerRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ClassRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Memo": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "InventoryAdjustmentLineAdd": {
+            "ItemRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "QuantityAdjustment": {
+              "NewQuantity": "QUANTYPE",
+              "QuantityDifference": "QUANTYPE",
+              "SerialNumber": "STRTYPE",
+              "LotNumber": "STRTYPE",
+              "InventorySiteLocationRef": {
+                "ListID": "IDTYPE",
+                "FullName": "STRTYPE"
+              }
+            },
+            "ValueAdjustment": {
+              "NewQuantity": "QUANTYPE",
+              "QuantityDifference": "QUANTYPE",
+              "NewValue": "AMTTYPE",
+              "ValueDifference": "AMTTYPE"
+            },
+            "SerialNumberAdjustment": {
+              "AddSerialNumber": "STRTYPE",
+              "RemoveSerialNumber": "STRTYPE",
+              "InventorySiteLocationRef": {
+                "ListID": "IDTYPE",
+                "FullName": "STRTYPE"
+              }
+            },
+            "LotNumberAdjustment": {
+              "LotNumber": "STRTYPE",
+              "CountAdjustment": "INTTYPE",
+              "InventorySiteLocationRef": {
+                "ListID": "IDTYPE",
+                "FullName": "STRTYPE"
+              }
+            }
+          }
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "InventoryAdjustmentAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "InventoryAdjustmentRet": {
+          "TxnID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "TxnNumber": "INTTYPE",
+          "AccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "InventorySiteRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TxnDate": "DATETYPE",
+          "RefNumber": "STRTYPE",
+          "CustomerRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ClassRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Memo": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "InventoryAdjustmentLineRet": {
+            "TxnLineID": "IDTYPE",
+            "ItemRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "SerialNumber": "STRTYPE",
+            "SerialNumberAddedOrRemoved": "ENUMTYPE",
+            "LotNumber": "STRTYPE",
+            "InventorySiteLocationRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "QuantityDifference": "QUANTYPE",
+            "ValueDifference": "AMTTYPE"
+          },
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

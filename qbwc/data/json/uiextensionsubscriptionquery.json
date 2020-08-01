@@ -1,0 +1,56 @@
+{
+  "QBXML": {
+    "QBXMLSubscriptionMsgsRq": {
+      "@onError": "stopOnError",
+      "UIExtensionSubscriptionQueryRq": {
+        "SubscriberID": "GUIDTYPE"
+      },
+      "UIExtensionSubscriptionQueryRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "UIExtensionSubscriptionRet": {
+          "SubscriberID": "GUIDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeLastProcessed": "DATETIMETYPE",
+          "COMCallbackInfo": {
+            "AppName": "STRTYPE",
+            "ProgID": "STRTYPE",
+            "CLSID": "GUIDTYPE"
+          },
+          "MenuExtensionSubscription": {
+            "AddToMenu": "ENUMTYPE",
+            "Submenu": {
+              "DisplayCondition": {
+                "VisibleIf": "ENUMTYPE",
+                "VisibleIfNot": "ENUMTYPE",
+                "EnabledIf": "ENUMTYPE",
+                "EnabledIfNot": "ENUMTYPE"
+              },
+              "MenuItem": {
+                "MenuText": "STRTYPE",
+                "EventTag": "STRTYPE",
+                "DisplayCondition": {
+                  "VisibleIf": "ENUMTYPE",
+                  "VisibleIfNot": "ENUMTYPE",
+                  "EnabledIf": "ENUMTYPE",
+                  "EnabledIfNot": "ENUMTYPE"
+                }
+              }
+            },
+            "MenuItem": {
+              "MenuText": "STRTYPE",
+              "EventTag": "STRTYPE",
+              "DisplayCondition": {
+                "VisibleIf": "ENUMTYPE",
+                "VisibleIfNot": "ENUMTYPE",
+                "EnabledIf": "ENUMTYPE",
+                "EnabledIfNot": "ENUMTYPE"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

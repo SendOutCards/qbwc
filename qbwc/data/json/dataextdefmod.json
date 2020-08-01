@@ -1,0 +1,43 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "DataExtDefModRq": {
+        "DataExtDefMod": {
+          "OwnerID": "GUIDTYPE",
+          "DataExtName": "STRTYPE",
+          "DataExtNewName": "STRTYPE",
+          "AssignToObject": "ENUMTYPE",
+          "RemoveFromObject": "ENUMTYPE",
+          "DataExtListRequire": "BOOLTYPE",
+          "DataExtTxnRequire": "BOOLTYPE",
+          "DataExtFormatString": "STRTYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "DataExtDefModRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "DataExtDefRet": {
+          "OwnerID": "GUIDTYPE",
+          "DataExtID": "INTTYPE",
+          "DataExtName": "STRTYPE",
+          "DataExtType": "ENUMTYPE",
+          "AssignToObject": "ENUMTYPE",
+          "DataExtListRequire": "BOOLTYPE",
+          "DataExtTxnRequire": "BOOLTYPE",
+          "DataExtFormatString": "STRTYPE"
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

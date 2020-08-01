@@ -1,0 +1,101 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "BuildAssemblyAddRq": {
+        "BuildAssemblyAdd": {
+          "@defMacro": "MACROTYPE",
+          "ItemInventoryAssemblyRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "InventorySiteRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "InventorySiteLocationRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "SerialNumber": "STRTYPE",
+          "LotNumber": "STRTYPE",
+          "TxnDate": "DATETYPE",
+          "RefNumber": "STRTYPE",
+          "Memo": "STRTYPE",
+          "QuantityToBuild": "QUANTYPE",
+          "MarkPendingIfRequired": "BOOLTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "BuildAssemblyAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "BuildAssemblyRet": {
+          "TxnID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "TxnNumber": "INTTYPE",
+          "ItemInventoryAssemblyRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "InventorySiteRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "InventorySiteLocationRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "SerialNumber": "STRTYPE",
+          "LotNumber": "STRTYPE",
+          "TxnDate": "DATETYPE",
+          "RefNumber": "STRTYPE",
+          "Memo": "STRTYPE",
+          "IsPending": "BOOLTYPE",
+          "QuantityToBuild": "QUANTYPE",
+          "QuantityCanBuild": "QUANTYPE",
+          "QuantityOnHand": "QUANTYPE",
+          "QuantityOnSalesOrder": "QUANTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "ComponentItemLineRet": {
+            "ItemRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "InventorySiteRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "InventorySiteLocationRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "SerialNumber": "STRTYPE",
+            "LotNumber": "STRTYPE",
+            "Desc": "STRTYPE",
+            "QuantityOnHand": "QUANTYPE",
+            "QuantityNeeded": "QUANTYPE"
+          },
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

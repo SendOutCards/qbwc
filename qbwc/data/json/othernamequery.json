@@ -1,0 +1,79 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "OtherNameQueryRq": {
+        "@metaData": "ENUMTYPE",
+        "ListID": "IDTYPE",
+        "FullName": "STRTYPE",
+        "MaxReturned": "INTTYPE",
+        "ActiveStatus": "ENUMTYPE",
+        "FromModifiedDate": "DATETIMETYPE",
+        "ToModifiedDate": "DATETIMETYPE",
+        "NameFilter": {
+          "MatchCriterion": "ENUMTYPE",
+          "Name": "STRTYPE"
+        },
+        "NameRangeFilter": {
+          "FromName": "STRTYPE",
+          "ToName": "STRTYPE"
+        },
+        "IncludeRetElement": "STRTYPE",
+        "OwnerID": "GUIDTYPE"
+      },
+      "OtherNameQueryRs": {
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "OtherNameRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "CompanyName": "STRTYPE",
+          "Salutation": "STRTYPE",
+          "FirstName": "STRTYPE",
+          "MiddleName": "STRTYPE",
+          "LastName": "STRTYPE",
+          "OtherNameAddress": {
+            "Addr1": "STRTYPE",
+            "Addr2": "STRTYPE",
+            "Addr3": "STRTYPE",
+            "Addr4": "STRTYPE",
+            "Addr5": "STRTYPE",
+            "City": "STRTYPE",
+            "State": "STRTYPE",
+            "PostalCode": "STRTYPE",
+            "Country": "STRTYPE",
+            "Note": "STRTYPE"
+          },
+          "OtherNameAddressBlock": {
+            "Addr1": "STRTYPE",
+            "Addr2": "STRTYPE",
+            "Addr3": "STRTYPE",
+            "Addr4": "STRTYPE",
+            "Addr5": "STRTYPE"
+          },
+          "Phone": "STRTYPE",
+          "AltPhone": "STRTYPE",
+          "Fax": "STRTYPE",
+          "Email": "STRTYPE",
+          "Contact": "STRTYPE",
+          "AltContact": "STRTYPE",
+          "AccountNumber": "STRTYPE",
+          "Notes": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        }
+      }
+    }
+  }
+}

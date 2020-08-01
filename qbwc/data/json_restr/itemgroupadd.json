@@ -1,0 +1,273 @@
+{
+  "QBXMLMsgsRq": {
+    "ItemGroupAddRq": {
+      "ItemGroupAdd": {
+        "@optional": false,
+        "@required": true,
+        "@may_repeat": false,
+        "Name": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "BarCode": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "BarCodeValue": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "AssignEvenIfUsed": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "AllowOverride": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "IsActive": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ItemDesc": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "UnitOfMeasureSetRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "IsPrintItemsInGroup": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ExternalGUID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ItemGroupLine": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true,
+          "ItemRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "Quantity": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "UnitOfMeasure": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        }
+      },
+      "IncludeRetElement": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true
+      }
+    },
+    "ItemGroupAddRs": {
+      "ItemGroupRet": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "ListID": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "TimeCreated": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "TimeModified": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "EditSequence": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "Name": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "BarCodeValue": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "IsActive": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ItemDesc": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "UnitOfMeasureSetRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "IsPrintItemsInGroup": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "SpecialItemType": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ExternalGUID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ItemGroupLine": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true,
+          "ItemRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "Quantity": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "UnitOfMeasure": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "DataExtRet": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true,
+          "OwnerID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "DataExtName": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "DataExtType": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "DataExtValue": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          }
+        }
+      },
+      "ErrorRecovery": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "ListID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "OwnerID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TxnID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TxnNumber": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "EditSequence": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ExternalGUID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "TransferInventoryQueryRq": {
+        "@iterator": "ENUMTYPE",
+        "@iteratorID": "UUIDTYPE",
+        "@metaData": "ENUMTYPE",
+        "TxnID": "IDTYPE",
+        "RefNumber": "STRTYPE",
+        "RefNumberCaseSensitive": "STRTYPE",
+        "MaxReturned": "INTTYPE",
+        "ModifiedDateRangeFilter": {
+          "FromModifiedDate": "DATETIMETYPE",
+          "ToModifiedDate": "DATETIMETYPE"
+        },
+        "TxnDateRangeFilter": {
+          "FromTxnDate": "DATETYPE",
+          "ToTxnDate": "DATETYPE",
+          "DateMacro": "ENUMTYPE"
+        },
+        "EntityFilter": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE",
+          "ListIDWithChildren": "IDTYPE",
+          "FullNameWithChildren": "STRTYPE"
+        },
+        "AccountFilter": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE",
+          "ListIDWithChildren": "IDTYPE",
+          "FullNameWithChildren": "STRTYPE"
+        },
+        "RefNumberFilter": {
+          "MatchCriterion": "ENUMTYPE",
+          "RefNumber": "STRTYPE"
+        },
+        "RefNumberRangeFilter": {
+          "FromRefNumber": "STRTYPE",
+          "ToRefNumber": "STRTYPE"
+        },
+        "SiteFilter": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE"
+        },
+        "IncludeLineItems": "BOOLTYPE",
+        "IncludeRetElement": "STRTYPE"
+      },
+      "TransferInventoryQueryRs": {
+        "@iteratorID": "UUIDTYPE",
+        "@iteratorRemainingCount": "INTTYPE",
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "TransferInventoryRet": {
+          "TxnID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "TxnNumber": "INTTYPE",
+          "TxnDate": "DATETYPE",
+          "RefNumber": "STRTYPE",
+          "FromInventorySiteRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ToInventorySiteRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Memo": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "TransferInventoryLineRet": {
+            "TxnLineID": "IDTYPE",
+            "ItemRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "FromInventorySiteLocationRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ToInventorySiteLocationRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "QuantityTransferred": "QUANTYPE",
+            "SerialNumber": "STRTYPE",
+            "LotNumber": "STRTYPE"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "TxnVoidRq": {
+        "TxnVoidType": "ENUMTYPE",
+        "TxnID": "IDTYPE"
+      },
+      "TxnVoidRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "TxnVoidType": "ENUMTYPE",
+        "TxnID": "IDTYPE",
+        "TimeCreated": "DATETIMETYPE",
+        "TimeModified": "DATETIMETYPE",
+        "RefNumber": "STRTYPE",
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

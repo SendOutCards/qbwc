@@ -1,0 +1,86 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "HostQueryRq": {
+        "IncludeListMetaData": {
+          "IncludeMaxCapacity": "BOOLTYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "HostQueryRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "HostRet": {
+          "ProductName": "STRTYPE",
+          "MajorVersion": "STRTYPE",
+          "MinorVersion": "STRTYPE",
+          "Country": "STRTYPE",
+          "SupportedQBXMLVersion": "STRTYPE",
+          "IsAutomaticLogin": "BOOLTYPE",
+          "QBFileMode": "ENUMTYPE",
+          "ListMetaData": {
+            "AccountMetaData": {
+              "MaxCapacity": "INTTYPE"
+            },
+            "BillingRateMetaData": {
+              "MaxCapacity": "INTTYPE"
+            },
+            "ClassMetaData": {
+              "MaxCapacity": "INTTYPE"
+            },
+            "CustomerMsgMetaData": {
+              "MaxCapacity": "INTTYPE"
+            },
+            "CustomerTypeMetaData": {
+              "MaxCapacity": "INTTYPE"
+            },
+            "EntityMetaData": {
+              "MaxCapacity": "INTTYPE"
+            },
+            "ItemMetaData": {
+              "MaxCapacity": "INTTYPE"
+            },
+            "JobTypeMetaData": {
+              "MaxCapacity": "INTTYPE"
+            },
+            "PaymentMethodMetaData": {
+              "MaxCapacity": "INTTYPE"
+            },
+            "PayrollItemMetaData": {
+              "MaxCapacity": "INTTYPE"
+            },
+            "PriceLevelMetaData": {
+              "MaxCapacity": "INTTYPE"
+            },
+            "SalesRepMetaData": {
+              "MaxCapacity": "INTTYPE"
+            },
+            "SalesTaxCodeMetaData": {
+              "MaxCapacity": "INTTYPE"
+            },
+            "ShipMethodMetaData": {
+              "MaxCapacity": "INTTYPE"
+            },
+            "TemplateMetaData": {
+              "MaxCapacity": "INTTYPE"
+            },
+            "TermsMetaData": {
+              "MaxCapacity": "INTTYPE"
+            },
+            "ToDoMetaData": {
+              "MaxCapacity": "INTTYPE"
+            },
+            "VehicleMetaData": {
+              "MaxCapacity": "INTTYPE"
+            },
+            "VendorTypeMetaData": {
+              "MaxCapacity": "INTTYPE"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "QBXMLMsgsRq": {
+    "ItemSalesTaxQueryRq": {
+      "ListID": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true
+      },
+      "FullName": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true
+      },
+      "MaxReturned": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      },
+      "ActiveStatus": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      },
+      "FromModifiedDate": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      },
+      "ToModifiedDate": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      },
+      "NameFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "MatchCriterion": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "Name": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        }
+      },
+      "NameRangeFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "FromName": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ToName": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      },
+      "ClassFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "ListID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true
+        },
+        "FullName": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true
+        },
+        "ListIDWithChildren": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "FullNameWithChildren": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      },
+      "IncludeRetElement": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true
+      },
+      "OwnerID": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true
+      }
+    },
+    "ItemSalesTaxQueryRs": {
+      "ItemSalesTaxRet": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true,
+        "ListID": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "TimeCreated": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "TimeModified": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "EditSequence": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "Name": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "BarCodeValue": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "IsActive": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ClassRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "ItemDesc": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TaxRate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TaxVendorRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "SalesTaxReturnLineRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "ExternalGUID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "DataExtRet": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true,
+          "OwnerID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "DataExtName": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "DataExtType": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "DataExtValue": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          }
+        }
+      }
+    }
+  }
+}

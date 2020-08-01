@@ -1,0 +1,70 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "TimeTrackingQueryRq": {
+        "@iterator": "ENUMTYPE",
+        "@iteratorID": "UUIDTYPE",
+        "@metaData": "ENUMTYPE",
+        "TxnID": "IDTYPE",
+        "MaxReturned": "INTTYPE",
+        "ModifiedDateRangeFilter": {
+          "FromModifiedDate": "DATETIMETYPE",
+          "ToModifiedDate": "DATETIMETYPE"
+        },
+        "TxnDateRangeFilter": {
+          "FromTxnDate": "DATETYPE",
+          "ToTxnDate": "DATETYPE",
+          "DateMacro": "ENUMTYPE"
+        },
+        "TimeTrackingEntityFilter": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "TimeTrackingQueryRs": {
+        "@iteratorID": "UUIDTYPE",
+        "@iteratorRemainingCount": "INTTYPE",
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "TimeTrackingRet": {
+          "TxnID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "TxnNumber": "INTTYPE",
+          "TxnDate": "DATETYPE",
+          "EntityRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "CustomerRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ItemServiceRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Duration": "TIMEINTERVALTYPE",
+          "ClassRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "PayrollItemWageRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Notes": "STRTYPE",
+          "BillableStatus": "ENUMTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "IsBillable": "BOOLTYPE",
+          "IsBilled": "BOOLTYPE"
+        }
+      }
+    }
+  }
+}

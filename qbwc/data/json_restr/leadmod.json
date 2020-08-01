@@ -1,0 +1,351 @@
+{
+  "QBXMLMsgsRq": {
+    "LeadModRq": {
+      "LeadMod": {
+        "@optional": false,
+        "@required": true,
+        "@may_repeat": false,
+        "ListID": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "EditSequence": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "FullName": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "Status": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "CompanyName": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "MainPhone": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "AdditionalContactRef": {
+          "ContactName": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "ContactValue": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          }
+        },
+        "LocationsMod": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true,
+          "LocationID": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "Location": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "LeadAddress": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "Addr1": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "Addr2": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "Addr3": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "Addr4": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "Addr5": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          }
+        },
+        "LeadContactsMod": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true,
+          "LeadContactID": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "Salutation": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FirstName": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "MiddleName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "LastName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "JobTitle": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "AdditionalContactRef": {
+            "ContactName": {
+              "@optional": false,
+              "@required": true,
+              "@may_repeat": false
+            },
+            "ContactValue": {
+              "@optional": false,
+              "@required": true,
+              "@may_repeat": false
+            }
+          },
+          "IsPrimaryContact": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        }
+      },
+      "IncludeRetElement": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true
+      }
+    },
+    "LeadModRs": {
+      "LeadRet": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "ListID": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "TimeCreated": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "TimeModified": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "EditSequence": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "FullName": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "Status": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "CompanyName": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "MainPhone": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "AdditionalContactRef": {
+          "ContactName": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "ContactValue": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          }
+        },
+        "LocationsRet": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true,
+          "LocationID": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "MainAddress": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "Location": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "LeadAddress": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "Addr1": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "Addr2": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "Addr3": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "Addr4": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "Addr5": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          }
+        },
+        "LeadContactsRet": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true,
+          "LeadContactID": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "Salutation": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FirstName": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "MiddleName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "LastName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "JobTitle": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "AdditionalContactRef": {
+            "ContactName": {
+              "@optional": false,
+              "@required": true,
+              "@may_repeat": false
+            },
+            "ContactValue": {
+              "@optional": false,
+              "@required": true,
+              "@may_repeat": false
+            }
+          },
+          "IsPrimaryContact": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        }
+      },
+      "ErrorRecovery": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "ListID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "OwnerID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TxnID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TxnNumber": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "EditSequence": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ExternalGUID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      }
+    }
+  }
+}

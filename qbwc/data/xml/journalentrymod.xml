@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <JournalEntryModRq>
+      <JournalEntryMod>
+        <!-- required -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <TxnDate>DATETYPE</TxnDate>
+        <!-- optional -->
+        <RefNumber>STRTYPE</RefNumber>
+        <!-- optional -->
+        <IsAdjustment>BOOLTYPE</IsAdjustment>
+        <!-- optional -->
+        <IsAmountsEnteredInHomeCurrency>BOOLTYPE</IsAmountsEnteredInHomeCurrency>
+        <!-- optional -->
+        <CurrencyRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CurrencyRef>
+        <ExchangeRate>FLOATTYPE</ExchangeRate>
+        <!-- optional -->
+        <JournalLineMod>
+          <!-- optional, may repeat -->
+          <TxnLineID>IDTYPE</TxnLineID>
+          <!-- required -->
+          <!-- JournalLineType may have one of the following values: Debit, Credit -->
+          <JournalLineType>ENUMTYPE</JournalLineType>
+          <!-- optional -->
+          <AccountRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </AccountRef>
+          <Amount>AMTTYPE</Amount>
+          <!-- optional -->
+          <Memo>STRTYPE</Memo>
+          <!-- optional -->
+          <EntityRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </EntityRef>
+          <ClassRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </ClassRef>
+          <ItemSalesTaxRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </ItemSalesTaxRef>
+          <!-- BillableStatus may have one of the following values: Billable, NotBillable, HasBeenBilled -->
+          <BillableStatus>ENUMTYPE</BillableStatus>
+          <!-- optional -->
+        </JournalLineMod>
+      </JournalEntryMod>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </JournalEntryModRq>
+    <JournalEntryModRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <JournalEntryRet>
+        <!-- optional -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- required -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- required -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <TxnDate>DATETYPE</TxnDate>
+        <!-- required -->
+        <RefNumber>STRTYPE</RefNumber>
+        <!-- optional -->
+        <IsAdjustment>BOOLTYPE</IsAdjustment>
+        <!-- optional -->
+        <IsHomeCurrencyAdjustment>BOOLTYPE</IsHomeCurrencyAdjustment>
+        <!-- optional -->
+        <IsAmountsEnteredInHomeCurrency>BOOLTYPE</IsAmountsEnteredInHomeCurrency>
+        <!-- optional -->
+        <CurrencyRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CurrencyRef>
+        <ExchangeRate>FLOATTYPE</ExchangeRate>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <JournalDebitLine defMacro="MACROTYPE">
+          <!-- optional -->
+          <TxnLineID>IDTYPE</TxnLineID>
+          <!-- optional -->
+          <AccountRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </AccountRef>
+          <Amount>AMTTYPE</Amount>
+          <!-- optional -->
+          <Memo>STRTYPE</Memo>
+          <!-- optional -->
+          <EntityRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </EntityRef>
+          <ClassRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </ClassRef>
+          <ItemSalesTaxRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </ItemSalesTaxRef>
+          <!-- BillableStatus may have one of the following values: Billable, NotBillable, HasBeenBilled -->
+          <BillableStatus>ENUMTYPE</BillableStatus>
+          <!-- optional -->
+        </JournalDebitLine>
+        <!-- OR -->
+        <JournalCreditLine defMacro="MACROTYPE">
+          <!-- optional -->
+          <TxnLineID>IDTYPE</TxnLineID>
+          <!-- optional -->
+          <AccountRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </AccountRef>
+          <Amount>AMTTYPE</Amount>
+          <!-- optional -->
+          <Memo>STRTYPE</Memo>
+          <!-- optional -->
+          <EntityRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </EntityRef>
+          <ClassRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </ClassRef>
+          <ItemSalesTaxRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </ItemSalesTaxRef>
+          <!-- BillableStatus may have one of the following values: Billable, NotBillable, HasBeenBilled -->
+          <BillableStatus>ENUMTYPE</BillableStatus>
+          <!-- optional -->
+        </JournalCreditLine>
+        <!-- END OR -->
+        <DataExtRet>
+          <!-- optional, may repeat -->
+          <OwnerID>GUIDTYPE</OwnerID>
+          <!-- optional -->
+          <DataExtName>STRTYPE</DataExtName>
+          <!-- required -->
+          <!-- DataExtType may have one of the following values: AMTTYPE, DATETIMETYPE, INTTYPE, PERCENTTYPE, PRICETYPE, QUANTYPE, STR1024TYPE, STR255TYPE -->
+          <DataExtType>ENUMTYPE</DataExtType>
+          <!-- required -->
+          <DataExtValue>STRTYPE</DataExtValue>
+          <!-- required -->
+        </DataExtRet>
+      </JournalEntryRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </JournalEntryModRs>
+  </QBXMLMsgsRq>
+</QBXML>

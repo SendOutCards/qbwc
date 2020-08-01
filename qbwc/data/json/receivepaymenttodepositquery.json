@@ -1,0 +1,35 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "ReceivePaymentToDepositQueryRq": {
+        "@metaData": "ENUMTYPE",
+        "IncludeRetElement": "STRTYPE"
+      },
+      "ReceivePaymentToDepositQueryRs": {
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "ReceivePaymentToDepositRet": {
+          "TxnID": "IDTYPE",
+          "TxnLineID": "IDTYPE",
+          "TxnType": "ENUMTYPE",
+          "CustomerRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TxnDate": "DATETYPE",
+          "RefNumber": "STRTYPE",
+          "Amount": "AMTTYPE",
+          "CurrencyRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ExchangeRate": "FLOATTYPE",
+          "AmountInHomeCurrency": "AMTTYPE"
+        }
+      }
+    }
+  }
+}

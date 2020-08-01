@@ -1,0 +1,40 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "VehicleQueryRq": {
+        "@metaData": "ENUMTYPE",
+        "ListID": "IDTYPE",
+        "FullName": "STRTYPE",
+        "MaxReturned": "INTTYPE",
+        "ActiveStatus": "ENUMTYPE",
+        "FromModifiedDate": "DATETIMETYPE",
+        "ToModifiedDate": "DATETIMETYPE",
+        "NameFilter": {
+          "MatchCriterion": "ENUMTYPE",
+          "Name": "STRTYPE"
+        },
+        "NameRangeFilter": {
+          "FromName": "STRTYPE",
+          "ToName": "STRTYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "VehicleQueryRs": {
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "VehicleRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "Desc": "STRTYPE"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "ItemGroupQueryRq": {
+        "@iterator": "ENUMTYPE",
+        "@iteratorID": "UUIDTYPE",
+        "@metaData": "ENUMTYPE",
+        "ListID": "IDTYPE",
+        "FullName": "STRTYPE",
+        "MaxReturned": "INTTYPE",
+        "ActiveStatus": "ENUMTYPE",
+        "FromModifiedDate": "DATETIMETYPE",
+        "ToModifiedDate": "DATETIMETYPE",
+        "NameFilter": {
+          "MatchCriterion": "ENUMTYPE",
+          "Name": "STRTYPE"
+        },
+        "NameRangeFilter": {
+          "FromName": "STRTYPE",
+          "ToName": "STRTYPE"
+        },
+        "IncludeRetElement": "STRTYPE",
+        "OwnerID": "GUIDTYPE"
+      },
+      "ItemGroupQueryRs": {
+        "@iteratorID": "UUIDTYPE",
+        "@iteratorRemainingCount": "INTTYPE",
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "ItemGroupRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "BarCodeValue": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "ItemDesc": "STRTYPE",
+          "UnitOfMeasureSetRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "IsPrintItemsInGroup": "BOOLTYPE",
+          "SpecialItemType": "ENUMTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "ItemGroupLine": {
+            "ItemRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Quantity": "QUANTYPE",
+            "UnitOfMeasure": "STRTYPE"
+          },
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        }
+      }
+    }
+  }
+}

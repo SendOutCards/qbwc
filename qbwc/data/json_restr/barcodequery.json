@@ -1,0 +1,33 @@
+{
+  "QBXMLMsgsRq": {
+    "BarCodeQueryRq": {
+      "BarCodeValue": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true
+      }
+    },
+    "BarCodeQueryRs": {
+      "BarCodeRet": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true,
+        "ListType": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "ListID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "FullName": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      }
+    }
+  }
+}

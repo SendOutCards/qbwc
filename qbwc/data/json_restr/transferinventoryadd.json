@@ -1,0 +1,318 @@
+{
+  "QBXMLMsgsRq": {
+    "TransferInventoryAddRq": {
+      "TransferInventoryAdd": {
+        "@optional": false,
+        "@required": true,
+        "@may_repeat": false,
+        "TxnDate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "RefNumber": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "FromInventorySiteRef": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "ToInventorySiteRef": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "Memo": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ExternalGUID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TransferInventoryLineAdd": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true,
+          "ItemRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "FromInventorySiteLocationRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "ToInventorySiteLocationRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "QuantityToTransfer": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "SerialNumber": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "LotNumber": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        }
+      },
+      "IncludeRetElement": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true
+      }
+    },
+    "TransferInventoryAddRs": {
+      "TransferInventoryRet": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "TxnID": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "TimeCreated": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "TimeModified": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "EditSequence": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "TxnNumber": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TxnDate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "RefNumber": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "FromInventorySiteRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "ToInventorySiteRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "Memo": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ExternalGUID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TransferInventoryLineRet": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true,
+          "TxnLineID": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "ItemRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "FromInventorySiteLocationRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "ToInventorySiteLocationRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "QuantityTransferred": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "SerialNumber": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "LotNumber": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        }
+      },
+      "ErrorRecovery": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "ListID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "OwnerID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TxnID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TxnNumber": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "EditSequence": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ExternalGUID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      }
+    }
+  }
+}

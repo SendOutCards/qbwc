@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <TemplateQueryRq metaData="ENUMTYPE">
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </TemplateQueryRq>
+    <TemplateQueryRs retCount="INTTYPE" statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <TemplateRet>
+        <!-- optional, may repeat -->
+        <ListID>IDTYPE</ListID>
+        <!-- required -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- required -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <Name>STRTYPE</Name>
+        <!-- required -->
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <!-- TemplateType may have one of the following values: BuildAssembly, CreditMemo, Estimate, Invoice, PurchaseOrder, SalesOrder, SalesReceipt -->
+        <TemplateType>ENUMTYPE</TemplateType>
+        <!-- required -->
+      </TemplateRet>
+    </TemplateQueryRs>
+  </QBXMLMsgsRq>
+</QBXML>

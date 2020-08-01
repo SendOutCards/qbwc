@@ -1,0 +1,32 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "SalesTaxPayableQueryRq": {
+        "@metaData": "ENUMTYPE",
+        "AsOfDate": "DATETYPE",
+        "IncludeRetElement": "STRTYPE"
+      },
+      "SalesTaxPayableQueryRs": {
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "SalesTaxPayableRet": {
+          "PayeeEntityRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Amount": "AMTTYPE",
+          "SalesTaxPayableLineRet": {
+            "ItemSalesTaxRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Amount": "AMTTYPE"
+          }
+        }
+      }
+    }
+  }
+}

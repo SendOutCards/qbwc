@@ -1,0 +1,103 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "TimeReportQueryRq": {
+        "TimeReportType": "ENUMTYPE",
+        "DisplayReport": "BOOLTYPE",
+        "ReportPeriod": {
+          "FromReportDate": "DATETYPE",
+          "ToReportDate": "DATETYPE"
+        },
+        "ReportDateMacro": "ENUMTYPE",
+        "ReportEntityFilter": {
+          "EntityTypeFilter": "ENUMTYPE",
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE",
+          "ListIDWithChildren": "IDTYPE",
+          "FullNameWithChildren": "STRTYPE"
+        },
+        "ReportItemFilter": {
+          "ItemTypeFilter": "ENUMTYPE",
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE",
+          "ListIDWithChildren": "IDTYPE",
+          "FullNameWithChildren": "STRTYPE"
+        },
+        "ReportClassFilter": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE",
+          "ListIDWithChildren": "IDTYPE",
+          "FullNameWithChildren": "STRTYPE"
+        },
+        "SummarizeColumnsBy": "ENUMTYPE",
+        "IncludeColumn": "ENUMTYPE",
+        "IncludeSubcolumns": "BOOLTYPE",
+        "ReportCalendar": "ENUMTYPE",
+        "ReturnRows": "ENUMTYPE",
+        "ReturnColumns": "ENUMTYPE"
+      },
+      "TimeReportQueryRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "ReportRet": {
+          "ReportTitle": "STRTYPE",
+          "ReportSubtitle": "STRTYPE",
+          "ReportBasis": "ENUMTYPE",
+          "NumRows": "INTTYPE",
+          "NumColumns": "INTTYPE",
+          "NumColTitleRows": "INTTYPE",
+          "ColDesc": {
+            "@colID": "INTTYPE",
+            "@dataType": "ENUMTYPE",
+            "ColTitle": {
+              "@titleRow": "INTTYPE",
+              "@value": "STRTYPE"
+            },
+            "ColType": "ENUMTYPE"
+          },
+          "ReportData": {
+            "DataRow": {
+              "RowData": {
+                "@rowType": "ENUMTYPE",
+                "@value": "STRTYPE"
+              },
+              "ColData": {
+                "@colID": "INTTYPE",
+                "@dataType": "ENUMTYPE",
+                "@value": "STRTYPE"
+              }
+            },
+            "TextRow": {
+              "@rowNumber": "INTTYPE",
+              "@value": "STRTYPE"
+            },
+            "SubtotalRow": {
+              "RowData": {
+                "@rowType": "ENUMTYPE",
+                "@value": "STRTYPE"
+              },
+              "ColData": {
+                "@colID": "INTTYPE",
+                "@dataType": "ENUMTYPE",
+                "@value": "STRTYPE"
+              }
+            },
+            "TotalRow": {
+              "RowData": {
+                "@rowType": "ENUMTYPE",
+                "@value": "STRTYPE"
+              },
+              "ColData": {
+                "@colID": "INTTYPE",
+                "@dataType": "ENUMTYPE",
+                "@value": "STRTYPE"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

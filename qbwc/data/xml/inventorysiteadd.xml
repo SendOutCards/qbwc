@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <InventorySiteAddRq>
+      <InventorySiteAdd>
+        <!-- required -->
+        <Name>STRTYPE</Name>
+        <!-- required -->
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <ParentSiteRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ParentSiteRef>
+        <SiteDesc>STRTYPE</SiteDesc>
+        <!-- optional -->
+        <Contact>STRTYPE</Contact>
+        <!-- optional -->
+        <Phone>STRTYPE</Phone>
+        <!-- optional -->
+        <Fax>STRTYPE</Fax>
+        <!-- optional -->
+        <Email>STRTYPE</Email>
+        <!-- optional -->
+        <SiteAddress>
+          <!-- optional -->
+          <Addr1>STRTYPE</Addr1>
+          <!-- optional -->
+          <Addr2>STRTYPE</Addr2>
+          <!-- optional -->
+          <Addr3>STRTYPE</Addr3>
+          <!-- optional -->
+          <Addr4>STRTYPE</Addr4>
+          <!-- optional -->
+          <Addr5>STRTYPE</Addr5>
+          <!-- optional -->
+          <City>STRTYPE</City>
+          <!-- optional -->
+          <State>STRTYPE</State>
+          <!-- optional -->
+          <PostalCode>STRTYPE</PostalCode>
+          <!-- optional -->
+          <Country>STRTYPE</Country>
+          <!-- optional -->
+        </SiteAddress>
+      </InventorySiteAdd>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </InventorySiteAddRq>
+    <InventorySiteAddRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <InventorySiteRet>
+        <!-- optional -->
+        <ListID>IDTYPE</ListID>
+        <!-- required -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- required -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <Name>STRTYPE</Name>
+        <!-- optional -->
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <ParentSiteRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ParentSiteRef>
+        <IsDefaultSite>BOOLTYPE</IsDefaultSite>
+        <!-- optional -->
+        <SiteDesc>STRTYPE</SiteDesc>
+        <!-- optional -->
+        <Contact>STRTYPE</Contact>
+        <!-- optional -->
+        <Phone>STRTYPE</Phone>
+        <!-- optional -->
+        <Fax>STRTYPE</Fax>
+        <!-- optional -->
+        <Email>STRTYPE</Email>
+        <!-- optional -->
+        <SiteAddress>
+          <!-- optional -->
+          <Addr1>STRTYPE</Addr1>
+          <!-- optional -->
+          <Addr2>STRTYPE</Addr2>
+          <!-- optional -->
+          <Addr3>STRTYPE</Addr3>
+          <!-- optional -->
+          <Addr4>STRTYPE</Addr4>
+          <!-- optional -->
+          <Addr5>STRTYPE</Addr5>
+          <!-- optional -->
+          <City>STRTYPE</City>
+          <!-- optional -->
+          <State>STRTYPE</State>
+          <!-- optional -->
+          <PostalCode>STRTYPE</PostalCode>
+          <!-- optional -->
+          <Country>STRTYPE</Country>
+          <!-- optional -->
+        </SiteAddress>
+        <SiteAddressBlock>
+          <!-- optional -->
+          <Addr1>STRTYPE</Addr1>
+          <!-- optional -->
+          <Addr2>STRTYPE</Addr2>
+          <!-- optional -->
+          <Addr3>STRTYPE</Addr3>
+          <!-- optional -->
+          <Addr4>STRTYPE</Addr4>
+          <!-- optional -->
+          <Addr5>STRTYPE</Addr5>
+          <!-- optional -->
+        </SiteAddressBlock>
+      </InventorySiteRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </InventorySiteAddRs>
+  </QBXMLMsgsRq>
+</QBXML>

@@ -1,0 +1,52 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "CurrencyAddRq": {
+        "CurrencyAdd": {
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "CurrencyCode": "STRTYPE",
+          "CurrencyFormat": {
+            "ThousandSeparator": "ENUMTYPE",
+            "ThousandSeparatorGrouping": "ENUMTYPE",
+            "DecimalPlaces": "ENUMTYPE",
+            "DecimalSeparator": "ENUMTYPE"
+          }
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "CurrencyAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "CurrencyRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "CurrencyCode": "STRTYPE",
+          "CurrencyFormat": {
+            "ThousandSeparator": "ENUMTYPE",
+            "ThousandSeparatorGrouping": "ENUMTYPE",
+            "DecimalPlaces": "ENUMTYPE",
+            "DecimalSeparator": "ENUMTYPE"
+          },
+          "IsUserDefinedCurrency": "BOOLTYPE",
+          "ExchangeRate": "FLOATTYPE",
+          "AsOfDate": "DATETYPE"
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

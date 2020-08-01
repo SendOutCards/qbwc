@@ -1,0 +1,89 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "ItemDiscountAddRq": {
+        "ItemDiscountAdd": {
+          "Name": "STRTYPE",
+          "BarCode": {
+            "BarCodeValue": "STRTYPE",
+            "AssignEvenIfUsed": "BOOLTYPE",
+            "AllowOverride": "BOOLTYPE"
+          },
+          "IsActive": "BOOLTYPE",
+          "ClassRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ParentRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ItemDesc": "STRTYPE",
+          "SalesTaxCodeRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "DiscountRate": "PRICETYPE",
+          "DiscountRatePercent": "PERCENTTYPE",
+          "AccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ExternalGUID": "GUIDTYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "ItemDiscountAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "ItemDiscountRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "FullName": "STRTYPE",
+          "BarCodeValue": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "ClassRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ParentRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Sublevel": "INTTYPE",
+          "ItemDesc": "STRTYPE",
+          "SalesTaxCodeRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "DiscountRate": "PRICETYPE",
+          "DiscountRatePercent": "PERCENTTYPE",
+          "AccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ExternalGUID": "GUIDTYPE",
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "QBXMLMsgsRq": {
+    "SpecialAccountAddRq": {
+      "SpecialAccountAdd": {
+        "@optional": false,
+        "@required": true,
+        "@may_repeat": false,
+        "SpecialAccountType": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "CurrencyRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        }
+      },
+      "IncludeRetElement": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true
+      }
+    },
+    "SpecialAccountAddRs": {
+      "AccountRet": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "ListID": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "TimeCreated": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "TimeModified": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "EditSequence": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "Name": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "FullName": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "IsActive": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ParentRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "Sublevel": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "AccountType": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "SpecialAccountType": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "IsTaxAccount": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "AccountNumber": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "BankNumber": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "Desc": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "Balance": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TotalBalance": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "SalesTaxCodeRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "TaxLineInfoRet": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "TaxLineID": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "TaxLineName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "CashFlowClassification": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "CurrencyRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "DataExtRet": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true,
+          "OwnerID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "DataExtName": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "DataExtType": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "DataExtValue": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          }
+        }
+      },
+      "ErrorRecovery": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "ListID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "OwnerID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TxnID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TxnNumber": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "EditSequence": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ExternalGUID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      }
+    }
+  }
+}

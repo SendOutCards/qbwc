@@ -1,0 +1,61 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "PriceLevelQueryRq": {
+        "@metaData": "ENUMTYPE",
+        "ListID": "IDTYPE",
+        "FullName": "STRTYPE",
+        "MaxReturned": "INTTYPE",
+        "ActiveStatus": "ENUMTYPE",
+        "FromModifiedDate": "DATETIMETYPE",
+        "ToModifiedDate": "DATETIMETYPE",
+        "NameFilter": {
+          "MatchCriterion": "ENUMTYPE",
+          "Name": "STRTYPE"
+        },
+        "NameRangeFilter": {
+          "FromName": "STRTYPE",
+          "ToName": "STRTYPE"
+        },
+        "ItemRef": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE"
+        },
+        "CurrencyFilter": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "PriceLevelQueryRs": {
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "PriceLevelRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "PriceLevelType": "ENUMTYPE",
+          "PriceLevelFixedPercentage": "PERCENTTYPE",
+          "PriceLevelPerItemRet": {
+            "ItemRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "CustomPrice": "PRICETYPE",
+            "CustomPricePercent": "PERCENTTYPE"
+          },
+          "CurrencyRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLSubscriptionMsgsRq onError="stopOnError">
+    <UIEventSubscriptionAddRq>
+      <UIEventSubscriptionAdd>
+        <!-- required -->
+        <SubscriberID>GUIDTYPE</SubscriberID>
+        <!-- required -->
+        <COMCallbackInfo>
+          <!-- required -->
+          <AppName>STRTYPE</AppName>
+          <!-- required -->
+          <!-- BEGIN OR -->
+          <ProgID>STRTYPE</ProgID>
+          <!-- optional -->
+          <!-- OR -->
+          <CLSID>GUIDTYPE</CLSID>
+          <!-- optional -->
+          <!-- END OR -->
+        </COMCallbackInfo>
+        <!-- DeliveryPolicy may have one of the following values: DeliverAlways, DeliverOnlyIfRunning -->
+        <DeliveryPolicy>ENUMTYPE</DeliveryPolicy>
+        <!-- required -->
+        <CompanyFileEventSubscription>
+          <!-- required -->
+          <!-- CompanyFileEventOperation may have one of the following values: Close, Open -->
+          <CompanyFileEventOperation>ENUMTYPE</CompanyFileEventOperation>
+          <!-- required, may repeat -->
+        </CompanyFileEventSubscription>
+      </UIEventSubscriptionAdd>
+    </UIEventSubscriptionAddRq>
+    <UIEventSubscriptionAddRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <UIEventSubscriptionRet>
+        <!-- optional -->
+        <SubscriberID>GUIDTYPE</SubscriberID>
+        <!-- required -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- required -->
+        <TimeLastProcessed>DATETIMETYPE</TimeLastProcessed>
+        <!-- optional -->
+        <COMCallbackInfo>
+          <!-- required -->
+          <AppName>STRTYPE</AppName>
+          <!-- required -->
+          <!-- BEGIN OR -->
+          <ProgID>STRTYPE</ProgID>
+          <!-- optional -->
+          <!-- OR -->
+          <CLSID>GUIDTYPE</CLSID>
+          <!-- optional -->
+          <!-- END OR -->
+        </COMCallbackInfo>
+        <!-- DeliveryPolicy may have one of the following values: DeliverAlways, DeliverOnlyIfRunning -->
+        <DeliveryPolicy>ENUMTYPE</DeliveryPolicy>
+        <!-- required -->
+        <CompanyFileEventSubscription>
+          <!-- required -->
+          <!-- CompanyFileEventOperation may have one of the following values: Close, Open -->
+          <CompanyFileEventOperation>ENUMTYPE</CompanyFileEventOperation>
+          <!-- required, may repeat -->
+        </CompanyFileEventSubscription>
+      </UIEventSubscriptionRet>
+    </UIEventSubscriptionAddRs>
+  </QBXMLSubscriptionMsgsRq>
+</QBXML>

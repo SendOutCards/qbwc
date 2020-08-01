@@ -1,0 +1,16 @@
+{
+  "QBXML": {
+    "QBXMLSubscriptionMsgsRq": {
+      "@onError": "stopOnError",
+      "SubscriptionDelRq": {
+        "SubscriberID": "GUIDTYPE",
+        "SubscriptionType": "ENUMTYPE"
+      },
+      "SubscriptionDelRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE"
+      }
+    }
+  }
+}

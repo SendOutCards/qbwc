@@ -1,0 +1,86 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "TimeTrackingAddRq": {
+        "TimeTrackingAdd": {
+          "@defMacro": "MACROTYPE",
+          "TxnDate": "DATETYPE",
+          "EntityRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "CustomerRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ItemServiceRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Duration": "TIMEINTERVALTYPE",
+          "ClassRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "PayrollItemWageRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Notes": "STRTYPE",
+          "BillableStatus": "ENUMTYPE",
+          "IsBillable": "BOOLTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "TimeTrackingAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "TimeTrackingRet": {
+          "TxnID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "TxnNumber": "INTTYPE",
+          "TxnDate": "DATETYPE",
+          "EntityRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "CustomerRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ItemServiceRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Duration": "TIMEINTERVALTYPE",
+          "ClassRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "PayrollItemWageRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Notes": "STRTYPE",
+          "BillableStatus": "ENUMTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "IsBillable": "BOOLTYPE",
+          "IsBilled": "BOOLTYPE"
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

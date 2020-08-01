@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <SalesTaxCodeAddRq>
+      <SalesTaxCodeAdd>
+        <!-- required -->
+        <Name>STRTYPE</Name>
+        <!-- required -->
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <IsTaxable>BOOLTYPE</IsTaxable>
+        <!-- required -->
+        <Desc>STRTYPE</Desc>
+        <!-- optional -->
+        <ItemPurchaseTaxRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ItemPurchaseTaxRef>
+        <ItemSalesTaxRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ItemSalesTaxRef>
+      </SalesTaxCodeAdd>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </SalesTaxCodeAddRq>
+    <SalesTaxCodeAddRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <SalesTaxCodeRet>
+        <!-- optional -->
+        <ListID>IDTYPE</ListID>
+        <!-- required -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- required -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <Name>STRTYPE</Name>
+        <!-- required -->
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <IsTaxable>BOOLTYPE</IsTaxable>
+        <!-- required -->
+        <Desc>STRTYPE</Desc>
+        <!-- optional -->
+        <ItemPurchaseTaxRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ItemPurchaseTaxRef>
+        <ItemSalesTaxRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ItemSalesTaxRef>
+      </SalesTaxCodeRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </SalesTaxCodeAddRs>
+  </QBXMLMsgsRq>
+</QBXML>

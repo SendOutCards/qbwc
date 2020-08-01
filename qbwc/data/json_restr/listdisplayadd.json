@@ -1,0 +1,11 @@
+{
+  "QBXMLMsgsRq": {
+    "ListDisplayAddRq": {
+      "ListDisplayAddType": {
+        "@optional": false,
+        "@required": true,
+        "@may_repeat": false
+      }
+    }
+  }
+}

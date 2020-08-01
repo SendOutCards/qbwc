@@ -1,0 +1,193 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "ARRefundCreditCardAddRq": {
+        "ARRefundCreditCardAdd": {
+          "@defMacro": "MACROTYPE",
+          "CustomerRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "RefundFromAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ARAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TxnDate": "DATETYPE",
+          "RefNumber": "STRTYPE",
+          "Address": {
+            "Addr1": "STRTYPE",
+            "Addr2": "STRTYPE",
+            "Addr3": "STRTYPE",
+            "Addr4": "STRTYPE",
+            "Addr5": "STRTYPE",
+            "City": "STRTYPE",
+            "State": "STRTYPE",
+            "PostalCode": "STRTYPE",
+            "Country": "STRTYPE",
+            "Note": "STRTYPE"
+          },
+          "PaymentMethodRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Memo": "STRTYPE",
+          "CreditCardTxnInfo": {
+            "CreditCardTxnInputInfo": {
+              "CreditCardNumber": "STRTYPE",
+              "ExpirationMonth": "INTTYPE",
+              "ExpirationYear": "INTTYPE",
+              "NameOnCard": "STRTYPE",
+              "CreditCardAddress": "STRTYPE",
+              "CreditCardPostalCode": "STRTYPE",
+              "CommercialCardCode": "STRTYPE",
+              "TransactionMode": "ENUMTYPE",
+              "CreditCardTxnType": "ENUMTYPE"
+            },
+            "CreditCardTxnResultInfo": {
+              "ResultCode": "INTTYPE",
+              "ResultMessage": "STRTYPE",
+              "CreditCardTransID": "STRTYPE",
+              "MerchantAccountNumber": "STRTYPE",
+              "AuthorizationCode": "STRTYPE",
+              "AVSStreet": "ENUMTYPE",
+              "AVSZip": "ENUMTYPE",
+              "CardSecurityCodeMatch": "ENUMTYPE",
+              "ReconBatchID": "STRTYPE",
+              "PaymentGroupingCode": "INTTYPE",
+              "PaymentStatus": "ENUMTYPE",
+              "TxnAuthorizationTime": "DATETIMETYPE",
+              "TxnAuthorizationStamp": "INTTYPE",
+              "ClientTransID": "STRTYPE"
+            }
+          },
+          "ExchangeRate": "FLOATTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "RefundAppliedToTxnAdd": {
+            "TxnID": {
+              "@useMacro": "MACROTYPE",
+              "#text": "IDTYPE"
+            },
+            "RefundAmount": "AMTTYPE"
+          }
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "ARRefundCreditCardAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "ARRefundCreditCardRet": {
+          "TxnID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "TxnNumber": "INTTYPE",
+          "CustomerRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "RefundFromAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ARAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TxnDate": "DATETYPE",
+          "RefNumber": "STRTYPE",
+          "TotalAmount": "AMTTYPE",
+          "CurrencyRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ExchangeRate": "FLOATTYPE",
+          "TotalAmountInHomeCurrency": "AMTTYPE",
+          "Address": {
+            "Addr1": "STRTYPE",
+            "Addr2": "STRTYPE",
+            "Addr3": "STRTYPE",
+            "Addr4": "STRTYPE",
+            "Addr5": "STRTYPE",
+            "City": "STRTYPE",
+            "State": "STRTYPE",
+            "PostalCode": "STRTYPE",
+            "Country": "STRTYPE",
+            "Note": "STRTYPE"
+          },
+          "AddressBlock": {
+            "Addr1": "STRTYPE",
+            "Addr2": "STRTYPE",
+            "Addr3": "STRTYPE",
+            "Addr4": "STRTYPE",
+            "Addr5": "STRTYPE"
+          },
+          "PaymentMethodRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Memo": "STRTYPE",
+          "CreditCardTxnInfo": {
+            "CreditCardTxnInputInfo": {
+              "CreditCardNumber": "STRTYPE",
+              "ExpirationMonth": "INTTYPE",
+              "ExpirationYear": "INTTYPE",
+              "NameOnCard": "STRTYPE",
+              "CreditCardAddress": "STRTYPE",
+              "CreditCardPostalCode": "STRTYPE",
+              "CommercialCardCode": "STRTYPE",
+              "TransactionMode": "ENUMTYPE",
+              "CreditCardTxnType": "ENUMTYPE"
+            },
+            "CreditCardTxnResultInfo": {
+              "ResultCode": "INTTYPE",
+              "ResultMessage": "STRTYPE",
+              "CreditCardTransID": "STRTYPE",
+              "MerchantAccountNumber": "STRTYPE",
+              "AuthorizationCode": "STRTYPE",
+              "AVSStreet": "ENUMTYPE",
+              "AVSZip": "ENUMTYPE",
+              "CardSecurityCodeMatch": "ENUMTYPE",
+              "ReconBatchID": "STRTYPE",
+              "PaymentGroupingCode": "INTTYPE",
+              "PaymentStatus": "ENUMTYPE",
+              "TxnAuthorizationTime": "DATETIMETYPE",
+              "TxnAuthorizationStamp": "INTTYPE",
+              "ClientTransID": "STRTYPE"
+            }
+          },
+          "ExternalGUID": "GUIDTYPE",
+          "RefundAppliedToTxnRet": {
+            "TxnID": "IDTYPE",
+            "TxnType": "ENUMTYPE",
+            "TxnDate": "DATETYPE",
+            "RefNumber": "STRTYPE",
+            "CreditRemaining": "AMTTYPE",
+            "RefundAmount": "AMTTYPE",
+            "CreditRemainingInHomeCurrency": "AMTTYPE",
+            "RefundAmountInHomeCurrency": "AMTTYPE"
+          },
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

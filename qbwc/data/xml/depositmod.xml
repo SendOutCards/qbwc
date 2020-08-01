@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <DepositModRq>
+      <DepositMod>
+        <!-- required -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <TxnDate>DATETYPE</TxnDate>
+        <!-- optional -->
+        <DepositToAccountRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </DepositToAccountRef>
+        <Memo>STRTYPE</Memo>
+        <!-- optional -->
+        <CashBackInfoMod>
+          <!-- optional -->
+          <AccountRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </AccountRef>
+          <Memo>STRTYPE</Memo>
+          <!-- optional -->
+          <Amount>AMTTYPE</Amount>
+          <!-- optional -->
+        </CashBackInfoMod>
+        <CurrencyRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CurrencyRef>
+        <ExchangeRate>FLOATTYPE</ExchangeRate>
+        <!-- optional -->
+        <DepositLineMod>
+          <!-- optional, may repeat -->
+          <TxnLineID>IDTYPE</TxnLineID>
+          <!-- required -->
+          <!-- BEGIN OR -->
+          <PaymentTxnID useMacro="MACROTYPE">IDTYPE</PaymentTxnID>
+          <!-- required -->
+          <PaymentTxnLineID useMacro="MACROTYPE">IDTYPE</PaymentTxnLineID>
+          <!-- optional -->
+          <OverrideMemo>STRTYPE</OverrideMemo>
+          <!-- optional -->
+          <OverrideCheckNumber>STRTYPE</OverrideCheckNumber>
+          <!-- optional -->
+          <OverrideClassRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </OverrideClassRef>
+          <!-- OR -->
+          <EntityRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </EntityRef>
+          <AccountRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </AccountRef>
+          <Memo>STRTYPE</Memo>
+          <!-- optional -->
+          <CheckNumber>STRTYPE</CheckNumber>
+          <!-- optional -->
+          <PaymentMethodRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </PaymentMethodRef>
+          <ClassRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </ClassRef>
+          <Amount>AMTTYPE</Amount>
+          <!-- optional -->
+          <!-- END OR -->
+        </DepositLineMod>
+      </DepositMod>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </DepositModRq>
+    <DepositModRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <DepositRet>
+        <!-- optional -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- required -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- required -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <TxnDate>DATETYPE</TxnDate>
+        <!-- required -->
+        <DepositToAccountRef>
+          <!-- required -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </DepositToAccountRef>
+        <Memo>STRTYPE</Memo>
+        <!-- optional -->
+        <DepositTotal>AMTTYPE</DepositTotal>
+        <!-- optional -->
+        <CurrencyRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CurrencyRef>
+        <ExchangeRate>FLOATTYPE</ExchangeRate>
+        <!-- optional -->
+        <DepositTotalInHomeCurrency>AMTTYPE</DepositTotalInHomeCurrency>
+        <!-- optional -->
+        <CashBackInfoRet>
+          <!-- optional -->
+          <TxnLineID>IDTYPE</TxnLineID>
+          <!-- required -->
+          <AccountRef>
+            <!-- required -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </AccountRef>
+          <Memo>STRTYPE</Memo>
+          <!-- optional -->
+          <Amount>AMTTYPE</Amount>
+          <!-- optional -->
+        </CashBackInfoRet>
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+        <DepositLineRet>
+          <!-- optional, may repeat -->
+          <!-- TxnType may have one of the following values: ARRefundCreditCard, Bill, BillPaymentCheck, BillPaymentCreditCard, BuildAssembly, Charge, Check, CreditCardCharge, CreditCardCredit, CreditMemo, Deposit, Estimate, InventoryAdjustment, Invoice, ItemReceipt, JournalEntry, LiabilityAdjustment, Paycheck, PayrollLiabilityCheck, PurchaseOrder, ReceivePayment, SalesOrder, SalesReceipt, SalesTaxPaymentCheck, Transfer, VendorCredit, YTDAdjustment -->
+          <TxnType>ENUMTYPE</TxnType>
+          <!-- optional -->
+          <TxnID>IDTYPE</TxnID>
+          <!-- optional -->
+          <TxnLineID>IDTYPE</TxnLineID>
+          <!-- required -->
+          <PaymentTxnLineID>IDTYPE</PaymentTxnLineID>
+          <!-- optional -->
+          <EntityRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </EntityRef>
+          <AccountRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </AccountRef>
+          <Memo>STRTYPE</Memo>
+          <!-- optional -->
+          <CheckNumber>STRTYPE</CheckNumber>
+          <!-- optional -->
+          <PaymentMethodRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </PaymentMethodRef>
+          <ClassRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </ClassRef>
+          <Amount>AMTTYPE</Amount>
+          <!-- optional -->
+        </DepositLineRet>
+        <DataExtRet>
+          <!-- optional, may repeat -->
+          <OwnerID>GUIDTYPE</OwnerID>
+          <!-- optional -->
+          <DataExtName>STRTYPE</DataExtName>
+          <!-- required -->
+          <!-- DataExtType may have one of the following values: AMTTYPE, DATETIMETYPE, INTTYPE, PERCENTTYPE, PRICETYPE, QUANTYPE, STR1024TYPE, STR255TYPE -->
+          <DataExtType>ENUMTYPE</DataExtType>
+          <!-- required -->
+          <DataExtValue>STRTYPE</DataExtValue>
+          <!-- required -->
+        </DataExtRet>
+      </DepositRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </DepositModRs>
+  </QBXMLMsgsRq>
+</QBXML>

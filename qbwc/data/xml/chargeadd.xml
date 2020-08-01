@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <ChargeAddRq>
+      <ChargeAdd defMacro="MACROTYPE">
+        <!-- required -->
+        <CustomerRef>
+          <!-- required -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CustomerRef>
+        <TxnDate>DATETYPE</TxnDate>
+        <!-- optional -->
+        <RefNumber>STRTYPE</RefNumber>
+        <!-- optional -->
+        <ItemRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ItemRef>
+        <InventorySiteRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </InventorySiteRef>
+        <InventorySiteLocationRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </InventorySiteLocationRef>
+        <Quantity>QUANTYPE</Quantity>
+        <!-- optional -->
+        <UnitOfMeasure>STRTYPE</UnitOfMeasure>
+        <!-- optional -->
+        <Rate>PRICETYPE</Rate>
+        <!-- optional -->
+        <!-- OptionForPriceRuleConflict may have one of the following values: Zero, BasePrice -->
+        <OptionForPriceRuleConflict>ENUMTYPE</OptionForPriceRuleConflict>
+        <!-- optional -->
+        <Amount>AMTTYPE</Amount>
+        <!-- optional -->
+        <Desc>STRTYPE</Desc>
+        <!-- optional -->
+        <ARAccountRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ARAccountRef>
+        <ClassRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ClassRef>
+        <BilledDate>DATETYPE</BilledDate>
+        <!-- optional -->
+        <DueDate>DATETYPE</DueDate>
+        <!-- optional -->
+        <OverrideItemAccountRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </OverrideItemAccountRef>
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ChargeAdd>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </ChargeAddRq>
+    <ChargeAddRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <ChargeRet>
+        <!-- optional -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- required -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- required -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <CustomerRef>
+          <!-- required -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CustomerRef>
+        <TxnDate>DATETYPE</TxnDate>
+        <!-- optional -->
+        <RefNumber>STRTYPE</RefNumber>
+        <!-- optional -->
+        <ItemRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ItemRef>
+        <InventorySiteRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </InventorySiteRef>
+        <InventorySiteLocationRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </InventorySiteLocationRef>
+        <Quantity>QUANTYPE</Quantity>
+        <!-- optional -->
+        <UnitOfMeasure>STRTYPE</UnitOfMeasure>
+        <!-- optional -->
+        <OverrideUOMSetRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </OverrideUOMSetRef>
+        <Rate>PRICETYPE</Rate>
+        <!-- optional -->
+        <Amount>AMTTYPE</Amount>
+        <!-- optional -->
+        <BalanceRemaining>AMTTYPE</BalanceRemaining>
+        <!-- optional -->
+        <Desc>STRTYPE</Desc>
+        <!-- optional -->
+        <ARAccountRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ARAccountRef>
+        <ClassRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ClassRef>
+        <BilledDate>DATETYPE</BilledDate>
+        <!-- optional -->
+        <DueDate>DATETYPE</DueDate>
+        <!-- optional -->
+        <IsPaid>BOOLTYPE</IsPaid>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+        <LinkedTxn>
+          <!-- optional, may repeat -->
+          <TxnID>IDTYPE</TxnID>
+          <!-- required -->
+          <!-- TxnType may have one of the following values: ARRefundCreditCard, Bill, BillPaymentCheck, BillPaymentCreditCard, BuildAssembly, Charge, Check, CreditCardCharge, CreditCardCredit, CreditMemo, Deposit, Estimate, InventoryAdjustment, Invoice, ItemReceipt, JournalEntry, LiabilityAdjustment, Paycheck, PayrollLiabilityCheck, PurchaseOrder, ReceivePayment, SalesOrder, SalesReceipt, SalesTaxPaymentCheck, Transfer, VendorCredit, YTDAdjustment -->
+          <TxnType>ENUMTYPE</TxnType>
+          <!-- required -->
+          <TxnDate>DATETYPE</TxnDate>
+          <!-- required -->
+          <RefNumber>STRTYPE</RefNumber>
+          <!-- optional -->
+          <!-- LinkType may have one of the following values: AMTTYPE, QUANTYPE -->
+          <LinkType>ENUMTYPE</LinkType>
+          <!-- optional -->
+          <Amount>AMTTYPE</Amount>
+          <!-- required -->
+        </LinkedTxn>
+        <DataExtRet>
+          <!-- optional, may repeat -->
+          <OwnerID>GUIDTYPE</OwnerID>
+          <!-- optional -->
+          <DataExtName>STRTYPE</DataExtName>
+          <!-- required -->
+          <!-- DataExtType may have one of the following values: AMTTYPE, DATETIMETYPE, INTTYPE, PERCENTTYPE, PRICETYPE, QUANTYPE, STR1024TYPE, STR255TYPE -->
+          <DataExtType>ENUMTYPE</DataExtType>
+          <!-- required -->
+          <DataExtValue>STRTYPE</DataExtValue>
+          <!-- required -->
+        </DataExtRet>
+      </ChargeRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </ChargeAddRs>
+  </QBXMLMsgsRq>
+</QBXML>

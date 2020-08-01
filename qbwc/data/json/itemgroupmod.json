@@ -1,0 +1,81 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "ItemGroupModRq": {
+        "ItemGroupMod": {
+          "ListID": "IDTYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "BarCode": {
+            "BarCodeValue": "STRTYPE",
+            "AssignEvenIfUsed": "BOOLTYPE",
+            "AllowOverride": "BOOLTYPE"
+          },
+          "IsActive": "BOOLTYPE",
+          "ItemDesc": "STRTYPE",
+          "UnitOfMeasureSetRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ForceUOMChange": "BOOLTYPE",
+          "IsPrintItemsInGroup": "BOOLTYPE",
+          "ClearItemsInGroup": "BOOLTYPE",
+          "ItemGroupLine": {
+            "ItemRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Quantity": "QUANTYPE",
+            "UnitOfMeasure": "STRTYPE"
+          }
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "ItemGroupModRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "ItemGroupRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "BarCodeValue": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "ItemDesc": "STRTYPE",
+          "UnitOfMeasureSetRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "IsPrintItemsInGroup": "BOOLTYPE",
+          "SpecialItemType": "ENUMTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "ItemGroupLine": {
+            "ItemRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Quantity": "QUANTYPE",
+            "UnitOfMeasure": "STRTYPE"
+          },
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

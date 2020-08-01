@@ -1,0 +1,1593 @@
+{
+  "QBXMLMsgsRq": {
+    "SalesOrderAddRq": {
+      "SalesOrderAdd": {
+        "@optional": false,
+        "@required": true,
+        "@may_repeat": false,
+        "CustomerRef": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "ClassRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "TemplateRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "TxnDate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "RefNumber": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "BillAddress": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "Addr1": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr2": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr3": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr4": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr5": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "City": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "State": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "PostalCode": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Country": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Note": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "ShipAddress": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "Addr1": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr2": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr3": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr4": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr5": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "City": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "State": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "PostalCode": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Country": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Note": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "PONumber": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TermsRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "DueDate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "SalesRepRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "FOB": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ShipDate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ShipMethodRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "ItemSalesTaxRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "IsManuallyClosed": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "Memo": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "CustomerMsgRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "IsToBePrinted": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "IsToBeEmailed": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "IsTaxIncluded": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "CustomerSalesTaxCodeRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "Other": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ExchangeRate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ExternalGUID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "SalesOrderLineAdd": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ItemRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "Desc": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Quantity": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "UnitOfMeasure": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Rate": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "RatePercent": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "PriceLevelRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "ClassRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "Amount": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "OptionForPriceRuleConflict": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "InventorySiteRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "InventorySiteLocationRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "SerialNumber": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "LotNumber": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "SalesTaxCodeRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "IsManuallyClosed": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Other1": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Other2": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "DataExt": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": true,
+            "OwnerID": {
+              "@optional": false,
+              "@required": true,
+              "@may_repeat": false
+            },
+            "DataExtName": {
+              "@optional": false,
+              "@required": true,
+              "@may_repeat": false
+            },
+            "DataExtValue": {
+              "@optional": false,
+              "@required": true,
+              "@may_repeat": false
+            }
+          }
+        },
+        "SalesOrderLineGroupAdd": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ItemGroupRef": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "Quantity": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "UnitOfMeasure": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "InventorySiteRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "InventorySiteLocationRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "DataExt": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": true,
+            "OwnerID": {
+              "@optional": false,
+              "@required": true,
+              "@may_repeat": false
+            },
+            "DataExtName": {
+              "@optional": false,
+              "@required": true,
+              "@may_repeat": false
+            },
+            "DataExtValue": {
+              "@optional": false,
+              "@required": true,
+              "@may_repeat": false
+            }
+          }
+        }
+      },
+      "IncludeRetElement": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true
+      }
+    },
+    "SalesOrderAddRs": {
+      "SalesOrderRet": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "TxnID": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "TimeCreated": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "TimeModified": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "EditSequence": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "TxnNumber": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "CustomerRef": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "ClassRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "TemplateRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "TxnDate": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "RefNumber": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "BillAddress": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "Addr1": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr2": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr3": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr4": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr5": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "City": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "State": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "PostalCode": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Country": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Note": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "BillAddressBlock": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "Addr1": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr2": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr3": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr4": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr5": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "ShipAddress": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "Addr1": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr2": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr3": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr4": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr5": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "City": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "State": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "PostalCode": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Country": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Note": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "ShipAddressBlock": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "Addr1": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr2": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr3": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr4": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Addr5": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "PONumber": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TermsRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "DueDate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "SalesRepRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "FOB": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ShipDate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ShipMethodRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "Subtotal": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ItemSalesTaxRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "SalesTaxPercentage": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "SalesTaxTotal": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TotalAmount": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "CurrencyRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "ExchangeRate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TotalAmountInHomeCurrency": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "IsManuallyClosed": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "IsFullyInvoiced": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "Memo": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "CustomerMsgRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "IsToBePrinted": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "IsToBeEmailed": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "IsTaxIncluded": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "CustomerSalesTaxCodeRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "Other": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ExternalGUID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "LinkedTxn": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true,
+          "TxnID": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "TxnType": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "TxnDate": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "RefNumber": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "LinkType": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Amount": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          }
+        },
+        "SalesOrderLineRet": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "TxnLineID": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "ItemRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "Desc": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Quantity": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "UnitOfMeasure": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "OverrideUOMSetRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "Rate": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "RatePercent": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "ClassRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "Amount": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "InventorySiteRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "InventorySiteLocationRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "SerialNumber": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "LotNumber": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "SalesTaxCodeRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "Invoiced": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "IsManuallyClosed": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Other1": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Other2": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "DataExtRet": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": true,
+            "OwnerID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "DataExtName": {
+              "@optional": false,
+              "@required": true,
+              "@may_repeat": false
+            },
+            "DataExtType": {
+              "@optional": false,
+              "@required": true,
+              "@may_repeat": false
+            },
+            "DataExtValue": {
+              "@optional": false,
+              "@required": true,
+              "@may_repeat": false
+            }
+          }
+        },
+        "SalesOrderLineGroupRet": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "TxnLineID": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "ItemGroupRef": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "Desc": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "Quantity": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "UnitOfMeasure": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "OverrideUOMSetRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "IsPrintItemsInGroup": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "TotalAmount": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "SalesOrderLineRet": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": true,
+            "TxnLineID": {
+              "@optional": false,
+              "@required": true,
+              "@may_repeat": false
+            },
+            "ItemRef": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false,
+              "ListID": {
+                "@optional": true,
+                "@required": false,
+                "@may_repeat": false
+              },
+              "FullName": {
+                "@optional": true,
+                "@required": false,
+                "@may_repeat": false
+              }
+            },
+            "Desc": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "Quantity": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "UnitOfMeasure": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "OverrideUOMSetRef": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false,
+              "ListID": {
+                "@optional": true,
+                "@required": false,
+                "@may_repeat": false
+              },
+              "FullName": {
+                "@optional": true,
+                "@required": false,
+                "@may_repeat": false
+              }
+            },
+            "Rate": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "RatePercent": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "ClassRef": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false,
+              "ListID": {
+                "@optional": true,
+                "@required": false,
+                "@may_repeat": false
+              },
+              "FullName": {
+                "@optional": true,
+                "@required": false,
+                "@may_repeat": false
+              }
+            },
+            "Amount": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "InventorySiteRef": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false,
+              "ListID": {
+                "@optional": true,
+                "@required": false,
+                "@may_repeat": false
+              },
+              "FullName": {
+                "@optional": true,
+                "@required": false,
+                "@may_repeat": false
+              }
+            },
+            "InventorySiteLocationRef": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false,
+              "ListID": {
+                "@optional": true,
+                "@required": false,
+                "@may_repeat": false
+              },
+              "FullName": {
+                "@optional": true,
+                "@required": false,
+                "@may_repeat": false
+              }
+            },
+            "SerialNumber": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "LotNumber": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "SalesTaxCodeRef": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false,
+              "ListID": {
+                "@optional": true,
+                "@required": false,
+                "@may_repeat": false
+              },
+              "FullName": {
+                "@optional": true,
+                "@required": false,
+                "@may_repeat": false
+              }
+            },
+            "Invoiced": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "IsManuallyClosed": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "Other1": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "Other2": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "DataExtRet": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": true,
+              "OwnerID": {
+                "@optional": true,
+                "@required": false,
+                "@may_repeat": false
+              },
+              "DataExtName": {
+                "@optional": false,
+                "@required": true,
+                "@may_repeat": false
+              },
+              "DataExtType": {
+                "@optional": false,
+                "@required": true,
+                "@may_repeat": false
+              },
+              "DataExtValue": {
+                "@optional": false,
+                "@required": true,
+                "@may_repeat": false
+              }
+            }
+          },
+          "DataExtRet": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": true,
+            "OwnerID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "DataExtName": {
+              "@optional": false,
+              "@required": true,
+              "@may_repeat": false
+            },
+            "DataExtType": {
+              "@optional": false,
+              "@required": true,
+              "@may_repeat": false
+            },
+            "DataExtValue": {
+              "@optional": false,
+              "@required": true,
+              "@may_repeat": false
+            }
+          }
+        },
+        "DataExtRet": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true,
+          "OwnerID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "DataExtName": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "DataExtType": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "DataExtValue": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          }
+        }
+      },
+      "ErrorRecovery": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "ListID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "OwnerID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TxnID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TxnNumber": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "EditSequence": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ExternalGUID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      }
+    }
+  }
+}

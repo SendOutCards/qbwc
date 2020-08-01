@@ -1,0 +1,17 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "AccountTaxLineInfoQueryRq": null,
+      "AccountTaxLineInfoQueryRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "AccountTaxLineInfoRet": {
+          "TaxLineID": "INTTYPE",
+          "TaxLineName": "STRTYPE"
+        }
+      }
+    }
+  }
+}

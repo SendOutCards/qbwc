@@ -1,0 +1,126 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "ChargeAddRq": {
+        "ChargeAdd": {
+          "@defMacro": "MACROTYPE",
+          "CustomerRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TxnDate": "DATETYPE",
+          "RefNumber": "STRTYPE",
+          "ItemRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "InventorySiteRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "InventorySiteLocationRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Quantity": "QUANTYPE",
+          "UnitOfMeasure": "STRTYPE",
+          "Rate": "PRICETYPE",
+          "OptionForPriceRuleConflict": "ENUMTYPE",
+          "Amount": "AMTTYPE",
+          "Desc": "STRTYPE",
+          "ARAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ClassRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "BilledDate": "DATETYPE",
+          "DueDate": "DATETYPE",
+          "OverrideItemAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ExternalGUID": "GUIDTYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "ChargeAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "ChargeRet": {
+          "TxnID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "TxnNumber": "INTTYPE",
+          "CustomerRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TxnDate": "DATETYPE",
+          "RefNumber": "STRTYPE",
+          "ItemRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "InventorySiteRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "InventorySiteLocationRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Quantity": "QUANTYPE",
+          "UnitOfMeasure": "STRTYPE",
+          "OverrideUOMSetRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Rate": "PRICETYPE",
+          "Amount": "AMTTYPE",
+          "BalanceRemaining": "AMTTYPE",
+          "Desc": "STRTYPE",
+          "ARAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ClassRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "BilledDate": "DATETYPE",
+          "DueDate": "DATETYPE",
+          "IsPaid": "BOOLTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "LinkedTxn": {
+            "TxnID": "IDTYPE",
+            "TxnType": "ENUMTYPE",
+            "TxnDate": "DATETYPE",
+            "RefNumber": "STRTYPE",
+            "LinkType": "ENUMTYPE",
+            "Amount": "AMTTYPE"
+          },
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

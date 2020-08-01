@@ -1,0 +1,93 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "TransferInventoryAddRq": {
+        "TransferInventoryAdd": {
+          "@defMacro": "MACROTYPE",
+          "TxnDate": "DATETYPE",
+          "RefNumber": "STRTYPE",
+          "FromInventorySiteRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ToInventorySiteRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Memo": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "TransferInventoryLineAdd": {
+            "@defMacro": "MACROTYPE",
+            "ItemRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "FromInventorySiteLocationRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ToInventorySiteLocationRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "QuantityToTransfer": "QUANTYPE",
+            "SerialNumber": "STRTYPE",
+            "LotNumber": "STRTYPE"
+          }
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "TransferInventoryAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "TransferInventoryRet": {
+          "TxnID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "TxnNumber": "INTTYPE",
+          "TxnDate": "DATETYPE",
+          "RefNumber": "STRTYPE",
+          "FromInventorySiteRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ToInventorySiteRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Memo": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "TransferInventoryLineRet": {
+            "TxnLineID": "IDTYPE",
+            "ItemRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "FromInventorySiteLocationRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ToInventorySiteLocationRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "QuantityTransferred": "QUANTYPE",
+            "SerialNumber": "STRTYPE",
+            "LotNumber": "STRTYPE"
+          }
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

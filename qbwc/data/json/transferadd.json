@@ -1,0 +1,57 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "TransferAddRq": {
+        "TransferAdd": {
+          "@defMacro": "MACROTYPE",
+          "TxnDate": "DATETYPE",
+          "TransferFromAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TransferToAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ClassRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Amount": "AMTTYPE",
+          "Memo": "STRTYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "TransferAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "TransferRet": {
+          "TxnID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "TxnNumber": "INTTYPE",
+          "TxnDate": "DATETYPE",
+          "TransferFromAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "FromAccountBalance": "AMTTYPE",
+          "TransferToAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ToAccountBalance": "AMTTYPE",
+          "ClassRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Amount": "AMTTYPE",
+          "Memo": "STRTYPE"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "ClearedStatusModRq": {
+        "ClearedStatusMod": {
+          "TxnID": {
+            "@useMacro": "MACROTYPE",
+            "#text": "IDTYPE"
+          },
+          "TxnLineID": {
+            "@useMacro": "MACROTYPE",
+            "#text": "IDTYPE"
+          },
+          "ClearedStatus": "ENUMTYPE"
+        }
+      },
+      "ClearedStatusModRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE"
+      }
+    }
+  }
+}

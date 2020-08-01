@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <SalesRepModRq>
+      <SalesRepMod>
+        <!-- required -->
+        <ListID>IDTYPE</ListID>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <Initial>STRTYPE</Initial>
+        <!-- optional -->
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <SalesRepEntityRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </SalesRepEntityRef>
+      </SalesRepMod>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </SalesRepModRq>
+    <SalesRepModRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <SalesRepRet>
+        <!-- optional -->
+        <ListID>IDTYPE</ListID>
+        <!-- required -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- required -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <Initial>STRTYPE</Initial>
+        <!-- required -->
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <SalesRepEntityRef>
+          <!-- required -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </SalesRepEntityRef>
+      </SalesRepRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </SalesRepModRs>
+  </QBXMLMsgsRq>
+</QBXML>

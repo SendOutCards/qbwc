@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <SalesRepAddRq>
+      <SalesRepAdd>
+        <!-- required -->
+        <Initial>STRTYPE</Initial>
+        <!-- required -->
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <SalesRepEntityRef>
+          <!-- required -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </SalesRepEntityRef>
+      </SalesRepAdd>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </SalesRepAddRq>
+    <SalesRepAddRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <SalesRepRet>
+        <!-- optional -->
+        <ListID>IDTYPE</ListID>
+        <!-- required -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- required -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <Initial>STRTYPE</Initial>
+        <!-- required -->
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <SalesRepEntityRef>
+          <!-- required -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </SalesRepEntityRef>
+      </SalesRepRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </SalesRepAddRs>
+  </QBXMLMsgsRq>
+</QBXML>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <DataEventRecoveryInfoDelRq>
+      <SubscriberID>GUIDTYPE</SubscriberID>
+      <!-- required -->
+    </DataEventRecoveryInfoDelRq>
+    <DataEventRecoveryInfoDelRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE"></DataEventRecoveryInfoDelRs>
+  </QBXMLMsgsRq>
+</QBXML>

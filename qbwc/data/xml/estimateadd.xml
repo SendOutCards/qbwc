@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <EstimateAddRq>
+      <EstimateAdd defMacro="MACROTYPE">
+        <!-- required -->
+        <CustomerRef>
+          <!-- required -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CustomerRef>
+        <ClassRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ClassRef>
+        <TemplateRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </TemplateRef>
+        <TxnDate>DATETYPE</TxnDate>
+        <!-- optional -->
+        <RefNumber>STRTYPE</RefNumber>
+        <!-- optional -->
+        <BillAddress>
+          <!-- optional -->
+          <Addr1>STRTYPE</Addr1>
+          <!-- optional -->
+          <Addr2>STRTYPE</Addr2>
+          <!-- optional -->
+          <Addr3>STRTYPE</Addr3>
+          <!-- optional -->
+          <Addr4>STRTYPE</Addr4>
+          <!-- optional -->
+          <Addr5>STRTYPE</Addr5>
+          <!-- optional -->
+          <City>STRTYPE</City>
+          <!-- optional -->
+          <State>STRTYPE</State>
+          <!-- optional -->
+          <PostalCode>STRTYPE</PostalCode>
+          <!-- optional -->
+          <Country>STRTYPE</Country>
+          <!-- optional -->
+          <Note>STRTYPE</Note>
+          <!-- optional -->
+        </BillAddress>
+        <ShipAddress>
+          <!-- optional -->
+          <Addr1>STRTYPE</Addr1>
+          <!-- optional -->
+          <Addr2>STRTYPE</Addr2>
+          <!-- optional -->
+          <Addr3>STRTYPE</Addr3>
+          <!-- optional -->
+          <Addr4>STRTYPE</Addr4>
+          <!-- optional -->
+          <Addr5>STRTYPE</Addr5>
+          <!-- optional -->
+          <City>STRTYPE</City>
+          <!-- optional -->
+          <State>STRTYPE</State>
+          <!-- optional -->
+          <PostalCode>STRTYPE</PostalCode>
+          <!-- optional -->
+          <Country>STRTYPE</Country>
+          <!-- optional -->
+          <Note>STRTYPE</Note>
+          <!-- optional -->
+        </ShipAddress>
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <PONumber>STRTYPE</PONumber>
+        <!-- optional -->
+        <TermsRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </TermsRef>
+        <DueDate>DATETYPE</DueDate>
+        <!-- optional -->
+        <SalesRepRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </SalesRepRef>
+        <FOB>STRTYPE</FOB>
+        <!-- optional -->
+        <ItemSalesTaxRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ItemSalesTaxRef>
+        <Memo>STRTYPE</Memo>
+        <!-- optional -->
+        <CustomerMsgRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CustomerMsgRef>
+        <IsToBeEmailed>BOOLTYPE</IsToBeEmailed>
+        <!-- optional -->
+        <IsTaxIncluded>BOOLTYPE</IsTaxIncluded>
+        <!-- optional -->
+        <CustomerSalesTaxCodeRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CustomerSalesTaxCodeRef>
+        <Other>STRTYPE</Other>
+        <!-- optional -->
+        <ExchangeRate>FLOATTYPE</ExchangeRate>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <EstimateLineAdd>
+          <!-- optional -->
+          <ItemRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </ItemRef>
+          <Desc>STRTYPE</Desc>
+          <!-- optional -->
+          <Quantity>QUANTYPE</Quantity>
+          <!-- optional -->
+          <UnitOfMeasure>STRTYPE</UnitOfMeasure>
+          <!-- optional -->
+          <!-- BEGIN OR -->
+          <Rate>PRICETYPE</Rate>
+          <!-- optional -->
+          <!-- OR -->
+          <RatePercent>PERCENTTYPE</RatePercent>
+          <!-- optional -->
+          <!-- END OR -->
+          <ClassRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </ClassRef>
+          <Amount>AMTTYPE</Amount>
+          <!-- optional -->
+          <!-- OptionForPriceRuleConflict may have one of the following values: Zero, BasePrice -->
+          <OptionForPriceRuleConflict>ENUMTYPE</OptionForPriceRuleConflict>
+          <!-- optional -->
+          <InventorySiteRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </InventorySiteRef>
+          <InventorySiteLocationRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </InventorySiteLocationRef>
+          <SalesTaxCodeRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </SalesTaxCodeRef>
+          <!-- BEGIN OR -->
+          <MarkupRate>PRICETYPE</MarkupRate>
+          <!-- optional -->
+          <!-- OR -->
+          <MarkupRatePercent>PERCENTTYPE</MarkupRatePercent>
+          <!-- optional -->
+          <!-- OR -->
+          <PriceLevelRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </PriceLevelRef>
+          <!-- END OR -->
+          <OverrideItemAccountRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </OverrideItemAccountRef>
+          <Other1>STRTYPE</Other1>
+          <!-- optional -->
+          <Other2>STRTYPE</Other2>
+          <!-- optional -->
+          <DataExt>
+            <!-- optional, may repeat -->
+            <OwnerID>GUIDTYPE</OwnerID>
+            <!-- required -->
+            <DataExtName>STRTYPE</DataExtName>
+            <!-- required -->
+            <DataExtValue>STRTYPE</DataExtValue>
+            <!-- required -->
+          </DataExt>
+        </EstimateLineAdd>
+        <!-- OR -->
+        <EstimateLineGroupAdd>
+          <!-- optional -->
+          <ItemGroupRef>
+            <!-- required -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </ItemGroupRef>
+          <Quantity>QUANTYPE</Quantity>
+          <!-- optional -->
+          <UnitOfMeasure>STRTYPE</UnitOfMeasure>
+          <!-- optional -->
+          <InventorySiteRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </InventorySiteRef>
+          <InventorySiteLocationRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </InventorySiteLocationRef>
+          <DataExt>
+            <!-- optional, may repeat -->
+            <OwnerID>GUIDTYPE</OwnerID>
+            <!-- required -->
+            <DataExtName>STRTYPE</DataExtName>
+            <!-- required -->
+            <DataExtValue>STRTYPE</DataExtValue>
+            <!-- required -->
+          </DataExt>
+        </EstimateLineGroupAdd>
+        <!-- END OR -->
+      </EstimateAdd>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </EstimateAddRq>
+    <EstimateAddRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <EstimateRet>
+        <!-- optional -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- required -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- required -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <CustomerRef>
+          <!-- required -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CustomerRef>
+        <ClassRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ClassRef>
+        <TemplateRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </TemplateRef>
+        <TxnDate>DATETYPE</TxnDate>
+        <!-- required -->
+        <RefNumber>STRTYPE</RefNumber>
+        <!-- optional -->
+        <BillAddress>
+          <!-- optional -->
+          <Addr1>STRTYPE</Addr1>
+          <!-- optional -->
+          <Addr2>STRTYPE</Addr2>
+          <!-- optional -->
+          <Addr3>STRTYPE</Addr3>
+          <!-- optional -->
+          <Addr4>STRTYPE</Addr4>
+          <!-- optional -->
+          <Addr5>STRTYPE</Addr5>
+          <!-- optional -->
+          <City>STRTYPE</City>
+          <!-- optional -->
+          <State>STRTYPE</State>
+          <!-- optional -->
+          <PostalCode>STRTYPE</PostalCode>
+          <!-- optional -->
+          <Country>STRTYPE</Country>
+          <!-- optional -->
+          <Note>STRTYPE</Note>
+          <!-- optional -->
+        </BillAddress>
+        <BillAddressBlock>
+          <!-- optional -->
+          <Addr1>STRTYPE</Addr1>
+          <!-- optional -->
+          <Addr2>STRTYPE</Addr2>
+          <!-- optional -->
+          <Addr3>STRTYPE</Addr3>
+          <!-- optional -->
+          <Addr4>STRTYPE</Addr4>
+          <!-- optional -->
+          <Addr5>STRTYPE</Addr5>
+          <!-- optional -->
+        </BillAddressBlock>
+        <ShipAddress>
+          <!-- optional -->
+          <Addr1>STRTYPE</Addr1>
+          <!-- optional -->
+          <Addr2>STRTYPE</Addr2>
+          <!-- optional -->
+          <Addr3>STRTYPE</Addr3>
+          <!-- optional -->
+          <Addr4>STRTYPE</Addr4>
+          <!-- optional -->
+          <Addr5>STRTYPE</Addr5>
+          <!-- optional -->
+          <City>STRTYPE</City>
+          <!-- optional -->
+          <State>STRTYPE</State>
+          <!-- optional -->
+          <PostalCode>STRTYPE</PostalCode>
+          <!-- optional -->
+          <Country>STRTYPE</Country>
+          <!-- optional -->
+          <Note>STRTYPE</Note>
+          <!-- optional -->
+        </ShipAddress>
+        <ShipAddressBlock>
+          <!-- optional -->
+          <Addr1>STRTYPE</Addr1>
+          <!-- optional -->
+          <Addr2>STRTYPE</Addr2>
+          <!-- optional -->
+          <Addr3>STRTYPE</Addr3>
+          <!-- optional -->
+          <Addr4>STRTYPE</Addr4>
+          <!-- optional -->
+          <Addr5>STRTYPE</Addr5>
+          <!-- optional -->
+        </ShipAddressBlock>
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <PONumber>STRTYPE</PONumber>
+        <!-- optional -->
+        <TermsRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </TermsRef>
+        <DueDate>DATETYPE</DueDate>
+        <!-- optional -->
+        <SalesRepRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </SalesRepRef>
+        <FOB>STRTYPE</FOB>
+        <!-- optional -->
+        <Subtotal>AMTTYPE</Subtotal>
+        <!-- optional -->
+        <ItemSalesTaxRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ItemSalesTaxRef>
+        <SalesTaxPercentage>PERCENTTYPE</SalesTaxPercentage>
+        <!-- optional -->
+        <SalesTaxTotal>AMTTYPE</SalesTaxTotal>
+        <!-- optional -->
+        <TotalAmount>AMTTYPE</TotalAmount>
+        <!-- optional -->
+        <CurrencyRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CurrencyRef>
+        <ExchangeRate>FLOATTYPE</ExchangeRate>
+        <!-- optional -->
+        <TotalAmountInHomeCurrency>AMTTYPE</TotalAmountInHomeCurrency>
+        <!-- optional -->
+        <Memo>STRTYPE</Memo>
+        <!-- optional -->
+        <CustomerMsgRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CustomerMsgRef>
+        <IsToBeEmailed>BOOLTYPE</IsToBeEmailed>
+        <!-- optional -->
+        <IsTaxIncluded>BOOLTYPE</IsTaxIncluded>
+        <!-- optional -->
+        <CustomerSalesTaxCodeRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CustomerSalesTaxCodeRef>
+        <Other>STRTYPE</Other>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+        <LinkedTxn>
+          <!-- optional, may repeat -->
+          <TxnID>IDTYPE</TxnID>
+          <!-- required -->
+          <!-- TxnType may have one of the following values: ARRefundCreditCard, Bill, BillPaymentCheck, BillPaymentCreditCard, BuildAssembly, Charge, Check, CreditCardCharge, CreditCardCredit, CreditMemo, Deposit, Estimate, InventoryAdjustment, Invoice, ItemReceipt, JournalEntry, LiabilityAdjustment, Paycheck, PayrollLiabilityCheck, PurchaseOrder, ReceivePayment, SalesOrder, SalesReceipt, SalesTaxPaymentCheck, Transfer, VendorCredit, YTDAdjustment -->
+          <TxnType>ENUMTYPE</TxnType>
+          <!-- required -->
+          <TxnDate>DATETYPE</TxnDate>
+          <!-- required -->
+          <RefNumber>STRTYPE</RefNumber>
+          <!-- optional -->
+          <!-- LinkType may have one of the following values: AMTTYPE, QUANTYPE -->
+          <LinkType>ENUMTYPE</LinkType>
+          <!-- optional -->
+          <Amount>AMTTYPE</Amount>
+          <!-- required -->
+        </LinkedTxn>
+        <!-- BEGIN OR -->
+        <EstimateLineRet>
+          <!-- optional -->
+          <TxnLineID>IDTYPE</TxnLineID>
+          <!-- required -->
+          <ItemRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </ItemRef>
+          <Desc>STRTYPE</Desc>
+          <!-- optional -->
+          <Quantity>QUANTYPE</Quantity>
+          <!-- optional -->
+          <UnitOfMeasure>STRTYPE</UnitOfMeasure>
+          <!-- optional -->
+          <OverrideUOMSetRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </OverrideUOMSetRef>
+          <!-- BEGIN OR -->
+          <Rate>PRICETYPE</Rate>
+          <!-- optional -->
+          <!-- OR -->
+          <RatePercent>PERCENTTYPE</RatePercent>
+          <!-- optional -->
+          <!-- END OR -->
+          <ClassRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </ClassRef>
+          <Amount>AMTTYPE</Amount>
+          <!-- optional -->
+          <InventorySiteRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </InventorySiteRef>
+          <InventorySiteLocationRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </InventorySiteLocationRef>
+          <SalesTaxCodeRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </SalesTaxCodeRef>
+          <!-- BEGIN OR -->
+          <MarkupRate>PRICETYPE</MarkupRate>
+          <!-- optional -->
+          <!-- OR -->
+          <MarkupRatePercent>PERCENTTYPE</MarkupRatePercent>
+          <!-- optional -->
+          <!-- END OR -->
+          <Other1>STRTYPE</Other1>
+          <!-- optional -->
+          <Other2>STRTYPE</Other2>
+          <!-- optional -->
+          <DataExtRet>
+            <!-- optional, may repeat -->
+            <OwnerID>GUIDTYPE</OwnerID>
+            <!-- optional -->
+            <DataExtName>STRTYPE</DataExtName>
+            <!-- required -->
+            <!-- DataExtType may have one of the following values: AMTTYPE, DATETIMETYPE, INTTYPE, PERCENTTYPE, PRICETYPE, QUANTYPE, STR1024TYPE, STR255TYPE -->
+            <DataExtType>ENUMTYPE</DataExtType>
+            <!-- required -->
+            <DataExtValue>STRTYPE</DataExtValue>
+            <!-- required -->
+          </DataExtRet>
+        </EstimateLineRet>
+        <!-- OR -->
+        <EstimateLineGroupRet>
+          <!-- optional -->
+          <TxnLineID>IDTYPE</TxnLineID>
+          <!-- required -->
+          <ItemGroupRef>
+            <!-- required -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </ItemGroupRef>
+          <Desc>STRTYPE</Desc>
+          <!-- optional -->
+          <Quantity>QUANTYPE</Quantity>
+          <!-- optional -->
+          <UnitOfMeasure>STRTYPE</UnitOfMeasure>
+          <!-- optional -->
+          <OverrideUOMSetRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </OverrideUOMSetRef>
+          <IsPrintItemsInGroup>BOOLTYPE</IsPrintItemsInGroup>
+          <!-- required -->
+          <TotalAmount>AMTTYPE</TotalAmount>
+          <!-- required -->
+          <EstimateLineRet>
+            <!-- optional, may repeat -->
+            <TxnLineID>IDTYPE</TxnLineID>
+            <!-- required -->
+            <ItemRef>
+              <!-- optional -->
+              <ListID>IDTYPE</ListID>
+              <!-- optional -->
+              <FullName>STRTYPE</FullName>
+              <!-- optional -->
+            </ItemRef>
+            <Desc>STRTYPE</Desc>
+            <!-- optional -->
+            <Quantity>QUANTYPE</Quantity>
+            <!-- optional -->
+            <UnitOfMeasure>STRTYPE</UnitOfMeasure>
+            <!-- optional -->
+            <OverrideUOMSetRef>
+              <!-- optional -->
+              <ListID>IDTYPE</ListID>
+              <!-- optional -->
+              <FullName>STRTYPE</FullName>
+              <!-- optional -->
+            </OverrideUOMSetRef>
+            <!-- BEGIN OR -->
+            <Rate>PRICETYPE</Rate>
+            <!-- optional -->
+            <!-- OR -->
+            <RatePercent>PERCENTTYPE</RatePercent>
+            <!-- optional -->
+            <!-- END OR -->
+            <ClassRef>
+              <!-- optional -->
+              <ListID>IDTYPE</ListID>
+              <!-- optional -->
+              <FullName>STRTYPE</FullName>
+              <!-- optional -->
+            </ClassRef>
+            <Amount>AMTTYPE</Amount>
+            <!-- optional -->
+            <InventorySiteRef>
+              <!-- optional -->
+              <ListID>IDTYPE</ListID>
+              <!-- optional -->
+              <FullName>STRTYPE</FullName>
+              <!-- optional -->
+            </InventorySiteRef>
+            <InventorySiteLocationRef>
+              <!-- optional -->
+              <ListID>IDTYPE</ListID>
+              <!-- optional -->
+              <FullName>STRTYPE</FullName>
+              <!-- optional -->
+            </InventorySiteLocationRef>
+            <SalesTaxCodeRef>
+              <!-- optional -->
+              <ListID>IDTYPE</ListID>
+              <!-- optional -->
+              <FullName>STRTYPE</FullName>
+              <!-- optional -->
+            </SalesTaxCodeRef>
+            <!-- BEGIN OR -->
+            <MarkupRate>PRICETYPE</MarkupRate>
+            <!-- optional -->
+            <!-- OR -->
+            <MarkupRatePercent>PERCENTTYPE</MarkupRatePercent>
+            <!-- optional -->
+            <!-- END OR -->
+            <Other1>STRTYPE</Other1>
+            <!-- optional -->
+            <Other2>STRTYPE</Other2>
+            <!-- optional -->
+            <DataExtRet>
+              <!-- optional, may repeat -->
+              <OwnerID>GUIDTYPE</OwnerID>
+              <!-- optional -->
+              <DataExtName>STRTYPE</DataExtName>
+              <!-- required -->
+              <!-- DataExtType may have one of the following values: AMTTYPE, DATETIMETYPE, INTTYPE, PERCENTTYPE, PRICETYPE, QUANTYPE, STR1024TYPE, STR255TYPE -->
+              <DataExtType>ENUMTYPE</DataExtType>
+              <!-- required -->
+              <DataExtValue>STRTYPE</DataExtValue>
+              <!-- required -->
+            </DataExtRet>
+          </EstimateLineRet>
+          <DataExtRet>
+            <!-- optional, may repeat -->
+            <OwnerID>GUIDTYPE</OwnerID>
+            <!-- optional -->
+            <DataExtName>STRTYPE</DataExtName>
+            <!-- required -->
+            <!-- DataExtType may have one of the following values: AMTTYPE, DATETIMETYPE, INTTYPE, PERCENTTYPE, PRICETYPE, QUANTYPE, STR1024TYPE, STR255TYPE -->
+            <DataExtType>ENUMTYPE</DataExtType>
+            <!-- required -->
+            <DataExtValue>STRTYPE</DataExtValue>
+            <!-- required -->
+          </DataExtRet>
+        </EstimateLineGroupRet>
+        <!-- END OR -->
+        <DataExtRet>
+          <!-- optional, may repeat -->
+          <OwnerID>GUIDTYPE</OwnerID>
+          <!-- optional -->
+          <DataExtName>STRTYPE</DataExtName>
+          <!-- required -->
+          <!-- DataExtType may have one of the following values: AMTTYPE, DATETIMETYPE, INTTYPE, PERCENTTYPE, PRICETYPE, QUANTYPE, STR1024TYPE, STR255TYPE -->
+          <DataExtType>ENUMTYPE</DataExtType>
+          <!-- required -->
+          <DataExtValue>STRTYPE</DataExtValue>
+          <!-- required -->
+        </DataExtRet>
+      </EstimateRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </EstimateAddRs>
+  </QBXMLMsgsRq>
+</QBXML>

@@ -1,0 +1,25 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "SalesTaxReturnLineQueryRq": {
+        "@metaData": "ENUMTYPE",
+        "TaxAgencyVendorRef": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE"
+        }
+      },
+      "SalesTaxReturnLineQueryRs": {
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "SalesTaxReturnLineRet": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE",
+          "LineType": "ENUMTYPE"
+        }
+      }
+    }
+  }
+}

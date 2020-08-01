@@ -1,0 +1,94 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "LeadAddRq": {
+        "LeadAdd": {
+          "FullName": "STRTYPE",
+          "Status": "ENUMTYPE",
+          "CompanyName": "STRTYPE",
+          "MainPhone": "STRTYPE",
+          "AdditionalContactRef": {
+            "ContactName": "STRTYPE",
+            "ContactValue": "STRTYPE"
+          },
+          "Locations": {
+            "Location": "STRTYPE",
+            "LeadAddress": {
+              "Addr1": "STRTYPE",
+              "Addr2": "STRTYPE",
+              "Addr3": "STRTYPE",
+              "Addr4": "STRTYPE",
+              "Addr5": "STRTYPE"
+            }
+          },
+          "LeadContacts": {
+            "Salutation": "STRTYPE",
+            "FirstName": "STRTYPE",
+            "MiddleName": "STRTYPE",
+            "LastName": "STRTYPE",
+            "JobTitle": "STRTYPE",
+            "AdditionalContactRef": {
+              "ContactName": "STRTYPE",
+              "ContactValue": "STRTYPE"
+            },
+            "IsPrimaryContact": "BOOLTYPE"
+          }
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "LeadAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "LeadRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "FullName": "STRTYPE",
+          "Status": "ENUMTYPE",
+          "CompanyName": "STRTYPE",
+          "MainPhone": "STRTYPE",
+          "AdditionalContactRef": {
+            "ContactName": "STRTYPE",
+            "ContactValue": "STRTYPE"
+          },
+          "LocationsRet": {
+            "LocationID": "INTTYPE",
+            "MainAddress": "STRTYPE",
+            "Location": "STRTYPE",
+            "LeadAddress": {
+              "Addr1": "STRTYPE",
+              "Addr2": "STRTYPE",
+              "Addr3": "STRTYPE",
+              "Addr4": "STRTYPE",
+              "Addr5": "STRTYPE"
+            }
+          },
+          "LeadContactsRet": {
+            "LeadContactID": "INTTYPE",
+            "Salutation": "STRTYPE",
+            "FirstName": "STRTYPE",
+            "MiddleName": "STRTYPE",
+            "LastName": "STRTYPE",
+            "JobTitle": "STRTYPE",
+            "AdditionalContactRef": {
+              "ContactName": "STRTYPE",
+              "ContactValue": "STRTYPE"
+            },
+            "IsPrimaryContact": "BOOLTYPE"
+          }
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

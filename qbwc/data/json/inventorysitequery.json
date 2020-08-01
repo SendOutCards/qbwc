@@ -1,0 +1,66 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "InventorySiteQueryRq": {
+        "@metaData": "ENUMTYPE",
+        "ListID": "IDTYPE",
+        "FullName": "STRTYPE",
+        "ActiveStatus": "ENUMTYPE",
+        "FromModifiedDate": "DATETIMETYPE",
+        "ToModifiedDate": "DATETIMETYPE",
+        "NameFilter": {
+          "MatchCriterion": "ENUMTYPE",
+          "Name": "STRTYPE"
+        },
+        "NameRangeFilter": {
+          "FromName": "STRTYPE",
+          "ToName": "STRTYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "InventorySiteQueryRs": {
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "InventorySiteRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "ParentSiteRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "IsDefaultSite": "BOOLTYPE",
+          "SiteDesc": "STRTYPE",
+          "Contact": "STRTYPE",
+          "Phone": "STRTYPE",
+          "Fax": "STRTYPE",
+          "Email": "STRTYPE",
+          "SiteAddress": {
+            "Addr1": "STRTYPE",
+            "Addr2": "STRTYPE",
+            "Addr3": "STRTYPE",
+            "Addr4": "STRTYPE",
+            "Addr5": "STRTYPE",
+            "City": "STRTYPE",
+            "State": "STRTYPE",
+            "PostalCode": "STRTYPE",
+            "Country": "STRTYPE"
+          },
+          "SiteAddressBlock": {
+            "Addr1": "STRTYPE",
+            "Addr2": "STRTYPE",
+            "Addr3": "STRTYPE",
+            "Addr4": "STRTYPE",
+            "Addr5": "STRTYPE"
+          }
+        }
+      }
+    }
+  }
+}

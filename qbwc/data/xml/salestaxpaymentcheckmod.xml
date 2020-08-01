@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <SalesTaxPaymentCheckModRq>
+      <SalesTaxPaymentCheckMod>
+        <!-- required -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <TxnDate>DATETYPE</TxnDate>
+        <!-- optional -->
+        <BankAccountRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </BankAccountRef>
+        <!-- BEGIN OR -->
+        <IsToBePrinted>BOOLTYPE</IsToBePrinted>
+        <!-- optional -->
+        <!-- OR -->
+        <RefNumber>STRTYPE</RefNumber>
+        <!-- optional -->
+        <!-- END OR -->
+        <Memo>STRTYPE</Memo>
+        <!-- optional -->
+        <Address>
+          <!-- optional -->
+          <Addr1>STRTYPE</Addr1>
+          <!-- optional -->
+          <Addr2>STRTYPE</Addr2>
+          <!-- optional -->
+          <Addr3>STRTYPE</Addr3>
+          <!-- optional -->
+          <Addr4>STRTYPE</Addr4>
+          <!-- optional -->
+          <Addr5>STRTYPE</Addr5>
+          <!-- optional -->
+          <City>STRTYPE</City>
+          <!-- optional -->
+          <State>STRTYPE</State>
+          <!-- optional -->
+          <PostalCode>STRTYPE</PostalCode>
+          <!-- optional -->
+          <Country>STRTYPE</Country>
+          <!-- optional -->
+          <Note>STRTYPE</Note>
+          <!-- optional -->
+        </Address>
+      </SalesTaxPaymentCheckMod>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </SalesTaxPaymentCheckModRq>
+    <SalesTaxPaymentCheckModRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <SalesTaxPaymentCheckRet>
+        <!-- optional -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- required -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- required -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <PayeeEntityRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </PayeeEntityRef>
+        <TxnDate>DATETYPE</TxnDate>
+        <!-- required -->
+        <BankAccountRef>
+          <!-- required -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </BankAccountRef>
+        <Amount>AMTTYPE</Amount>
+        <!-- required -->
+        <RefNumber>STRTYPE</RefNumber>
+        <!-- optional -->
+        <Memo>STRTYPE</Memo>
+        <!-- optional -->
+        <Address>
+          <!-- optional -->
+          <Addr1>STRTYPE</Addr1>
+          <!-- optional -->
+          <Addr2>STRTYPE</Addr2>
+          <!-- optional -->
+          <Addr3>STRTYPE</Addr3>
+          <!-- optional -->
+          <Addr4>STRTYPE</Addr4>
+          <!-- optional -->
+          <Addr5>STRTYPE</Addr5>
+          <!-- optional -->
+          <City>STRTYPE</City>
+          <!-- optional -->
+          <State>STRTYPE</State>
+          <!-- optional -->
+          <PostalCode>STRTYPE</PostalCode>
+          <!-- optional -->
+          <Country>STRTYPE</Country>
+          <!-- optional -->
+          <Note>STRTYPE</Note>
+          <!-- optional -->
+        </Address>
+        <AddressBlock>
+          <!-- optional -->
+          <Addr1>STRTYPE</Addr1>
+          <!-- optional -->
+          <Addr2>STRTYPE</Addr2>
+          <!-- optional -->
+          <Addr3>STRTYPE</Addr3>
+          <!-- optional -->
+          <Addr4>STRTYPE</Addr4>
+          <!-- optional -->
+          <Addr5>STRTYPE</Addr5>
+          <!-- optional -->
+        </AddressBlock>
+        <IsToBePrinted>BOOLTYPE</IsToBePrinted>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+        <SalesTaxPaymentCheckLineRet>
+          <!-- optional, may repeat -->
+          <TxnLineID>IDTYPE</TxnLineID>
+          <!-- required -->
+          <ItemSalesTaxRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </ItemSalesTaxRef>
+          <Amount>AMTTYPE</Amount>
+          <!-- optional -->
+        </SalesTaxPaymentCheckLineRet>
+        <DataExtRet>
+          <!-- optional, may repeat -->
+          <OwnerID>GUIDTYPE</OwnerID>
+          <!-- optional -->
+          <DataExtName>STRTYPE</DataExtName>
+          <!-- required -->
+          <!-- DataExtType may have one of the following values: AMTTYPE, DATETIMETYPE, INTTYPE, PERCENTTYPE, PRICETYPE, QUANTYPE, STR1024TYPE, STR255TYPE -->
+          <DataExtType>ENUMTYPE</DataExtType>
+          <!-- required -->
+          <DataExtValue>STRTYPE</DataExtValue>
+          <!-- required -->
+        </DataExtRet>
+      </SalesTaxPaymentCheckRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </SalesTaxPaymentCheckModRs>
+  </QBXMLMsgsRq>
+</QBXML>

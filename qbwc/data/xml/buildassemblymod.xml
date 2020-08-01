@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <BuildAssemblyModRq>
+      <BuildAssemblyMod>
+        <!-- required -->
+        <TxnID useMacro="MACROTYPE">IDTYPE</TxnID>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <InventorySiteRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </InventorySiteRef>
+        <InventorySiteLocationRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </InventorySiteLocationRef>
+        <!-- BEGIN OR -->
+        <SerialNumber>STRTYPE</SerialNumber>
+        <!-- optional -->
+        <!-- OR -->
+        <LotNumber>STRTYPE</LotNumber>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnDate>DATETYPE</TxnDate>
+        <!-- optional -->
+        <RefNumber>STRTYPE</RefNumber>
+        <!-- optional -->
+        <Memo>STRTYPE</Memo>
+        <!-- optional -->
+        <QuantityToBuild>QUANTYPE</QuantityToBuild>
+        <!-- optional -->
+        <MarkPendingIfRequired>BOOLTYPE</MarkPendingIfRequired>
+        <!-- optional -->
+        <RemovePending>BOOLTYPE</RemovePending>
+        <!-- optional -->
+      </BuildAssemblyMod>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </BuildAssemblyModRq>
+    <BuildAssemblyModRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <BuildAssemblyRet>
+        <!-- optional -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- required -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- required -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <ItemInventoryAssemblyRef>
+          <!-- required -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ItemInventoryAssemblyRef>
+        <InventorySiteRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </InventorySiteRef>
+        <InventorySiteLocationRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </InventorySiteLocationRef>
+        <!-- BEGIN OR -->
+        <SerialNumber>STRTYPE</SerialNumber>
+        <!-- optional -->
+        <!-- OR -->
+        <LotNumber>STRTYPE</LotNumber>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnDate>DATETYPE</TxnDate>
+        <!-- required -->
+        <RefNumber>STRTYPE</RefNumber>
+        <!-- optional -->
+        <Memo>STRTYPE</Memo>
+        <!-- optional -->
+        <IsPending>BOOLTYPE</IsPending>
+        <!-- optional -->
+        <QuantityToBuild>QUANTYPE</QuantityToBuild>
+        <!-- required -->
+        <QuantityCanBuild>QUANTYPE</QuantityCanBuild>
+        <!-- required -->
+        <QuantityOnHand>QUANTYPE</QuantityOnHand>
+        <!-- required -->
+        <QuantityOnSalesOrder>QUANTYPE</QuantityOnSalesOrder>
+        <!-- required -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+        <ComponentItemLineRet>
+          <!-- optional, may repeat -->
+          <ItemRef>
+            <!-- required -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </ItemRef>
+          <InventorySiteRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </InventorySiteRef>
+          <InventorySiteLocationRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </InventorySiteLocationRef>
+          <!-- BEGIN OR -->
+          <SerialNumber>STRTYPE</SerialNumber>
+          <!-- optional -->
+          <!-- OR -->
+          <LotNumber>STRTYPE</LotNumber>
+          <!-- optional -->
+          <!-- END OR -->
+          <Desc>STRTYPE</Desc>
+          <!-- optional -->
+          <QuantityOnHand>QUANTYPE</QuantityOnHand>
+          <!-- optional -->
+          <QuantityNeeded>QUANTYPE</QuantityNeeded>
+          <!-- optional -->
+        </ComponentItemLineRet>
+        <DataExtRet>
+          <!-- optional, may repeat -->
+          <OwnerID>GUIDTYPE</OwnerID>
+          <!-- optional -->
+          <DataExtName>STRTYPE</DataExtName>
+          <!-- required -->
+          <!-- DataExtType may have one of the following values: AMTTYPE, DATETIMETYPE, INTTYPE, PERCENTTYPE, PRICETYPE, QUANTYPE, STR1024TYPE, STR255TYPE -->
+          <DataExtType>ENUMTYPE</DataExtType>
+          <!-- required -->
+          <DataExtValue>STRTYPE</DataExtValue>
+          <!-- required -->
+        </DataExtRet>
+      </BuildAssemblyRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </BuildAssemblyModRs>
+  </QBXMLMsgsRq>
+</QBXML>

@@ -1,0 +1,29 @@
+{
+  "QBXML": {
+    "QBXMLSubscriptionMsgsRq": {
+      "@onError": "stopOnError",
+      "UIEventSubscriptionQueryRq": {
+        "SubscriberID": "GUIDTYPE"
+      },
+      "UIEventSubscriptionQueryRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "UIEventSubscriptionRet": {
+          "SubscriberID": "GUIDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeLastProcessed": "DATETIMETYPE",
+          "COMCallbackInfo": {
+            "AppName": "STRTYPE",
+            "ProgID": "STRTYPE",
+            "CLSID": "GUIDTYPE"
+          },
+          "DeliveryPolicy": "ENUMTYPE",
+          "CompanyFileEventSubscription": {
+            "CompanyFileEventOperation": "ENUMTYPE"
+          }
+        }
+      }
+    }
+  }
+}

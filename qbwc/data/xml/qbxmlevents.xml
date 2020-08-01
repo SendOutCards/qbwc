@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLSubscriptionMsgsRq onError="stopOnError">
+    <QBXMLEventsRq></QBXMLEventsRq>
+    <QBXMLEventsRs>
+      <!-- BEGIN OR -->
+      <DataEvent>
+        <!-- optional, may repeat -->
+        <CompanyFilePath>STRTYPE</CompanyFilePath>
+        <!-- required -->
+        <HostInfo>
+          <!-- required -->
+          <ProductName>STRTYPE</ProductName>
+          <!-- required -->
+          <MajorVersion>STRTYPE</MajorVersion>
+          <!-- required -->
+          <MinorVersion>STRTYPE</MinorVersion>
+          <!-- required -->
+          <Country>STRTYPE</Country>
+          <!-- required -->
+        </HostInfo>
+        <!-- BEGIN OR -->
+        <ListEvent>
+          <!-- optional -->
+          <!-- ListEventType may have one of the following values: Account, Class, Customer, CustomerMsg, CustomerType, DateDrivenTerms, Employee, ItemDiscount, ItemFixedAsset, ItemGroup, ItemInventory, ItemInventoryAssembly, ItemNonInventory, ItemOtherCharge, ItemPayment, ItemSalesTax, ItemSalesTaxGroup, ItemService, ItemSubtotal, JobType, OtherName, PaymentMethod, PriceLevel, SalesRep, SalesTaxCode, ShipMethod, StandardTerms, ToDo, Vendor, VendorType -->
+          <ListEventType>ENUMTYPE</ListEventType>
+          <!-- required -->
+          <!-- ListEventOperation may have one of the following values: Add, Modify, Delete, Merge -->
+          <ListEventOperation>ENUMTYPE</ListEventOperation>
+          <!-- required -->
+          <ListID>IDTYPE</ListID>
+          <!-- required -->
+          <AfterMergeListID>IDTYPE</AfterMergeListID>
+          <!-- optional -->
+        </ListEvent>
+        <!-- OR -->
+        <TxnEvent>
+          <!-- optional -->
+          <!-- TxnEventType may have one of the following values: ARRefundCreditCard, Bill, BillPaymentCheck, BillPaymentCreditCard, Charge, Check, CreditCardCharge, CreditCardCredit, CreditMemo, Deposit, Estimate, InventoryAdjustment, Invoice, ItemReceipt, JournalEntry, PurchaseOrder, ReceivePayment, SalesOrder, SalesReceipt, SalesTaxPaymentCheck, TimeTracking, VendorCredit -->
+          <TxnEventType>ENUMTYPE</TxnEventType>
+          <!-- required -->
+          <!-- TxnEventOperation may have one of the following values: Add, Modify, Delete -->
+          <TxnEventOperation>ENUMTYPE</TxnEventOperation>
+          <!-- required -->
+          <TxnID>IDTYPE</TxnID>
+          <!-- required -->
+          <RefNumber>STRTYPE</RefNumber>
+          <!-- optional -->
+        </TxnEvent>
+        <!-- END OR -->
+        <LastRestoreTime>DATETIMETYPE</LastRestoreTime>
+        <!-- optional -->
+        <LastCondenseTime>DATETIMETYPE</LastCondenseTime>
+        <!-- optional -->
+        <DataEventRecoveryTime>DATETIMETYPE</DataEventRecoveryTime>
+        <!-- optional -->
+      </DataEvent>
+      <!-- OR -->
+      <UIEvent>
+        <!-- optional -->
+        <CompanyFilePath>STRTYPE</CompanyFilePath>
+        <!-- required -->
+        <HostInfo>
+          <!-- required -->
+          <ProductName>STRTYPE</ProductName>
+          <!-- required -->
+          <MajorVersion>STRTYPE</MajorVersion>
+          <!-- required -->
+          <MinorVersion>STRTYPE</MinorVersion>
+          <!-- required -->
+          <Country>STRTYPE</Country>
+          <!-- required -->
+        </HostInfo>
+        <CompanyFileEvent>
+          <!-- required -->
+          <!-- CompanyFileEventOperation may have one of the following values: Close, Open -->
+          <CompanyFileEventOperation>ENUMTYPE</CompanyFileEventOperation>
+          <!-- required -->
+          <IsNewCompany>BOOLTYPE</IsNewCompany>
+          <!-- optional -->
+          <IsAutomaticLogin>BOOLTYPE</IsAutomaticLogin>
+          <!-- optional -->
+        </CompanyFileEvent>
+      </UIEvent>
+      <!-- OR -->
+      <UIExtensionEvent>
+        <!-- optional -->
+        <CompanyFilePath>STRTYPE</CompanyFilePath>
+        <!-- required -->
+        <HostInfo>
+          <!-- required -->
+          <ProductName>STRTYPE</ProductName>
+          <!-- required -->
+          <MajorVersion>STRTYPE</MajorVersion>
+          <!-- required -->
+          <MinorVersion>STRTYPE</MinorVersion>
+          <!-- required -->
+          <Country>STRTYPE</Country>
+          <!-- required -->
+        </HostInfo>
+        <EventTag>STRTYPE</EventTag>
+        <!-- required -->
+        <CurrentWindow>
+          <!-- optional -->
+          <!-- BEGIN OR -->
+          <!-- TxnType may have one of the following values: ARRefundCreditCard, Bill, BillPaymentCheck, BillPaymentCreditCard, BuildAssembly, Charge, Check, CreditCardCharge, CreditCardCredit, CreditMemo, Deposit, Estimate, InventoryAdjustment, Invoice, ItemReceipt, JournalEntry, LiabilityAdjustment, Paycheck, PayrollLiabilityCheck, PurchaseOrder, ReceivePayment, SalesOrder, SalesReceipt, SalesTaxPaymentCheck, Transfer, VendorCredit, YTDAdjustment -->
+          <TxnType>ENUMTYPE</TxnType>
+          <!-- required -->
+          <TxnID>IDTYPE</TxnID>
+          <!-- optional -->
+          <!-- OR -->
+          <!-- ListType may have one of the following values: Account, Class, Customer, CustomerMsg, CustomerType, DateDrivenTerms, Employee, ItemDiscount, ItemFixedAsset, ItemGroup, ItemInventory, ItemInventoryAssembly, ItemNonInventory, ItemOtherCharge, ItemPayment, ItemSalesTax, ItemSalesTaxGroup, ItemService, ItemSubtotal, JobType, OtherName, PaymentMethod, PriceLevel, SalesRep, SalesTaxCode, ShipMethod, StandardTerms, ToDo, Vendor, VendorType -->
+          <ListType>ENUMTYPE</ListType>
+          <!-- required -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <!-- END OR -->
+        </CurrentWindow>
+      </UIExtensionEvent>
+      <!-- END OR -->
+    </QBXMLEventsRs>
+  </QBXMLSubscriptionMsgsRq>
+</QBXML>

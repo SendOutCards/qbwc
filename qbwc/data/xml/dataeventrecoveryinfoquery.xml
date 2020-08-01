@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <DataEventRecoveryInfoQueryRq>
+      <SubscriberID>GUIDTYPE</SubscriberID>
+      <!-- required -->
+    </DataEventRecoveryInfoQueryRq>
+    <DataEventRecoveryInfoQueryRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <DataEventRecoveryInfoRet>
+        <!-- optional -->
+        <SubscriberID>GUIDTYPE</SubscriberID>
+        <!-- required -->
+        <DataEventRecoveryTime>DATETIMETYPE</DataEventRecoveryTime>
+        <!-- optional -->
+      </DataEventRecoveryInfoRet>
+    </DataEventRecoveryInfoQueryRs>
+  </QBXMLMsgsRq>
+</QBXML>

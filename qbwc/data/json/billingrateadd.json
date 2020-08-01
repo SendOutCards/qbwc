@@ -1,0 +1,54 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "BillingRateAddRq": {
+        "BillingRateAdd": {
+          "Name": "STRTYPE",
+          "FixedBillingRate": "PRICETYPE",
+          "BillingRatePerItem": {
+            "ItemRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "CustomRate": "PRICETYPE",
+            "CustomRatePercent": "PERCENTTYPE",
+            "AdjustPercentage": "PERCENTTYPE",
+            "AdjustBillingRateRelativeTo": "ENUMTYPE"
+          }
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "BillingRateAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "BillingRateRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "BillingRateType": "ENUMTYPE",
+          "FixedBillingRate": "PRICETYPE",
+          "BillingRatePerItemRet": {
+            "ItemRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "CustomRate": "PRICETYPE",
+            "CustomRatePercent": "PERCENTTYPE"
+          }
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

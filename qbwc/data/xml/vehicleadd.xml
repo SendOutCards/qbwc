@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <VehicleAddRq>
+      <VehicleAdd>
+        <!-- required -->
+        <Name>STRTYPE</Name>
+        <!-- required -->
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <Desc>STRTYPE</Desc>
+        <!-- optional -->
+      </VehicleAdd>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </VehicleAddRq>
+    <VehicleAddRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <VehicleRet>
+        <!-- optional -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- optional -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <Name>STRTYPE</Name>
+        <!-- optional -->
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <Desc>STRTYPE</Desc>
+        <!-- optional -->
+      </VehicleRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </VehicleAddRs>
+  </QBXMLMsgsRq>
+</QBXML>

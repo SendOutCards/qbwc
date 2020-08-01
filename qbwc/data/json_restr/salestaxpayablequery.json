@@ -1,0 +1,68 @@
+{
+  "QBXMLMsgsRq": {
+    "SalesTaxPayableQueryRq": {
+      "AsOfDate": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      },
+      "IncludeRetElement": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true
+      }
+    },
+    "SalesTaxPayableQueryRs": {
+      "SalesTaxPayableRet": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true,
+        "PayeeEntityRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "Amount": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "SalesTaxPayableLineRet": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true,
+          "ItemSalesTaxRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "Amount": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          }
+        }
+      }
+    }
+  }
+}

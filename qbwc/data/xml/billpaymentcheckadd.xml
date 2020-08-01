@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <BillPaymentCheckAddRq>
+      <BillPaymentCheckAdd defMacro="MACROTYPE">
+        <!-- required -->
+        <PayeeEntityRef>
+          <!-- required -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </PayeeEntityRef>
+        <APAccountRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </APAccountRef>
+        <TxnDate>DATETYPE</TxnDate>
+        <!-- optional -->
+        <BankAccountRef>
+          <!-- required -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </BankAccountRef>
+        <!-- BEGIN OR -->
+        <IsToBePrinted>BOOLTYPE</IsToBePrinted>
+        <!-- optional -->
+        <!-- OR -->
+        <RefNumber>STRTYPE</RefNumber>
+        <!-- optional -->
+        <!-- END OR -->
+        <Memo>STRTYPE</Memo>
+        <!-- optional -->
+        <ExchangeRate>FLOATTYPE</ExchangeRate>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+        <AppliedToTxnAdd>
+          <!-- required, may repeat -->
+          <TxnID useMacro="MACROTYPE">IDTYPE</TxnID>
+          <!-- required -->
+          <PaymentAmount>AMTTYPE</PaymentAmount>
+          <!-- optional -->
+          <SetCredit>
+            <!-- optional, may repeat -->
+            <CreditTxnID useMacro="MACROTYPE">IDTYPE</CreditTxnID>
+            <!-- required -->
+            <AppliedAmount>AMTTYPE</AppliedAmount>
+            <!-- required -->
+            <Override>BOOLTYPE</Override>
+            <!-- optional -->
+          </SetCredit>
+          <DiscountAmount>AMTTYPE</DiscountAmount>
+          <!-- optional -->
+          <DiscountAccountRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </DiscountAccountRef>
+          <DiscountClassRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </DiscountClassRef>
+        </AppliedToTxnAdd>
+      </BillPaymentCheckAdd>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </BillPaymentCheckAddRq>
+    <BillPaymentCheckAddRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <BillPaymentCheckRet>
+        <!-- optional -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- optional -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <PayeeEntityRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </PayeeEntityRef>
+        <APAccountRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </APAccountRef>
+        <TxnDate>DATETYPE</TxnDate>
+        <!-- optional -->
+        <BankAccountRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </BankAccountRef>
+        <Amount>AMTTYPE</Amount>
+        <!-- optional -->
+        <CurrencyRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CurrencyRef>
+        <ExchangeRate>FLOATTYPE</ExchangeRate>
+        <!-- optional -->
+        <AmountInHomeCurrency>AMTTYPE</AmountInHomeCurrency>
+        <!-- optional -->
+        <RefNumber>STRTYPE</RefNumber>
+        <!-- optional -->
+        <Memo>STRTYPE</Memo>
+        <!-- optional -->
+        <Address>
+          <!-- optional -->
+          <Addr1>STRTYPE</Addr1>
+          <!-- optional -->
+          <Addr2>STRTYPE</Addr2>
+          <!-- optional -->
+          <Addr3>STRTYPE</Addr3>
+          <!-- optional -->
+          <Addr4>STRTYPE</Addr4>
+          <!-- optional -->
+          <Addr5>STRTYPE</Addr5>
+          <!-- optional -->
+          <City>STRTYPE</City>
+          <!-- optional -->
+          <State>STRTYPE</State>
+          <!-- optional -->
+          <PostalCode>STRTYPE</PostalCode>
+          <!-- optional -->
+          <Country>STRTYPE</Country>
+          <!-- optional -->
+          <Note>STRTYPE</Note>
+          <!-- optional -->
+        </Address>
+        <AddressBlock>
+          <!-- optional -->
+          <Addr1>STRTYPE</Addr1>
+          <!-- optional -->
+          <Addr2>STRTYPE</Addr2>
+          <!-- optional -->
+          <Addr3>STRTYPE</Addr3>
+          <!-- optional -->
+          <Addr4>STRTYPE</Addr4>
+          <!-- optional -->
+          <Addr5>STRTYPE</Addr5>
+          <!-- optional -->
+        </AddressBlock>
+        <IsToBePrinted>BOOLTYPE</IsToBePrinted>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+        <AppliedToTxnRet>
+          <!-- optional, may repeat -->
+          <TxnID>IDTYPE</TxnID>
+          <!-- required -->
+          <!-- TxnType may have one of the following values: ARRefundCreditCard, Bill, BillPaymentCheck, BillPaymentCreditCard, BuildAssembly, Charge, Check, CreditCardCharge, CreditCardCredit, CreditMemo, Deposit, Estimate, InventoryAdjustment, Invoice, ItemReceipt, JournalEntry, LiabilityAdjustment, Paycheck, PayrollLiabilityCheck, PurchaseOrder, ReceivePayment, SalesOrder, SalesReceipt, SalesTaxPaymentCheck, Transfer, VendorCredit, YTDAdjustment -->
+          <TxnType>ENUMTYPE</TxnType>
+          <!-- required -->
+          <TxnDate>DATETYPE</TxnDate>
+          <!-- optional -->
+          <RefNumber>STRTYPE</RefNumber>
+          <!-- optional -->
+          <BalanceRemaining>AMTTYPE</BalanceRemaining>
+          <!-- optional -->
+          <Amount>AMTTYPE</Amount>
+          <!-- optional -->
+          <DiscountAmount>AMTTYPE</DiscountAmount>
+          <!-- optional -->
+          <DiscountAccountRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </DiscountAccountRef>
+          <DiscountClassRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </DiscountClassRef>
+          <LinkedTxn>
+            <!-- optional, may repeat -->
+            <TxnID>IDTYPE</TxnID>
+            <!-- required -->
+            <!-- TxnType may have one of the following values: ARRefundCreditCard, Bill, BillPaymentCheck, BillPaymentCreditCard, BuildAssembly, Charge, Check, CreditCardCharge, CreditCardCredit, CreditMemo, Deposit, Estimate, InventoryAdjustment, Invoice, ItemReceipt, JournalEntry, LiabilityAdjustment, Paycheck, PayrollLiabilityCheck, PurchaseOrder, ReceivePayment, SalesOrder, SalesReceipt, SalesTaxPaymentCheck, Transfer, VendorCredit, YTDAdjustment -->
+            <TxnType>ENUMTYPE</TxnType>
+            <!-- required -->
+            <TxnDate>DATETYPE</TxnDate>
+            <!-- required -->
+            <RefNumber>STRTYPE</RefNumber>
+            <!-- optional -->
+            <!-- LinkType may have one of the following values: AMTTYPE, QUANTYPE -->
+            <LinkType>ENUMTYPE</LinkType>
+            <!-- optional -->
+            <Amount>AMTTYPE</Amount>
+            <!-- required -->
+          </LinkedTxn>
+        </AppliedToTxnRet>
+        <DataExtRet>
+          <!-- optional, may repeat -->
+          <OwnerID>GUIDTYPE</OwnerID>
+          <!-- optional -->
+          <DataExtName>STRTYPE</DataExtName>
+          <!-- required -->
+          <!-- DataExtType may have one of the following values: AMTTYPE, DATETIMETYPE, INTTYPE, PERCENTTYPE, PRICETYPE, QUANTYPE, STR1024TYPE, STR255TYPE -->
+          <DataExtType>ENUMTYPE</DataExtType>
+          <!-- required -->
+          <DataExtValue>STRTYPE</DataExtValue>
+          <!-- required -->
+        </DataExtRet>
+      </BillPaymentCheckRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </BillPaymentCheckAddRs>
+  </QBXMLMsgsRq>
+</QBXML>

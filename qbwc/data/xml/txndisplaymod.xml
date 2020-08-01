@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <TxnDisplayModRq>
+      <!-- TxnDisplayModType may have one of the following values: Bill, BillPaymentCheck, BillPaymentCreditCard, BuildAssembly, Charge, Check, CreditCardCharge, CreditCardCredit, CreditMemo, Deposit, Estimate, InventoryAdjustment, Invoice, ItemReceipt, JournalEntry, PurchaseOrder, ReceivePayment, SalesOrder, SalesReceipt, SalesTaxPaymentCheck, VendorCredit -->
+      <TxnDisplayModType>ENUMTYPE</TxnDisplayModType>
+      <!-- required -->
+      <TxnID>IDTYPE</TxnID>
+      <!-- required -->
+    </TxnDisplayModRq>
+    <TxnDisplayModRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE"></TxnDisplayModRs>
+  </QBXMLMsgsRq>
+</QBXML>

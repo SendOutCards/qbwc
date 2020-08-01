@@ -1,0 +1,136 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "SpecialItemAddRq": {
+        "SpecialItemAdd": {
+          "SpecialItemType": "ENUMTYPE",
+          "BarCode": {
+            "BarCodeValue": "STRTYPE",
+            "AssignEvenIfUsed": "BOOLTYPE",
+            "AllowOverride": "BOOLTYPE"
+          },
+          "ExternalGUID": "GUIDTYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "SpecialItemAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "ItemOtherChargeRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "FullName": "STRTYPE",
+          "BarCodeValue": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "ClassRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ParentRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Sublevel": "INTTYPE",
+          "IsTaxIncluded": "BOOLTYPE",
+          "SalesTaxCodeRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "SalesOrPurchase": {
+            "Desc": "STRTYPE",
+            "Price": "PRICETYPE",
+            "PricePercent": "PERCENTTYPE",
+            "AccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            }
+          },
+          "SalesAndPurchase": {
+            "SalesDesc": "STRTYPE",
+            "SalesPrice": "PRICETYPE",
+            "IncomeAccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "PurchaseDesc": "STRTYPE",
+            "PurchaseCost": "PRICETYPE",
+            "PurchaseTaxCodeRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ExpenseAccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "PrefVendorRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            }
+          },
+          "SpecialItemType": "ENUMTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        },
+        "ItemSubtotalRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "BarCodeValue": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "ItemDesc": "STRTYPE",
+          "SpecialItemType": "ENUMTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        },
+        "ItemGroupRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "BarCodeValue": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "ItemDesc": "STRTYPE",
+          "UnitOfMeasureSetRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "IsPrintItemsInGroup": "BOOLTYPE",
+          "SpecialItemType": "ENUMTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "ItemGroupLine": {
+            "ItemRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Quantity": "QUANTYPE",
+            "UnitOfMeasure": "STRTYPE"
+          },
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        }
+      }
+    }
+  }
+}

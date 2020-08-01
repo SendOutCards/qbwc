@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <DataExtAddRq>
+      <DataExtAdd>
+        <!-- required -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- required -->
+        <DataExtName>STRTYPE</DataExtName>
+        <!-- required -->
+        <!-- BEGIN OR -->
+        <!-- ListDataExtType may have one of the following values: Account, Customer, Employee, Item, OtherName, Vendor -->
+        <ListDataExtType>ENUMTYPE</ListDataExtType>
+        <!-- required -->
+        <ListObjRef>
+          <!-- required -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ListObjRef>
+        <!-- OR -->
+        <!-- TxnDataExtType may have one of the following values: ARRefundCreditCard, Bill, BillPaymentCheck, BillPaymentCreditCard, BuildAssembly, Charge, Check, CreditCardCharge, CreditCardCredit, CreditMemo, Deposit, Estimate, InventoryAdjustment, Invoice, ItemReceipt, JournalEntry, PurchaseOrder, ReceivePayment, SalesOrder, SalesReceipt, SalesTaxPaymentCheck, VendorCredit -->
+        <TxnDataExtType>ENUMTYPE</TxnDataExtType>
+        <!-- required -->
+        <TxnID useMacro="MACROTYPE">IDTYPE</TxnID>
+        <!-- required -->
+        <TxnLineID>IDTYPE</TxnLineID>
+        <!-- optional -->
+        <!-- OR -->
+        <!-- OtherDataExtType may have one of the following values: Company -->
+        <OtherDataExtType>ENUMTYPE</OtherDataExtType>
+        <!-- optional -->
+        <!-- END OR -->
+        <DataExtValue>STRTYPE</DataExtValue>
+        <!-- required -->
+      </DataExtAdd>
+    </DataExtAddRq>
+    <DataExtAddRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <DataExtRet>
+        <!-- optional -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <DataExtName>STRTYPE</DataExtName>
+        <!-- required -->
+        <!-- DataExtType may have one of the following values: AMTTYPE, DATETIMETYPE, INTTYPE, PERCENTTYPE, PRICETYPE, QUANTYPE, STR1024TYPE, STR255TYPE -->
+        <DataExtType>ENUMTYPE</DataExtType>
+        <!-- required -->
+        <DataExtValue>STRTYPE</DataExtValue>
+        <!-- required -->
+      </DataExtRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </DataExtAddRs>
+  </QBXMLMsgsRq>
+</QBXML>

@@ -1,0 +1,21 @@
+{
+  "QBXMLMsgsRq": {
+    "AccountTaxLineInfoQueryRs": {
+      "AccountTaxLineInfoRet": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true,
+        "TaxLineID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TaxLineName": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      }
+    }
+  }
+}

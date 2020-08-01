@@ -1,0 +1,108 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "ItemFixedAssetModRq": {
+        "ItemFixedAssetMod": {
+          "ListID": "IDTYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "BarCode": {
+            "BarCodeValue": "STRTYPE",
+            "AssignEvenIfUsed": "BOOLTYPE",
+            "AllowOverride": "BOOLTYPE"
+          },
+          "IsActive": "BOOLTYPE",
+          "ClassRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "AcquiredAs": "ENUMTYPE",
+          "PurchaseDesc": "STRTYPE",
+          "PurchaseDate": "DATETYPE",
+          "PurchaseCost": "PRICETYPE",
+          "VendorOrPayeeName": "STRTYPE",
+          "AssetAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "FixedAssetSalesInfoMod": {
+            "SalesDesc": "STRTYPE",
+            "SalesDate": "DATETYPE",
+            "SalesPrice": "PRICETYPE",
+            "SalesExpense": "PRICETYPE"
+          },
+          "AssetDesc": "STRTYPE",
+          "Location": "STRTYPE",
+          "PONumber": "STRTYPE",
+          "SerialNumber": "STRTYPE",
+          "WarrantyExpDate": "DATETYPE",
+          "Notes": "STRTYPE",
+          "AssetNumber": "STRTYPE",
+          "CostBasis": "AMTTYPE",
+          "YearEndAccumulatedDepreciation": "AMTTYPE",
+          "YearEndBookValue": "AMTTYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "ItemFixedAssetModRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "ItemFixedAssetRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "BarCodeValue": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "ClassRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "AcquiredAs": "ENUMTYPE",
+          "PurchaseDesc": "STRTYPE",
+          "PurchaseDate": "DATETYPE",
+          "PurchaseCost": "PRICETYPE",
+          "VendorOrPayeeName": "STRTYPE",
+          "AssetAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "FixedAssetSalesInfo": {
+            "SalesDesc": "STRTYPE",
+            "SalesDate": "DATETYPE",
+            "SalesPrice": "PRICETYPE",
+            "SalesExpense": "PRICETYPE"
+          },
+          "AssetDesc": "STRTYPE",
+          "Location": "STRTYPE",
+          "PONumber": "STRTYPE",
+          "SerialNumber": "STRTYPE",
+          "WarrantyExpDate": "DATETYPE",
+          "Notes": "STRTYPE",
+          "AssetNumber": "STRTYPE",
+          "CostBasis": "AMTTYPE",
+          "YearEndAccumulatedDepreciation": "AMTTYPE",
+          "YearEndBookValue": "AMTTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "QBXMLMsgsRq": {
+    "ReceivePaymentToDepositQueryRq": {
+      "IncludeRetElement": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true
+      }
+    },
+    "ReceivePaymentToDepositQueryRs": {
+      "ReceivePaymentToDepositRet": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true,
+        "TxnID": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "TxnLineID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TxnType": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "CustomerRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "TxnDate": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "RefNumber": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "Amount": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "CurrencyRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "ExchangeRate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "AmountInHomeCurrency": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      }
+    }
+  }
+}

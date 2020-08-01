@@ -1,0 +1,105 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "TransactionQueryRq": {
+        "@iterator": "ENUMTYPE",
+        "@iteratorID": "UUIDTYPE",
+        "@metaData": "ENUMTYPE",
+        "TxnID": "IDTYPE",
+        "MaxReturned": "INTTYPE",
+        "RefNumber": "STRTYPE",
+        "RefNumberCaseSensitive": "STRTYPE",
+        "RefNumberFilter": {
+          "MatchCriterion": "ENUMTYPE",
+          "RefNumber": "STRTYPE"
+        },
+        "RefNumberRangeFilter": {
+          "FromRefNumber": "STRTYPE",
+          "ToRefNumber": "STRTYPE"
+        },
+        "TransactionModifiedDateRangeFilter": {
+          "FromModifiedDate": "DATETIMETYPE",
+          "ToModifiedDate": "DATETIMETYPE",
+          "DateMacro": "ENUMTYPE"
+        },
+        "TransactionDateRangeFilter": {
+          "FromTxnDate": "DATETYPE",
+          "ToTxnDate": "DATETYPE",
+          "DateMacro": "ENUMTYPE"
+        },
+        "TransactionEntityFilter": {
+          "EntityTypeFilter": "ENUMTYPE",
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE",
+          "ListIDWithChildren": "IDTYPE",
+          "FullNameWithChildren": "STRTYPE"
+        },
+        "TransactionAccountFilter": {
+          "AccountTypeFilter": "ENUMTYPE",
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE",
+          "ListIDWithChildren": "IDTYPE",
+          "FullNameWithChildren": "STRTYPE"
+        },
+        "TransactionItemFilter": {
+          "ItemTypeFilter": "ENUMTYPE",
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE",
+          "ListIDWithChildren": "IDTYPE",
+          "FullNameWithChildren": "STRTYPE"
+        },
+        "TransactionClassFilter": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE",
+          "ListIDWithChildren": "IDTYPE",
+          "FullNameWithChildren": "STRTYPE"
+        },
+        "TransactionTypeFilter": {
+          "TxnTypeFilter": "ENUMTYPE"
+        },
+        "TransactionDetailLevelFilter": "ENUMTYPE",
+        "TransactionPostingStatusFilter": "ENUMTYPE",
+        "TransactionPaidStatusFilter": "ENUMTYPE",
+        "CurrencyFilter": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "TransactionQueryRs": {
+        "@iteratorID": "UUIDTYPE",
+        "@iteratorRemainingCount": "INTTYPE",
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "TransactionRet": {
+          "TxnType": "ENUMTYPE",
+          "TxnID": "IDTYPE",
+          "TxnLineID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EntityRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "AccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TxnDate": "DATETYPE",
+          "RefNumber": "STRTYPE",
+          "Amount": "AMTTYPE",
+          "CurrencyRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ExchangeRate": "FLOATTYPE",
+          "AmountInHomeCurrency": "AMTTYPE",
+          "Memo": "STRTYPE"
+        }
+      }
+    }
+  }
+}

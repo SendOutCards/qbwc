@@ -1,0 +1,78 @@
+{
+  "QBXMLMsgsRq": {
+    "TxnVoidRq": {
+      "TxnVoidType": {
+        "@optional": false,
+        "@required": true,
+        "@may_repeat": false
+      },
+      "TxnID": {
+        "@optional": false,
+        "@required": true,
+        "@may_repeat": false
+      }
+    },
+    "TxnVoidRs": {
+      "TxnVoidType": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      },
+      "TxnID": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      },
+      "TimeCreated": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      },
+      "TimeModified": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      },
+      "RefNumber": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      },
+      "ErrorRecovery": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "ListID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "OwnerID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TxnID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TxnNumber": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "EditSequence": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ExternalGUID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      }
+    }
+  }
+}

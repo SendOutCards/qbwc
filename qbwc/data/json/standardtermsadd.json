@@ -1,0 +1,41 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "StandardTermsAddRq": {
+        "StandardTermsAdd": {
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "StdDueDays": "INTTYPE",
+          "StdDiscountDays": "INTTYPE",
+          "DiscountPct": "PERCENTTYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "StandardTermsAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "StandardTermsRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "StdDueDays": "INTTYPE",
+          "StdDiscountDays": "INTTYPE",
+          "DiscountPct": "PERCENTTYPE"
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

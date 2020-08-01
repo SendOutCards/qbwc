@@ -1,0 +1,39 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "Form1099CategoryAccountMappingModRq": {
+        "Form1099CategoryAccountMappingMod": {
+          "IsFiling1099Misc": "BOOLTYPE",
+          "CategoryAccountMappingMod": {
+            "MappingCategory": "ENUMTYPE",
+            "MappingAccount": {
+              "AccountRef": {
+                "ListID": "IDTYPE",
+                "FullName": "STRTYPE"
+              },
+              "ForceMapping": "BOOLTYPE"
+            },
+            "Threshold": "AMTTYPE"
+          }
+        }
+      },
+      "Form1099CategoryAccountMappingModRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "Form1099CategoryAccountMappingRet": {
+          "IsFiling1099Misc": "BOOLTYPE",
+          "CategoryAccountMapping": {
+            "MappingCategory": "ENUMTYPE",
+            "AccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Threshold": "AMTTYPE"
+          }
+        }
+      }
+    }
+  }
+}

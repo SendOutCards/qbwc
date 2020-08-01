@@ -1,0 +1,51 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "WorkersCompCodeModRq": {
+        "WorkersCompCodeMod": {
+          "ListID": "IDTYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "Desc": "STRTYPE",
+          "RateEntry": {
+            "Rate": "PRICETYPE",
+            "EffectiveDate": "DATETYPE"
+          }
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "WorkersCompCodeModRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "WorkersCompCodeRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "Desc": "STRTYPE",
+          "CurrentRate": "PRICETYPE",
+          "CurrentEffectiveDate": "DATETYPE",
+          "NextRate": "PRICETYPE",
+          "NextEffectiveDate": "DATETYPE",
+          "RateHistory": {
+            "Rate": "PRICETYPE",
+            "EffectiveDate": "DATETYPE"
+          }
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

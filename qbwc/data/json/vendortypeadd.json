@@ -1,0 +1,45 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "VendorTypeAddRq": {
+        "VendorTypeAdd": {
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "ParentRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          }
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "VendorTypeAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "VendorTypeRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "FullName": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "ParentRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Sublevel": "INTTYPE"
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

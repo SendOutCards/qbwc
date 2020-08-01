@@ -1,0 +1,189 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "VendorQueryRq": {
+        "@iterator": "ENUMTYPE",
+        "@iteratorID": "UUIDTYPE",
+        "@metaData": "ENUMTYPE",
+        "ListID": "IDTYPE",
+        "FullName": "STRTYPE",
+        "MaxReturned": "INTTYPE",
+        "ActiveStatus": "ENUMTYPE",
+        "FromModifiedDate": "DATETIMETYPE",
+        "ToModifiedDate": "DATETIMETYPE",
+        "NameFilter": {
+          "MatchCriterion": "ENUMTYPE",
+          "Name": "STRTYPE"
+        },
+        "NameRangeFilter": {
+          "FromName": "STRTYPE",
+          "ToName": "STRTYPE"
+        },
+        "TotalBalanceFilter": {
+          "Operator": "ENUMTYPE",
+          "Amount": "AMTTYPE"
+        },
+        "CurrencyFilter": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE"
+        },
+        "ClassFilter": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE",
+          "ListIDWithChildren": "IDTYPE",
+          "FullNameWithChildren": "STRTYPE"
+        },
+        "IncludeRetElement": "STRTYPE",
+        "OwnerID": "GUIDTYPE"
+      },
+      "VendorQueryRs": {
+        "@iteratorID": "UUIDTYPE",
+        "@iteratorRemainingCount": "INTTYPE",
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "VendorRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "ClassRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "IsTaxAgency": "BOOLTYPE",
+          "CompanyName": "STRTYPE",
+          "Salutation": "STRTYPE",
+          "FirstName": "STRTYPE",
+          "MiddleName": "STRTYPE",
+          "LastName": "STRTYPE",
+          "JobTitle": "STRTYPE",
+          "VendorAddress": {
+            "Addr1": "STRTYPE",
+            "Addr2": "STRTYPE",
+            "Addr3": "STRTYPE",
+            "Addr4": "STRTYPE",
+            "Addr5": "STRTYPE",
+            "City": "STRTYPE",
+            "State": "STRTYPE",
+            "PostalCode": "STRTYPE",
+            "Country": "STRTYPE",
+            "Note": "STRTYPE"
+          },
+          "VendorAddressBlock": {
+            "Addr1": "STRTYPE",
+            "Addr2": "STRTYPE",
+            "Addr3": "STRTYPE",
+            "Addr4": "STRTYPE",
+            "Addr5": "STRTYPE"
+          },
+          "ShipAddress": {
+            "Addr1": "STRTYPE",
+            "Addr2": "STRTYPE",
+            "Addr3": "STRTYPE",
+            "Addr4": "STRTYPE",
+            "Addr5": "STRTYPE",
+            "City": "STRTYPE",
+            "State": "STRTYPE",
+            "PostalCode": "STRTYPE",
+            "Country": "STRTYPE",
+            "Note": "STRTYPE"
+          },
+          "Phone": "STRTYPE",
+          "AltPhone": "STRTYPE",
+          "Fax": "STRTYPE",
+          "Email": "STRTYPE",
+          "Cc": "STRTYPE",
+          "Contact": "STRTYPE",
+          "AltContact": "STRTYPE",
+          "AdditionalContactRef": {
+            "ContactName": "STRTYPE",
+            "ContactValue": "STRTYPE"
+          },
+          "ContactsRet": {
+            "ListID": "IDTYPE",
+            "TimeCreated": "DATETIMETYPE",
+            "TimeModified": "DATETIMETYPE",
+            "EditSequence": "STRTYPE",
+            "Contact": "STRTYPE",
+            "Salutation": "STRTYPE",
+            "FirstName": "STRTYPE",
+            "MiddleName": "STRTYPE",
+            "LastName": "STRTYPE",
+            "JobTitle": "STRTYPE",
+            "AdditionalContactRef": {
+              "ContactName": "STRTYPE",
+              "ContactValue": "STRTYPE"
+            }
+          },
+          "NameOnCheck": "STRTYPE",
+          "AccountNumber": "STRTYPE",
+          "Notes": "STRTYPE",
+          "AdditionalNotesRet": {
+            "NoteID": "INTTYPE",
+            "Date": "DATETYPE",
+            "Note": "STRTYPE"
+          },
+          "VendorTypeRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TermsRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "CreditLimit": "AMTTYPE",
+          "VendorTaxIdent": "STRTYPE",
+          "IsVendorEligibleFor1099": "BOOLTYPE",
+          "Balance": "AMTTYPE",
+          "BillingRateRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ExternalGUID": "GUIDTYPE",
+          "SalesTaxCodeRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "SalesTaxCountry": "ENUMTYPE",
+          "IsSalesTaxAgency": "BOOLTYPE",
+          "SalesTaxReturnRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TaxRegistrationNumber": "STRTYPE",
+          "ReportingPeriod": "ENUMTYPE",
+          "IsTaxTrackedOnPurchases": "BOOLTYPE",
+          "TaxOnPurchasesAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "IsTaxTrackedOnSales": "BOOLTYPE",
+          "TaxOnSalesAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "IsTaxOnTax": "BOOLTYPE",
+          "PrefillAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "CurrencyRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        }
+      }
+    }
+  }
+}

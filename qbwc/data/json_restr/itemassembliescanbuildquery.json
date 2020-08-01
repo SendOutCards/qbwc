@@ -1,0 +1,58 @@
+{
+  "QBXMLMsgsRq": {
+    "ItemAssembliesCanBuildQueryRq": {
+      "ItemInventoryAssemblyRef": {
+        "@optional": false,
+        "@required": true,
+        "@may_repeat": false,
+        "ListID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "FullName": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      },
+      "TxnDate": {
+        "@optional": false,
+        "@required": true,
+        "@may_repeat": false
+      }
+    },
+    "ItemAssembliesCanBuildQueryRs": {
+      "ItemAssembliesCanBuildRet": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "ItemInventoryAssemblyRef": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "TxnDate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "QuantityCanBuild": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        }
+      }
+    }
+  }
+}

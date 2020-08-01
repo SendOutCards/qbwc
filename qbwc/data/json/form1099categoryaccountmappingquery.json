@@ -1,0 +1,26 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "Form1099CategoryAccountMappingQueryRq": {
+        "MappingCategory": "ENUMTYPE"
+      },
+      "Form1099CategoryAccountMappingQueryRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "Form1099CategoryAccountMappingRet": {
+          "IsFiling1099Misc": "BOOLTYPE",
+          "CategoryAccountMapping": {
+            "MappingCategory": "ENUMTYPE",
+            "AccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Threshold": "AMTTYPE"
+          }
+        }
+      }
+    }
+  }
+}

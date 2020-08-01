@@ -1,0 +1,27 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "ItemAssembliesCanBuildQueryRq": {
+        "ItemInventoryAssemblyRef": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE"
+        },
+        "TxnDate": "DATETYPE"
+      },
+      "ItemAssembliesCanBuildQueryRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "ItemAssembliesCanBuildRet": {
+          "ItemInventoryAssemblyRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TxnDate": "DATETYPE",
+          "QuantityCanBuild": "QUANTYPE"
+        }
+      }
+    }
+  }
+}

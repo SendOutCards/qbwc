@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <ARRefundCreditCardAddRq>
+      <ARRefundCreditCardAdd defMacro="MACROTYPE">
+        <!-- required -->
+        <CustomerRef>
+          <!-- required -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CustomerRef>
+        <RefundFromAccountRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </RefundFromAccountRef>
+        <ARAccountRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ARAccountRef>
+        <TxnDate>DATETYPE</TxnDate>
+        <!-- optional -->
+        <RefNumber>STRTYPE</RefNumber>
+        <!-- optional -->
+        <Address>
+          <!-- optional -->
+          <Addr1>STRTYPE</Addr1>
+          <!-- optional -->
+          <Addr2>STRTYPE</Addr2>
+          <!-- optional -->
+          <Addr3>STRTYPE</Addr3>
+          <!-- optional -->
+          <Addr4>STRTYPE</Addr4>
+          <!-- optional -->
+          <Addr5>STRTYPE</Addr5>
+          <!-- optional -->
+          <City>STRTYPE</City>
+          <!-- optional -->
+          <State>STRTYPE</State>
+          <!-- optional -->
+          <PostalCode>STRTYPE</PostalCode>
+          <!-- optional -->
+          <Country>STRTYPE</Country>
+          <!-- optional -->
+          <Note>STRTYPE</Note>
+          <!-- optional -->
+        </Address>
+        <PaymentMethodRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </PaymentMethodRef>
+        <Memo>STRTYPE</Memo>
+        <!-- optional -->
+        <CreditCardTxnInfo>
+          <!-- optional -->
+          <CreditCardTxnInputInfo>
+            <!-- required -->
+            <CreditCardNumber>STRTYPE</CreditCardNumber>
+            <!-- required -->
+            <ExpirationMonth>INTTYPE</ExpirationMonth>
+            <!-- required -->
+            <ExpirationYear>INTTYPE</ExpirationYear>
+            <!-- required -->
+            <NameOnCard>STRTYPE</NameOnCard>
+            <!-- required -->
+            <CreditCardAddress>STRTYPE</CreditCardAddress>
+            <!-- optional -->
+            <CreditCardPostalCode>STRTYPE</CreditCardPostalCode>
+            <!-- optional -->
+            <CommercialCardCode>STRTYPE</CommercialCardCode>
+            <!-- optional -->
+            <!-- TransactionMode may have one of the following values: CardNotPresent [DEFAULT], CardPresent -->
+            <TransactionMode>ENUMTYPE</TransactionMode>
+            <!-- optional -->
+            <!-- CreditCardTxnType may have one of the following values: Authorization, Capture, Charge, Refund, VoiceAuthorization -->
+            <CreditCardTxnType>ENUMTYPE</CreditCardTxnType>
+            <!-- optional -->
+          </CreditCardTxnInputInfo>
+          <CreditCardTxnResultInfo>
+            <!-- required -->
+            <ResultCode>INTTYPE</ResultCode>
+            <!-- required -->
+            <ResultMessage>STRTYPE</ResultMessage>
+            <!-- required -->
+            <CreditCardTransID>STRTYPE</CreditCardTransID>
+            <!-- required -->
+            <MerchantAccountNumber>STRTYPE</MerchantAccountNumber>
+            <!-- required -->
+            <AuthorizationCode>STRTYPE</AuthorizationCode>
+            <!-- optional -->
+            <!-- AVSStreet may have one of the following values: Pass, Fail, NotAvailable -->
+            <AVSStreet>ENUMTYPE</AVSStreet>
+            <!-- optional -->
+            <!-- AVSZip may have one of the following values: Pass, Fail, NotAvailable -->
+            <AVSZip>ENUMTYPE</AVSZip>
+            <!-- optional -->
+            <!-- CardSecurityCodeMatch may have one of the following values: Pass, Fail, NotAvailable -->
+            <CardSecurityCodeMatch>ENUMTYPE</CardSecurityCodeMatch>
+            <!-- optional -->
+            <ReconBatchID>STRTYPE</ReconBatchID>
+            <!-- optional -->
+            <PaymentGroupingCode>INTTYPE</PaymentGroupingCode>
+            <!-- optional -->
+            <!-- PaymentStatus may have one of the following values: Unknown, Completed -->
+            <PaymentStatus>ENUMTYPE</PaymentStatus>
+            <!-- required -->
+            <TxnAuthorizationTime>DATETIMETYPE</TxnAuthorizationTime>
+            <!-- required -->
+            <TxnAuthorizationStamp>INTTYPE</TxnAuthorizationStamp>
+            <!-- optional -->
+            <ClientTransID>STRTYPE</ClientTransID>
+            <!-- optional -->
+          </CreditCardTxnResultInfo>
+        </CreditCardTxnInfo>
+        <ExchangeRate>FLOATTYPE</ExchangeRate>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+        <RefundAppliedToTxnAdd>
+          <!-- required, may repeat -->
+          <TxnID useMacro="MACROTYPE">IDTYPE</TxnID>
+          <!-- required -->
+          <RefundAmount>AMTTYPE</RefundAmount>
+          <!-- required -->
+        </RefundAppliedToTxnAdd>
+      </ARRefundCreditCardAdd>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </ARRefundCreditCardAddRq>
+    <ARRefundCreditCardAddRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <ARRefundCreditCardRet>
+        <!-- optional -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- optional -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <CustomerRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CustomerRef>
+        <RefundFromAccountRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </RefundFromAccountRef>
+        <ARAccountRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ARAccountRef>
+        <TxnDate>DATETYPE</TxnDate>
+        <!-- optional -->
+        <RefNumber>STRTYPE</RefNumber>
+        <!-- optional -->
+        <TotalAmount>AMTTYPE</TotalAmount>
+        <!-- optional -->
+        <CurrencyRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CurrencyRef>
+        <ExchangeRate>FLOATTYPE</ExchangeRate>
+        <!-- optional -->
+        <TotalAmountInHomeCurrency>AMTTYPE</TotalAmountInHomeCurrency>
+        <!-- optional -->
+        <Address>
+          <!-- optional -->
+          <Addr1>STRTYPE</Addr1>
+          <!-- optional -->
+          <Addr2>STRTYPE</Addr2>
+          <!-- optional -->
+          <Addr3>STRTYPE</Addr3>
+          <!-- optional -->
+          <Addr4>STRTYPE</Addr4>
+          <!-- optional -->
+          <Addr5>STRTYPE</Addr5>
+          <!-- optional -->
+          <City>STRTYPE</City>
+          <!-- optional -->
+          <State>STRTYPE</State>
+          <!-- optional -->
+          <PostalCode>STRTYPE</PostalCode>
+          <!-- optional -->
+          <Country>STRTYPE</Country>
+          <!-- optional -->
+          <Note>STRTYPE</Note>
+          <!-- optional -->
+        </Address>
+        <AddressBlock>
+          <!-- optional -->
+          <Addr1>STRTYPE</Addr1>
+          <!-- optional -->
+          <Addr2>STRTYPE</Addr2>
+          <!-- optional -->
+          <Addr3>STRTYPE</Addr3>
+          <!-- optional -->
+          <Addr4>STRTYPE</Addr4>
+          <!-- optional -->
+          <Addr5>STRTYPE</Addr5>
+          <!-- optional -->
+        </AddressBlock>
+        <PaymentMethodRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </PaymentMethodRef>
+        <Memo>STRTYPE</Memo>
+        <!-- optional -->
+        <CreditCardTxnInfo>
+          <!-- optional -->
+          <CreditCardTxnInputInfo>
+            <!-- required -->
+            <CreditCardNumber>STRTYPE</CreditCardNumber>
+            <!-- required -->
+            <ExpirationMonth>INTTYPE</ExpirationMonth>
+            <!-- required -->
+            <ExpirationYear>INTTYPE</ExpirationYear>
+            <!-- required -->
+            <NameOnCard>STRTYPE</NameOnCard>
+            <!-- required -->
+            <CreditCardAddress>STRTYPE</CreditCardAddress>
+            <!-- optional -->
+            <CreditCardPostalCode>STRTYPE</CreditCardPostalCode>
+            <!-- optional -->
+            <CommercialCardCode>STRTYPE</CommercialCardCode>
+            <!-- optional -->
+            <!-- TransactionMode may have one of the following values: CardNotPresent [DEFAULT], CardPresent -->
+            <TransactionMode>ENUMTYPE</TransactionMode>
+            <!-- optional -->
+            <!-- CreditCardTxnType may have one of the following values: Authorization, Capture, Charge, Refund, VoiceAuthorization -->
+            <CreditCardTxnType>ENUMTYPE</CreditCardTxnType>
+            <!-- optional -->
+          </CreditCardTxnInputInfo>
+          <CreditCardTxnResultInfo>
+            <!-- required -->
+            <ResultCode>INTTYPE</ResultCode>
+            <!-- required -->
+            <ResultMessage>STRTYPE</ResultMessage>
+            <!-- required -->
+            <CreditCardTransID>STRTYPE</CreditCardTransID>
+            <!-- required -->
+            <MerchantAccountNumber>STRTYPE</MerchantAccountNumber>
+            <!-- required -->
+            <AuthorizationCode>STRTYPE</AuthorizationCode>
+            <!-- optional -->
+            <!-- AVSStreet may have one of the following values: Pass, Fail, NotAvailable -->
+            <AVSStreet>ENUMTYPE</AVSStreet>
+            <!-- optional -->
+            <!-- AVSZip may have one of the following values: Pass, Fail, NotAvailable -->
+            <AVSZip>ENUMTYPE</AVSZip>
+            <!-- optional -->
+            <!-- CardSecurityCodeMatch may have one of the following values: Pass, Fail, NotAvailable -->
+            <CardSecurityCodeMatch>ENUMTYPE</CardSecurityCodeMatch>
+            <!-- optional -->
+            <ReconBatchID>STRTYPE</ReconBatchID>
+            <!-- optional -->
+            <PaymentGroupingCode>INTTYPE</PaymentGroupingCode>
+            <!-- optional -->
+            <!-- PaymentStatus may have one of the following values: Unknown, Completed -->
+            <PaymentStatus>ENUMTYPE</PaymentStatus>
+            <!-- required -->
+            <TxnAuthorizationTime>DATETIMETYPE</TxnAuthorizationTime>
+            <!-- required -->
+            <TxnAuthorizationStamp>INTTYPE</TxnAuthorizationStamp>
+            <!-- optional -->
+            <ClientTransID>STRTYPE</ClientTransID>
+            <!-- optional -->
+          </CreditCardTxnResultInfo>
+        </CreditCardTxnInfo>
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+        <RefundAppliedToTxnRet>
+          <!-- optional, may repeat -->
+          <TxnID>IDTYPE</TxnID>
+          <!-- required -->
+          <!-- TxnType may have one of the following values: ARRefundCreditCard, Bill, BillPaymentCheck, BillPaymentCreditCard, BuildAssembly, Charge, Check, CreditCardCharge, CreditCardCredit, CreditMemo, Deposit, Estimate, InventoryAdjustment, Invoice, ItemReceipt, JournalEntry, LiabilityAdjustment, Paycheck, PayrollLiabilityCheck, PurchaseOrder, ReceivePayment, SalesOrder, SalesReceipt, SalesTaxPaymentCheck, Transfer, VendorCredit, YTDAdjustment -->
+          <TxnType>ENUMTYPE</TxnType>
+          <!-- required -->
+          <TxnDate>DATETYPE</TxnDate>
+          <!-- required -->
+          <RefNumber>STRTYPE</RefNumber>
+          <!-- optional -->
+          <CreditRemaining>AMTTYPE</CreditRemaining>
+          <!-- required -->
+          <RefundAmount>AMTTYPE</RefundAmount>
+          <!-- required -->
+          <CreditRemainingInHomeCurrency>AMTTYPE</CreditRemainingInHomeCurrency>
+          <!-- optional -->
+          <RefundAmountInHomeCurrency>AMTTYPE</RefundAmountInHomeCurrency>
+          <!-- optional -->
+        </RefundAppliedToTxnRet>
+        <DataExtRet>
+          <!-- optional, may repeat -->
+          <OwnerID>GUIDTYPE</OwnerID>
+          <!-- optional -->
+          <DataExtName>STRTYPE</DataExtName>
+          <!-- required -->
+          <!-- DataExtType may have one of the following values: AMTTYPE, DATETIMETYPE, INTTYPE, PERCENTTYPE, PRICETYPE, QUANTYPE, STR1024TYPE, STR255TYPE -->
+          <DataExtType>ENUMTYPE</DataExtType>
+          <!-- required -->
+          <DataExtValue>STRTYPE</DataExtValue>
+          <!-- required -->
+        </DataExtRet>
+      </ARRefundCreditCardRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </ARRefundCreditCardAddRs>
+  </QBXMLMsgsRq>
+</QBXML>

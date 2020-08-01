@@ -1,0 +1,37 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "ListMergeRq": {
+        "ListMergeType": "ENUMTYPE",
+        "MergeFrom": {
+          "ListID": "IDTYPE",
+          "EditSequence": "STRTYPE"
+        },
+        "MergeTo": {
+          "ListID": "IDTYPE",
+          "EditSequence": "STRTYPE"
+        },
+        "SameShipAddrOk": "BOOLTYPE"
+      },
+      "ListMergeRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "ListMergeType": "ENUMTYPE",
+        "MergedFrom": {
+          "ListID": "IDTYPE",
+          "TimeDeleted": "DATETIMETYPE",
+          "FullName": "STRTYPE"
+        },
+        "MergedTo": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "FullName": "STRTYPE"
+        }
+      }
+    }
+  }
+}

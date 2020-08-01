@@ -1,0 +1,116 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "SalesTaxPaymentCheckQueryRq": {
+        "@iterator": "ENUMTYPE",
+        "@iteratorID": "UUIDTYPE",
+        "@metaData": "ENUMTYPE",
+        "TxnID": "IDTYPE",
+        "RefNumber": "STRTYPE",
+        "RefNumberCaseSensitive": "STRTYPE",
+        "MaxReturned": "INTTYPE",
+        "ModifiedDateRangeFilter": {
+          "FromModifiedDate": "DATETIMETYPE",
+          "ToModifiedDate": "DATETIMETYPE"
+        },
+        "TxnDateRangeFilter": {
+          "FromTxnDate": "DATETYPE",
+          "ToTxnDate": "DATETYPE",
+          "DateMacro": "ENUMTYPE"
+        },
+        "EntityFilter": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE",
+          "ListIDWithChildren": "IDTYPE",
+          "FullNameWithChildren": "STRTYPE"
+        },
+        "AccountFilter": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE",
+          "ListIDWithChildren": "IDTYPE",
+          "FullNameWithChildren": "STRTYPE"
+        },
+        "ItemFilter": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE",
+          "ListIDWithChildren": "IDTYPE",
+          "FullNameWithChildren": "STRTYPE"
+        },
+        "RefNumberFilter": {
+          "MatchCriterion": "ENUMTYPE",
+          "RefNumber": "STRTYPE"
+        },
+        "RefNumberRangeFilter": {
+          "FromRefNumber": "STRTYPE",
+          "ToRefNumber": "STRTYPE"
+        },
+        "IncludeLineItems": "BOOLTYPE",
+        "IncludeRetElement": "STRTYPE",
+        "OwnerID": "GUIDTYPE"
+      },
+      "SalesTaxPaymentCheckQueryRs": {
+        "@iteratorID": "UUIDTYPE",
+        "@iteratorRemainingCount": "INTTYPE",
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "SalesTaxPaymentCheckRet": {
+          "TxnID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "TxnNumber": "INTTYPE",
+          "PayeeEntityRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TxnDate": "DATETYPE",
+          "BankAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Amount": "AMTTYPE",
+          "RefNumber": "STRTYPE",
+          "Memo": "STRTYPE",
+          "Address": {
+            "Addr1": "STRTYPE",
+            "Addr2": "STRTYPE",
+            "Addr3": "STRTYPE",
+            "Addr4": "STRTYPE",
+            "Addr5": "STRTYPE",
+            "City": "STRTYPE",
+            "State": "STRTYPE",
+            "PostalCode": "STRTYPE",
+            "Country": "STRTYPE",
+            "Note": "STRTYPE"
+          },
+          "AddressBlock": {
+            "Addr1": "STRTYPE",
+            "Addr2": "STRTYPE",
+            "Addr3": "STRTYPE",
+            "Addr4": "STRTYPE",
+            "Addr5": "STRTYPE"
+          },
+          "IsToBePrinted": "BOOLTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "SalesTaxPaymentCheckLineRet": {
+            "TxnLineID": "IDTYPE",
+            "ItemSalesTaxRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Amount": "AMTTYPE"
+          },
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        }
+      }
+    }
+  }
+}

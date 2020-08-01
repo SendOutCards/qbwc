@@ -1,0 +1,115 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "ItemInventoryAssemblyQueryRq": {
+        "@iterator": "ENUMTYPE",
+        "@iteratorID": "UUIDTYPE",
+        "@metaData": "ENUMTYPE",
+        "ListID": "IDTYPE",
+        "FullName": "STRTYPE",
+        "MaxReturned": "INTTYPE",
+        "ActiveStatus": "ENUMTYPE",
+        "FromModifiedDate": "DATETIMETYPE",
+        "ToModifiedDate": "DATETIMETYPE",
+        "NameFilter": {
+          "MatchCriterion": "ENUMTYPE",
+          "Name": "STRTYPE"
+        },
+        "NameRangeFilter": {
+          "FromName": "STRTYPE",
+          "ToName": "STRTYPE"
+        },
+        "ClassFilter": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE",
+          "ListIDWithChildren": "IDTYPE",
+          "FullNameWithChildren": "STRTYPE"
+        },
+        "IncludeRetElement": "STRTYPE",
+        "OwnerID": "GUIDTYPE"
+      },
+      "ItemInventoryAssemblyQueryRs": {
+        "@iteratorID": "UUIDTYPE",
+        "@iteratorRemainingCount": "INTTYPE",
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "ItemInventoryAssemblyRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "FullName": "STRTYPE",
+          "BarCodeValue": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "ClassRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ParentRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Sublevel": "INTTYPE",
+          "ManufacturerPartNumber": "STRTYPE",
+          "UnitOfMeasureSetRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "IsTaxIncluded": "BOOLTYPE",
+          "SalesTaxCodeRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "SalesDesc": "STRTYPE",
+          "SalesPrice": "PRICETYPE",
+          "IncomeAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "PurchaseDesc": "STRTYPE",
+          "PurchaseCost": "PRICETYPE",
+          "PurchaseTaxCodeRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "COGSAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "PrefVendorRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "AssetAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "BuildPoint": "QUANTYPE",
+          "Max": "QUANTYPE",
+          "QuantityOnHand": "QUANTYPE",
+          "AverageCost": "PRICETYPE",
+          "QuantityOnOrder": "QUANTYPE",
+          "QuantityOnSalesOrder": "QUANTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "ItemInventoryAssemblyLine": {
+            "ItemInventoryRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Quantity": "QUANTYPE"
+          },
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        }
+      }
+    }
+  }
+}

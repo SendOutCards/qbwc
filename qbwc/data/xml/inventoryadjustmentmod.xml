@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <InventoryAdjustmentModRq>
+      <InventoryAdjustmentMod>
+        <!-- required -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <AccountRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </AccountRef>
+        <InventorySiteRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </InventorySiteRef>
+        <TxnDate>DATETYPE</TxnDate>
+        <!-- optional -->
+        <RefNumber>STRTYPE</RefNumber>
+        <!-- optional -->
+        <CustomerRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CustomerRef>
+        <ClassRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ClassRef>
+        <Memo>STRTYPE</Memo>
+        <!-- optional -->
+        <InventoryAdjustmentLineMod>
+          <!-- optional, may repeat -->
+          <TxnLineID>IDTYPE</TxnLineID>
+          <!-- required -->
+          <ItemRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </ItemRef>
+          <!-- BEGIN OR -->
+          <SerialNumber>STRTYPE</SerialNumber>
+          <!-- optional -->
+          <!-- OR -->
+          <LotNumber>STRTYPE</LotNumber>
+          <!-- optional -->
+          <CountAdjustment>INTTYPE</CountAdjustment>
+          <!-- optional -->
+          <!-- END OR -->
+          <InventorySiteLocationRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </InventorySiteLocationRef>
+          <QuantityDifference>QUANTYPE</QuantityDifference>
+          <!-- optional -->
+          <ValueDifference>AMTTYPE</ValueDifference>
+          <!-- optional -->
+        </InventoryAdjustmentLineMod>
+      </InventoryAdjustmentMod>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </InventoryAdjustmentModRq>
+    <InventoryAdjustmentModRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <InventoryAdjustmentRet>
+        <!-- optional -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- required -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- required -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <AccountRef>
+          <!-- required -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </AccountRef>
+        <InventorySiteRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </InventorySiteRef>
+        <TxnDate>DATETYPE</TxnDate>
+        <!-- required -->
+        <RefNumber>STRTYPE</RefNumber>
+        <!-- optional -->
+        <CustomerRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CustomerRef>
+        <ClassRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ClassRef>
+        <Memo>STRTYPE</Memo>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+        <InventoryAdjustmentLineRet>
+          <!-- optional, may repeat -->
+          <TxnLineID>IDTYPE</TxnLineID>
+          <!-- required -->
+          <ItemRef>
+            <!-- required -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </ItemRef>
+          <!-- BEGIN OR -->
+          <SerialNumber>STRTYPE</SerialNumber>
+          <!-- optional -->
+          <!-- SerialNumberAddedOrRemoved may have one of the following values: Added, Removed -->
+          <SerialNumberAddedOrRemoved>ENUMTYPE</SerialNumberAddedOrRemoved>
+          <!-- optional -->
+          <!-- OR -->
+          <LotNumber>STRTYPE</LotNumber>
+          <!-- optional -->
+          <!-- END OR -->
+          <InventorySiteLocationRef>
+            <!-- optional -->
+            <ListID>IDTYPE</ListID>
+            <!-- optional -->
+            <FullName>STRTYPE</FullName>
+            <!-- optional -->
+          </InventorySiteLocationRef>
+          <QuantityDifference>QUANTYPE</QuantityDifference>
+          <!-- required -->
+          <ValueDifference>AMTTYPE</ValueDifference>
+          <!-- required -->
+        </InventoryAdjustmentLineRet>
+        <DataExtRet>
+          <!-- optional, may repeat -->
+          <OwnerID>GUIDTYPE</OwnerID>
+          <!-- optional -->
+          <DataExtName>STRTYPE</DataExtName>
+          <!-- required -->
+          <!-- DataExtType may have one of the following values: AMTTYPE, DATETIMETYPE, INTTYPE, PERCENTTYPE, PRICETYPE, QUANTYPE, STR1024TYPE, STR255TYPE -->
+          <DataExtType>ENUMTYPE</DataExtType>
+          <!-- required -->
+          <DataExtValue>STRTYPE</DataExtValue>
+          <!-- required -->
+        </DataExtRet>
+      </InventoryAdjustmentRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </InventoryAdjustmentModRs>
+  </QBXMLMsgsRq>
+</QBXML>

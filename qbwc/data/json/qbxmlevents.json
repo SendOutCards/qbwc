@@ -1,0 +1,64 @@
+{
+  "QBXML": {
+    "QBXMLSubscriptionMsgsRq": {
+      "@onError": "stopOnError",
+      "QBXMLEventsRq": null,
+      "QBXMLEventsRs": {
+        "DataEvent": {
+          "CompanyFilePath": "STRTYPE",
+          "HostInfo": {
+            "ProductName": "STRTYPE",
+            "MajorVersion": "STRTYPE",
+            "MinorVersion": "STRTYPE",
+            "Country": "STRTYPE"
+          },
+          "ListEvent": {
+            "ListEventType": "ENUMTYPE",
+            "ListEventOperation": "ENUMTYPE",
+            "ListID": "IDTYPE",
+            "AfterMergeListID": "IDTYPE"
+          },
+          "TxnEvent": {
+            "TxnEventType": "ENUMTYPE",
+            "TxnEventOperation": "ENUMTYPE",
+            "TxnID": "IDTYPE",
+            "RefNumber": "STRTYPE"
+          },
+          "LastRestoreTime": "DATETIMETYPE",
+          "LastCondenseTime": "DATETIMETYPE",
+          "DataEventRecoveryTime": "DATETIMETYPE"
+        },
+        "UIEvent": {
+          "CompanyFilePath": "STRTYPE",
+          "HostInfo": {
+            "ProductName": "STRTYPE",
+            "MajorVersion": "STRTYPE",
+            "MinorVersion": "STRTYPE",
+            "Country": "STRTYPE"
+          },
+          "CompanyFileEvent": {
+            "CompanyFileEventOperation": "ENUMTYPE",
+            "IsNewCompany": "BOOLTYPE",
+            "IsAutomaticLogin": "BOOLTYPE"
+          }
+        },
+        "UIExtensionEvent": {
+          "CompanyFilePath": "STRTYPE",
+          "HostInfo": {
+            "ProductName": "STRTYPE",
+            "MajorVersion": "STRTYPE",
+            "MinorVersion": "STRTYPE",
+            "Country": "STRTYPE"
+          },
+          "EventTag": "STRTYPE",
+          "CurrentWindow": {
+            "TxnType": "ENUMTYPE",
+            "TxnID": "IDTYPE",
+            "ListType": "ENUMTYPE",
+            "ListID": "IDTYPE"
+          }
+        }
+      }
+    }
+  }
+}

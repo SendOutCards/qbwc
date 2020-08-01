@@ -1,0 +1,19 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "TxnDisplayAddRq": {
+        "TxnDisplayAddType": "ENUMTYPE",
+        "EntityRef": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE"
+        }
+      },
+      "TxnDisplayAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE"
+      }
+    }
+  }
+}

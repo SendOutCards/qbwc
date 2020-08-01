@@ -1,0 +1,60 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "ItemSalesTaxGroupModRq": {
+        "ItemSalesTaxGroupMod": {
+          "ListID": "IDTYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "BarCode": {
+            "BarCodeValue": "STRTYPE",
+            "AssignEvenIfUsed": "BOOLTYPE",
+            "AllowOverride": "BOOLTYPE"
+          },
+          "IsActive": "BOOLTYPE",
+          "ItemDesc": "STRTYPE",
+          "ItemSalesTaxRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          }
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "ItemSalesTaxGroupModRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "ItemSalesTaxGroupRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "BarCodeValue": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "ItemDesc": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "ItemSalesTaxRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

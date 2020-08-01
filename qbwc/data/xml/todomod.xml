@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <ToDoModRq>
+      <ToDoMod>
+        <!-- required -->
+        <ListID>IDTYPE</ListID>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <Notes>STRTYPE</Notes>
+        <!-- optional -->
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <!-- Type may have one of the following values: Task [DEFAULT], Call, Fax, Email, Meeting, Appointment -->
+        <Type>ENUMTYPE</Type>
+        <!-- optional -->
+        <!-- Priority may have one of the following values: Low [DEFAULT], Medium, High -->
+        <Priority>ENUMTYPE</Priority>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <CustomerRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CustomerRef>
+        <!-- OR -->
+        <EmployeeRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </EmployeeRef>
+        <!-- OR -->
+        <LeadRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </LeadRef>
+        <!-- OR -->
+        <VendorRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </VendorRef>
+        <!-- END OR -->
+        <IsDone>BOOLTYPE</IsDone>
+        <!-- optional -->
+        <ReminderDate>DATETYPE</ReminderDate>
+        <!-- optional -->
+        <ReminderTime>TIMEINTERVALTYPE</ReminderTime>
+        <!-- optional -->
+      </ToDoMod>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </ToDoModRq>
+    <ToDoModRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <ToDoRet>
+        <!-- optional -->
+        <ListID>IDTYPE</ListID>
+        <!-- required -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- required -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <Notes>STRTYPE</Notes>
+        <!-- required -->
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <!-- Type may have one of the following values: Task [DEFAULT], Call, Fax, Email, Meeting, Appointment -->
+        <Type>ENUMTYPE</Type>
+        <!-- optional -->
+        <!-- Priority may have one of the following values: Low [DEFAULT], Medium, High -->
+        <Priority>ENUMTYPE</Priority>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <CustomerRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </CustomerRef>
+        <!-- OR -->
+        <EmployeeRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </EmployeeRef>
+        <!-- OR -->
+        <LeadRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </LeadRef>
+        <!-- OR -->
+        <VendorRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </VendorRef>
+        <!-- END OR -->
+        <IsDone>BOOLTYPE</IsDone>
+        <!-- required -->
+        <ReminderDate>DATETYPE</ReminderDate>
+        <!-- required -->
+        <ReminderTime>TIMEINTERVALTYPE</ReminderTime>
+        <!-- optional -->
+      </ToDoRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </ToDoModRs>
+  </QBXMLMsgsRq>
+</QBXML>

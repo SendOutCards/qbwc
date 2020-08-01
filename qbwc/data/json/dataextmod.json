@@ -1,0 +1,42 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "DataExtModRq": {
+        "DataExtMod": {
+          "OwnerID": "GUIDTYPE",
+          "DataExtName": "STRTYPE",
+          "ListDataExtType": "ENUMTYPE",
+          "ListObjRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TxnDataExtType": "ENUMTYPE",
+          "TxnID": "IDTYPE",
+          "TxnLineID": "IDTYPE",
+          "OtherDataExtType": "ENUMTYPE",
+          "DataExtValue": "STRTYPE"
+        }
+      },
+      "DataExtModRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "DataExtRet": {
+          "OwnerID": "GUIDTYPE",
+          "DataExtName": "STRTYPE",
+          "DataExtType": "ENUMTYPE",
+          "DataExtValue": "STRTYPE"
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

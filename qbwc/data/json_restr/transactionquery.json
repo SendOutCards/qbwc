@@ -1,0 +1,363 @@
+{
+  "QBXMLMsgsRq": {
+    "TransactionQueryRq": {
+      "TxnID": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true
+      },
+      "MaxReturned": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      },
+      "RefNumber": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true
+      },
+      "RefNumberCaseSensitive": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true
+      },
+      "RefNumberFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "MatchCriterion": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "RefNumber": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        }
+      },
+      "RefNumberRangeFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "FromRefNumber": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ToRefNumber": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      },
+      "TransactionModifiedDateRangeFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "FromModifiedDate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ToModifiedDate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "DateMacro": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      },
+      "TransactionDateRangeFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "FromTxnDate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ToTxnDate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "DateMacro": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      },
+      "TransactionEntityFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "EntityTypeFilter": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ListID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true
+        },
+        "FullName": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true
+        },
+        "ListIDWithChildren": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "FullNameWithChildren": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      },
+      "TransactionAccountFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "AccountTypeFilter": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ListID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true
+        },
+        "FullName": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true
+        },
+        "ListIDWithChildren": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "FullNameWithChildren": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      },
+      "TransactionItemFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "ItemTypeFilter": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ListID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true
+        },
+        "FullName": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true
+        },
+        "ListIDWithChildren": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "FullNameWithChildren": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      },
+      "TransactionClassFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "ListID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true
+        },
+        "FullName": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true
+        },
+        "ListIDWithChildren": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "FullNameWithChildren": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      },
+      "TransactionTypeFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "TxnTypeFilter": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": true
+        }
+      },
+      "TransactionDetailLevelFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      },
+      "TransactionPostingStatusFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      },
+      "TransactionPaidStatusFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      },
+      "CurrencyFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "ListID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true
+        },
+        "FullName": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true
+        }
+      },
+      "IncludeRetElement": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true
+      }
+    },
+    "TransactionQueryRs": {
+      "TransactionRet": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true,
+        "TxnType": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TxnID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TxnLineID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TimeCreated": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "TimeModified": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "EntityRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "AccountRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "TxnDate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "RefNumber": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "Amount": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "CurrencyRef": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "ListID": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FullName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "ExchangeRate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "AmountInHomeCurrency": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "Memo": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "ItemSitesQueryRq": {
+        "@iterator": "ENUMTYPE",
+        "@iteratorID": "UUIDTYPE",
+        "@metaData": "ENUMTYPE",
+        "ListID": "IDTYPE",
+        "ItemTypeFilter": "ENUMTYPE",
+        "ItemSiteFilter": {
+          "ItemFilter": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE",
+            "ListIDWithChildren": "IDTYPE",
+            "FullNameWithChildren": "STRTYPE"
+          },
+          "SiteFilter": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          }
+        },
+        "MaxReturned": "INTTYPE",
+        "ActiveStatus": "ENUMTYPE",
+        "IncludeRetElement": "STRTYPE"
+      },
+      "ItemSitesQueryRs": {
+        "@iteratorID": "UUIDTYPE",
+        "@iteratorRemainingCount": "INTTYPE",
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "ItemSitesRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "ItemInventoryAssemblyRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ItemInventoryRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "InventorySiteRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "InventorySiteLocationRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ReorderLevel": "QUANTYPE",
+          "QuantityOnHand": "QUANTYPE",
+          "QuantityOnPurchaseOrders": "QUANTYPE",
+          "QuantityOnSalesOrders": "QUANTYPE",
+          "QuantityToBeBuiltByPendingBuildTxns": "QUANTYPE",
+          "QuantityRequiredByPendingBuildTxns": "QUANTYPE",
+          "QuantityOnPendingTransfers": "QUANTYPE",
+          "AssemblyBuildPoint": "QUANTYPE"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <WorkersCompCodeModRq>
+      <WorkersCompCodeMod>
+        <!-- required -->
+        <ListID>IDTYPE</ListID>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <Name>STRTYPE</Name>
+        <!-- optional -->
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <Desc>STRTYPE</Desc>
+        <!-- optional -->
+        <RateEntry>
+          <!-- optional, may repeat -->
+          <Rate>PRICETYPE</Rate>
+          <!-- required -->
+          <EffectiveDate>DATETYPE</EffectiveDate>
+          <!-- required -->
+        </RateEntry>
+      </WorkersCompCodeMod>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </WorkersCompCodeModRq>
+    <WorkersCompCodeModRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <WorkersCompCodeRet>
+        <!-- optional -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- optional -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <Name>STRTYPE</Name>
+        <!-- optional -->
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <Desc>STRTYPE</Desc>
+        <!-- optional -->
+        <CurrentRate>PRICETYPE</CurrentRate>
+        <!-- optional -->
+        <CurrentEffectiveDate>DATETYPE</CurrentEffectiveDate>
+        <!-- optional -->
+        <NextRate>PRICETYPE</NextRate>
+        <!-- optional -->
+        <NextEffectiveDate>DATETYPE</NextEffectiveDate>
+        <!-- optional -->
+        <RateHistory>
+          <!-- optional, may repeat -->
+          <Rate>PRICETYPE</Rate>
+          <!-- required -->
+          <EffectiveDate>DATETYPE</EffectiveDate>
+          <!-- required -->
+        </RateHistory>
+      </WorkersCompCodeRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </WorkersCompCodeModRs>
+  </QBXMLMsgsRq>
+</QBXML>

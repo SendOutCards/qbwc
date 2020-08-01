@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <ListDisplayModRq>
+      <!-- ListDisplayModType may have one of the following values: Account, Customer, Employee, Item, OtherName, Vendor -->
+      <ListDisplayModType>ENUMTYPE</ListDisplayModType>
+      <!-- required -->
+      <ListID>IDTYPE</ListID>
+      <!-- required -->
+    </ListDisplayModRq>
+    <ListDisplayModRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE"></ListDisplayModRs>
+  </QBXMLMsgsRq>
+</QBXML>

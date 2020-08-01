@@ -1,0 +1,82 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "VehicleMileageAddRq": {
+        "VehicleMileageAdd": {
+          "@defMacro": "MACROTYPE",
+          "VehicleRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "CustomerRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ItemRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ClassRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TripStartDate": "DATETYPE",
+          "TripEndDate": "DATETYPE",
+          "OdometerStart": "QUANTYPE",
+          "OdometerEnd": "QUANTYPE",
+          "TotalMiles": "QUANTYPE",
+          "Notes": "STRTYPE",
+          "BillableStatus": "ENUMTYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "VehicleMileageAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "VehicleMileageRet": {
+          "TxnID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "VehicleRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "CustomerRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ItemRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ClassRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TripStartDate": "DATETYPE",
+          "TripEndDate": "DATETYPE",
+          "OdometerStart": "QUANTYPE",
+          "OdometerEnd": "QUANTYPE",
+          "TotalMiles": "QUANTYPE",
+          "Notes": "STRTYPE",
+          "BillableStatus": "ENUMTYPE",
+          "StandardMileageRate": "PERCENTTYPE",
+          "StandardMileageTotalAmount": "AMTTYPE",
+          "BillableRate": "PRICETYPE",
+          "BillableAmount": "AMTTYPE"
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

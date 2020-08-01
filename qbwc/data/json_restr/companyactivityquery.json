@@ -1,0 +1,28 @@
+{
+  "QBXMLMsgsRq": {
+    "CompanyActivityQueryRq": {
+      "IncludeRetElement": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true
+      }
+    },
+    "CompanyActivityQueryRs": {
+      "CompanyActivityRet": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "LastRestoreTime": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "LastCondenseTime": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        }
+      }
+    }
+  }
+}

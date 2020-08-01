@@ -1,0 +1,29 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "DataExtDefDelRq": {
+        "OwnerID": "GUIDTYPE",
+        "DataExtName": "STRTYPE"
+      },
+      "DataExtDefDelRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "DataExtDefDelRet": {
+          "OwnerID": "GUIDTYPE",
+          "DataExtName": "STRTYPE",
+          "TimeDeleted": "DATETIMETYPE"
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

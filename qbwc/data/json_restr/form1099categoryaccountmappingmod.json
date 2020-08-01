@@ -1,0 +1,98 @@
+{
+  "QBXMLMsgsRq": {
+    "Form1099CategoryAccountMappingModRq": {
+      "Form1099CategoryAccountMappingMod": {
+        "@optional": false,
+        "@required": true,
+        "@may_repeat": false,
+        "IsFiling1099Misc": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "CategoryAccountMappingMod": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true,
+          "MappingCategory": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "MappingAccount": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": true,
+            "AccountRef": {
+              "@optional": false,
+              "@required": true,
+              "@may_repeat": false,
+              "ListID": {
+                "@optional": true,
+                "@required": false,
+                "@may_repeat": false
+              },
+              "FullName": {
+                "@optional": true,
+                "@required": false,
+                "@may_repeat": false
+              }
+            },
+            "ForceMapping": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "Threshold": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        }
+      }
+    },
+    "Form1099CategoryAccountMappingModRs": {
+      "Form1099CategoryAccountMappingRet": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "IsFiling1099Misc": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "CategoryAccountMapping": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true,
+          "MappingCategory": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "AccountRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": true,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "Threshold": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        }
+      }
+    }
+  }
+}

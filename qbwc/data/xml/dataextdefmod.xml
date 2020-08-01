@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <DataExtDefModRq>
+      <DataExtDefMod>
+        <!-- required -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- required -->
+        <DataExtName>STRTYPE</DataExtName>
+        <!-- required -->
+        <DataExtNewName>STRTYPE</DataExtNewName>
+        <!-- optional -->
+        <!-- AssignToObject may have one of the following values: Account, ARRefundCreditCard, Bill, BillPaymentCheck, BillPaymentCreditCard, BuildAssembly, Charge, Check, Company, CreditCardCharge, CreditCardCredit, CreditMemo, Customer, Deposit, Employee, Estimate, InventoryAdjustment, Invoice, Item, ItemReceipt, JournalEntry, OtherName, PurchaseOrder, ReceivePayment, SalesOrder, SalesReceipt, SalesTaxPaymentCheck, Vendor, VendorCredit -->
+        <AssignToObject>ENUMTYPE</AssignToObject>
+        <!-- optional, may repeat -->
+        <!-- RemoveFromObject may have one of the following values: Account, ARRefundCreditCard, Bill, BillPaymentCheck, BillPaymentCreditCard, BuildAssembly, Charge, Check, Company, CreditCardCharge, CreditCardCredit, CreditMemo, Customer, Deposit, Employee, Estimate, InventoryAdjustment, Invoice, Item, ItemReceipt, JournalEntry, OtherName, PurchaseOrder, ReceivePayment, SalesOrder, SalesReceipt, SalesTaxPaymentCheck, Vendor, VendorCredit -->
+        <RemoveFromObject>ENUMTYPE</RemoveFromObject>
+        <!-- optional, may repeat -->
+        <DataExtListRequire>BOOLTYPE</DataExtListRequire>
+        <!-- optional -->
+        <DataExtTxnRequire>BOOLTYPE</DataExtTxnRequire>
+        <!-- optional -->
+        <DataExtFormatString>STRTYPE</DataExtFormatString>
+        <!-- optional -->
+      </DataExtDefMod>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </DataExtDefModRq>
+    <DataExtDefModRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <DataExtDefRet>
+        <!-- optional -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <DataExtID>INTTYPE</DataExtID>
+        <!-- required -->
+        <DataExtName>STRTYPE</DataExtName>
+        <!-- required -->
+        <!-- DataExtType may have one of the following values: AMTTYPE, DATETIMETYPE, INTTYPE, PERCENTTYPE, PRICETYPE, QUANTYPE, STR1024TYPE, STR255TYPE -->
+        <DataExtType>ENUMTYPE</DataExtType>
+        <!-- required -->
+        <!-- AssignToObject may have one of the following values: Account, ARRefundCreditCard, Bill, BillPaymentCheck, BillPaymentCreditCard, BuildAssembly, Charge, Check, Company, CreditCardCharge, CreditCardCredit, CreditMemo, Customer, Deposit, Employee, Estimate, InventoryAdjustment, Invoice, Item, ItemReceipt, JournalEntry, OtherName, PurchaseOrder, ReceivePayment, SalesOrder, SalesReceipt, SalesTaxPaymentCheck, Vendor, VendorCredit -->
+        <AssignToObject>ENUMTYPE</AssignToObject>
+        <!-- optional, may repeat -->
+        <DataExtListRequire>BOOLTYPE</DataExtListRequire>
+        <!-- required -->
+        <DataExtTxnRequire>BOOLTYPE</DataExtTxnRequire>
+        <!-- required -->
+        <DataExtFormatString>STRTYPE</DataExtFormatString>
+        <!-- required -->
+      </DataExtDefRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </DataExtDefModRs>
+  </QBXMLMsgsRq>
+</QBXML>

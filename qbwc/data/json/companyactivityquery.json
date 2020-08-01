@@ -1,0 +1,19 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "CompanyActivityQueryRq": {
+        "IncludeRetElement": "STRTYPE"
+      },
+      "CompanyActivityQueryRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "CompanyActivityRet": {
+          "LastRestoreTime": "DATETIMETYPE",
+          "LastCondenseTime": "DATETIMETYPE"
+        }
+      }
+    }
+  }
+}

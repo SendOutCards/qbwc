@@ -1,0 +1,428 @@
+{
+  "QBXMLMsgsRq": {
+    "PreferencesQueryRq": {
+      "IncludeRetElement": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true
+      }
+    },
+    "PreferencesQueryRs": {
+      "PreferencesRet": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "AccountingPreferences": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false,
+          "IsUsingAccountNumbers": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "IsRequiringAccounts": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "IsUsingClassTracking": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "AssignClassesTo": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "IsUsingAuditTrail": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "IsAssigningJournalEntryNumbers": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "ClosingDate": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "FinanceChargePreferences": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false,
+          "AnnualInterestRate": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "MinFinanceCharge": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "GracePeriod": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "FinanceChargeAccountRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "IsAssessingForOverdueCharges": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "CalculateChargesFrom": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "IsMarkedToBePrinted": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          }
+        },
+        "JobsAndEstimatesPreferences": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false,
+          "IsUsingEstimates": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "IsUsingProgressInvoicing": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "IsPrintingItemsWithZeroAmounts": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          }
+        },
+        "MultiCurrencyPreferences": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "IsMultiCurrencyOn": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "HomeCurrencyRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          }
+        },
+        "MultiLocationInventoryPreferences": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "IsMultiLocationInventoryAvailable": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "IsMultiLocationInventoryEnabled": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "PurchasesAndVendorsPreferences": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false,
+          "IsUsingInventory": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "DaysBillsAreDue": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "IsAutomaticallyUsingDiscounts": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "DefaultDiscountAccountRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          }
+        },
+        "ReportsPreferences": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false,
+          "AgingReportBasis": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "SummaryReportBasis": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          }
+        },
+        "SalesAndCustomersPreferences": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false,
+          "DefaultShipMethodRef": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "DefaultFOB": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "DefaultMarkup": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "IsTrackingReimbursedExpensesAsIncome": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "IsAutoApplyingPayments": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "PriceLevels": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false,
+            "IsUsingPriceLevels": {
+              "@optional": false,
+              "@required": true,
+              "@may_repeat": false
+            },
+            "IsRoundingSalesPriceUp": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          }
+        },
+        "SalesTaxPreferences": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "DefaultItemSalesTaxRef": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "PaySalesTax": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "DefaultTaxableSalesTaxCodeRef": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "DefaultNonTaxableSalesTaxCodeRef": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false,
+            "ListID": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            },
+            "FullName": {
+              "@optional": true,
+              "@required": false,
+              "@may_repeat": false
+            }
+          },
+          "IsUsingVendorTaxCode": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "IsUsingCustomerTaxCode": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "IsUsingAmountsIncludeTax": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        },
+        "TimeTrackingPreferences": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "FirstDayOfWeek": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          }
+        },
+        "CurrentAppAccessRights": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false,
+          "IsAutomaticLoginAllowed": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          },
+          "AutomaticLoginUserName": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "IsPersonalDataAccessAllowed": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          }
+        },
+        "ItemsAndInventoryPreferences": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "EnhancedInventoryReceivingEnabled": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "IsTrackingSerialOrLotNumber": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "isTrackingOnSalesTransactionsEnabled": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "isTrackingOnPurchaseTransactionsEnabled": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "isTrackingOnInventoryAdjustmentEnabled": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "isTrackingOnBuildAssemblyEnabled": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FIFOEnabled": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "FIFOEffectiveDate": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "IsRSBEnabled": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "IsBarcodeEnabled": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        }
+      }
+    }
+  }
+}

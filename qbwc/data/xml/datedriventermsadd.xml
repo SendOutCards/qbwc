@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <DateDrivenTermsAddRq>
+      <DateDrivenTermsAdd>
+        <!-- required -->
+        <Name>STRTYPE</Name>
+        <!-- required -->
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <DayOfMonthDue>INTTYPE</DayOfMonthDue>
+        <!-- required -->
+        <DueNextMonthDays>INTTYPE</DueNextMonthDays>
+        <!-- optional -->
+        <DiscountDayOfMonth>INTTYPE</DiscountDayOfMonth>
+        <!-- optional -->
+        <DiscountPct>PERCENTTYPE</DiscountPct>
+        <!-- optional -->
+      </DateDrivenTermsAdd>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </DateDrivenTermsAddRq>
+    <DateDrivenTermsAddRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <DateDrivenTermsRet>
+        <!-- optional -->
+        <ListID>IDTYPE</ListID>
+        <!-- required -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- required -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <Name>STRTYPE</Name>
+        <!-- required -->
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <DayOfMonthDue>INTTYPE</DayOfMonthDue>
+        <!-- required -->
+        <DueNextMonthDays>INTTYPE</DueNextMonthDays>
+        <!-- optional -->
+        <DiscountDayOfMonth>INTTYPE</DiscountDayOfMonth>
+        <!-- optional -->
+        <DiscountPct>PERCENTTYPE</DiscountPct>
+        <!-- optional -->
+      </DateDrivenTermsRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </DateDrivenTermsAddRs>
+  </QBXMLMsgsRq>
+</QBXML>

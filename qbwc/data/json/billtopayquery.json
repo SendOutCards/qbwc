@@ -1,0 +1,67 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "BillToPayQueryRq": {
+        "@metaData": "ENUMTYPE",
+        "PayeeEntityRef": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE"
+        },
+        "APAccountRef": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE"
+        },
+        "DueDate": "DATETYPE",
+        "CurrencyFilter": {
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "BillToPayQueryRs": {
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "BillToPayRet": {
+          "BillToPay": {
+            "TxnID": "IDTYPE",
+            "TxnType": "ENUMTYPE",
+            "APAccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "TxnDate": "DATETYPE",
+            "RefNumber": "STRTYPE",
+            "DueDate": "DATETYPE",
+            "AmountDue": "AMTTYPE",
+            "CurrencyRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ExchangeRate": "FLOATTYPE",
+            "AmountDueInHomeCurrency": "AMTTYPE"
+          },
+          "CreditToApply": {
+            "TxnID": "IDTYPE",
+            "TxnType": "ENUMTYPE",
+            "APAccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "TxnDate": "DATETYPE",
+            "RefNumber": "STRTYPE",
+            "CreditRemaining": "AMTTYPE",
+            "CurrencyRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ExchangeRate": "FLOATTYPE",
+            "CreditRemainingInHomeCurrency": "AMTTYPE"
+          }
+        }
+      }
+    }
+  }
+}

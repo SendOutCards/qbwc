@@ -1,0 +1,347 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "ItemReceiptAddRq": {
+        "ItemReceiptAdd": {
+          "@defMacro": "MACROTYPE",
+          "VendorRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "APAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TxnDate": "DATETYPE",
+          "RefNumber": "STRTYPE",
+          "Memo": "STRTYPE",
+          "IsTaxIncluded": "BOOLTYPE",
+          "SalesTaxCodeRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ExchangeRate": "FLOATTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "LinkToTxnID": "IDTYPE",
+          "ExpenseLineAdd": {
+            "@defMacro": "MACROTYPE",
+            "AccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Amount": "AMTTYPE",
+            "Memo": "STRTYPE",
+            "CustomerRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ClassRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "SalesTaxCodeRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "BillableStatus": "ENUMTYPE",
+            "SalesRepRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "DataExt": {
+              "OwnerID": "GUIDTYPE",
+              "DataExtName": "STRTYPE",
+              "DataExtValue": "STRTYPE"
+            }
+          },
+          "ItemLineAdd": {
+            "ItemRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "InventorySiteRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "InventorySiteLocationRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "SerialNumber": "STRTYPE",
+            "LotNumber": "STRTYPE",
+            "Desc": "STRTYPE",
+            "Quantity": "QUANTYPE",
+            "UnitOfMeasure": "STRTYPE",
+            "Cost": "PRICETYPE",
+            "Amount": "AMTTYPE",
+            "CustomerRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ClassRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "SalesTaxCodeRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "BillableStatus": "ENUMTYPE",
+            "OverrideItemAccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "LinkToTxn": {
+              "TxnID": "IDTYPE",
+              "TxnLineID": "IDTYPE"
+            },
+            "SalesRepRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "DataExt": {
+              "OwnerID": "GUIDTYPE",
+              "DataExtName": "STRTYPE",
+              "DataExtValue": "STRTYPE"
+            }
+          },
+          "ItemGroupLineAdd": {
+            "ItemGroupRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Quantity": "QUANTYPE",
+            "UnitOfMeasure": "STRTYPE",
+            "InventorySiteRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "InventorySiteLocationRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "DataExt": {
+              "OwnerID": "GUIDTYPE",
+              "DataExtName": "STRTYPE",
+              "DataExtValue": "STRTYPE"
+            }
+          }
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "ItemReceiptAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "ItemReceiptRet": {
+          "TxnID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "TxnNumber": "INTTYPE",
+          "VendorRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "APAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "LiabilityAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TxnDate": "DATETYPE",
+          "TotalAmount": "AMTTYPE",
+          "CurrencyRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ExchangeRate": "FLOATTYPE",
+          "TotalAmountInHomeCurrency": "AMTTYPE",
+          "RefNumber": "STRTYPE",
+          "Memo": "STRTYPE",
+          "IsTaxIncluded": "BOOLTYPE",
+          "SalesTaxCodeRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ExternalGUID": "GUIDTYPE",
+          "LinkedTxn": {
+            "TxnID": "IDTYPE",
+            "TxnType": "ENUMTYPE",
+            "TxnDate": "DATETYPE",
+            "RefNumber": "STRTYPE",
+            "LinkType": "ENUMTYPE",
+            "Amount": "AMTTYPE"
+          },
+          "ExpenseLineRet": {
+            "TxnLineID": "IDTYPE",
+            "AccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Amount": "AMTTYPE",
+            "Memo": "STRTYPE",
+            "CustomerRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ClassRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "SalesTaxCodeRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "BillableStatus": "ENUMTYPE",
+            "SalesRepRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "DataExtRet": {
+              "OwnerID": "GUIDTYPE",
+              "DataExtName": "STRTYPE",
+              "DataExtType": "ENUMTYPE",
+              "DataExtValue": "STRTYPE"
+            }
+          },
+          "ItemLineRet": {
+            "TxnLineID": "IDTYPE",
+            "ItemRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "InventorySiteRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "InventorySiteLocationRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "SerialNumber": "STRTYPE",
+            "LotNumber": "STRTYPE",
+            "Desc": "STRTYPE",
+            "Quantity": "QUANTYPE",
+            "UnitOfMeasure": "STRTYPE",
+            "OverrideUOMSetRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Cost": "PRICETYPE",
+            "Amount": "AMTTYPE",
+            "CustomerRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ClassRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "SalesTaxCodeRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "BillableStatus": "ENUMTYPE",
+            "SalesRepRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "DataExtRet": {
+              "OwnerID": "GUIDTYPE",
+              "DataExtName": "STRTYPE",
+              "DataExtType": "ENUMTYPE",
+              "DataExtValue": "STRTYPE"
+            }
+          },
+          "ItemGroupLineRet": {
+            "TxnLineID": "IDTYPE",
+            "ItemGroupRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Desc": "STRTYPE",
+            "Quantity": "QUANTYPE",
+            "UnitOfMeasure": "STRTYPE",
+            "OverrideUOMSetRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "TotalAmount": "AMTTYPE",
+            "ItemLineRet": {
+              "TxnLineID": "IDTYPE",
+              "ItemRef": {
+                "ListID": "IDTYPE",
+                "FullName": "STRTYPE"
+              },
+              "InventorySiteRef": {
+                "ListID": "IDTYPE",
+                "FullName": "STRTYPE"
+              },
+              "InventorySiteLocationRef": {
+                "ListID": "IDTYPE",
+                "FullName": "STRTYPE"
+              },
+              "SerialNumber": "STRTYPE",
+              "LotNumber": "STRTYPE",
+              "Desc": "STRTYPE",
+              "Quantity": "QUANTYPE",
+              "UnitOfMeasure": "STRTYPE",
+              "OverrideUOMSetRef": {
+                "ListID": "IDTYPE",
+                "FullName": "STRTYPE"
+              },
+              "Cost": "PRICETYPE",
+              "Amount": "AMTTYPE",
+              "CustomerRef": {
+                "ListID": "IDTYPE",
+                "FullName": "STRTYPE"
+              },
+              "ClassRef": {
+                "ListID": "IDTYPE",
+                "FullName": "STRTYPE"
+              },
+              "SalesTaxCodeRef": {
+                "ListID": "IDTYPE",
+                "FullName": "STRTYPE"
+              },
+              "BillableStatus": "ENUMTYPE",
+              "SalesRepRef": {
+                "ListID": "IDTYPE",
+                "FullName": "STRTYPE"
+              },
+              "DataExtRet": {
+                "OwnerID": "GUIDTYPE",
+                "DataExtName": "STRTYPE",
+                "DataExtType": "ENUMTYPE",
+                "DataExtValue": "STRTYPE"
+              }
+            },
+            "DataExt": {
+              "OwnerID": "GUIDTYPE",
+              "DataExtName": "STRTYPE",
+              "DataExtValue": "STRTYPE"
+            }
+          },
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

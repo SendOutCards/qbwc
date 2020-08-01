@@ -1,0 +1,63 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "UnitOfMeasureSetAddRq": {
+        "UnitOfMeasureSetAdd": {
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "UnitOfMeasureType": "ENUMTYPE",
+          "BaseUnit": {
+            "Name": "STRTYPE",
+            "Abbreviation": "STRTYPE"
+          },
+          "RelatedUnit": {
+            "Name": "STRTYPE",
+            "Abbreviation": "STRTYPE",
+            "ConversionRatio": "PRICETYPE"
+          },
+          "DefaultUnit": {
+            "UnitUsedFor": "ENUMTYPE",
+            "Unit": "STRTYPE"
+          }
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "UnitOfMeasureSetAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "UnitOfMeasureSetRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "UnitOfMeasureType": "ENUMTYPE",
+          "BaseUnit": {
+            "Name": "STRTYPE",
+            "Abbreviation": "STRTYPE"
+          },
+          "RelatedUnit": {
+            "Name": "STRTYPE",
+            "Abbreviation": "STRTYPE",
+            "ConversionRatio": "PRICETYPE"
+          },
+          "DefaultUnit": {
+            "UnitUsedFor": "ENUMTYPE",
+            "Unit": "STRTYPE"
+          }
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

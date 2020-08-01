@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <UnitOfMeasureSetAddRq>
+      <UnitOfMeasureSetAdd>
+        <!-- required -->
+        <Name>STRTYPE</Name>
+        <!-- required -->
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <!-- UnitOfMeasureType may have one of the following values: Area, Count, Length, Other, Time, Volume, Weight -->
+        <UnitOfMeasureType>ENUMTYPE</UnitOfMeasureType>
+        <!-- required -->
+        <BaseUnit>
+          <!-- required -->
+          <Name>STRTYPE</Name>
+          <!-- required -->
+          <Abbreviation>STRTYPE</Abbreviation>
+          <!-- required -->
+        </BaseUnit>
+        <RelatedUnit>
+          <!-- optional, may repeat -->
+          <Name>STRTYPE</Name>
+          <!-- required -->
+          <Abbreviation>STRTYPE</Abbreviation>
+          <!-- required -->
+          <ConversionRatio>PRICETYPE</ConversionRatio>
+          <!-- required -->
+        </RelatedUnit>
+        <DefaultUnit>
+          <!-- optional, may repeat -->
+          <!-- UnitUsedFor may have one of the following values: Purchase, Sales, Shipping -->
+          <UnitUsedFor>ENUMTYPE</UnitUsedFor>
+          <!-- required -->
+          <Unit>STRTYPE</Unit>
+          <!-- required -->
+        </DefaultUnit>
+      </UnitOfMeasureSetAdd>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </UnitOfMeasureSetAddRq>
+    <UnitOfMeasureSetAddRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <UnitOfMeasureSetRet>
+        <!-- optional -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- optional -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <Name>STRTYPE</Name>
+        <!-- optional -->
+        <IsActive>BOOLTYPE</IsActive>
+        <!-- optional -->
+        <!-- UnitOfMeasureType may have one of the following values: Area, Count, Length, Other, Time, Volume, Weight -->
+        <UnitOfMeasureType>ENUMTYPE</UnitOfMeasureType>
+        <!-- optional -->
+        <BaseUnit>
+          <!-- optional -->
+          <Name>STRTYPE</Name>
+          <!-- required -->
+          <Abbreviation>STRTYPE</Abbreviation>
+          <!-- required -->
+        </BaseUnit>
+        <RelatedUnit>
+          <!-- optional, may repeat -->
+          <Name>STRTYPE</Name>
+          <!-- required -->
+          <Abbreviation>STRTYPE</Abbreviation>
+          <!-- required -->
+          <ConversionRatio>PRICETYPE</ConversionRatio>
+          <!-- required -->
+        </RelatedUnit>
+        <DefaultUnit>
+          <!-- optional, may repeat -->
+          <!-- UnitUsedFor may have one of the following values: Purchase, Sales, Shipping -->
+          <UnitUsedFor>ENUMTYPE</UnitUsedFor>
+          <!-- required -->
+          <Unit>STRTYPE</Unit>
+          <!-- required -->
+        </DefaultUnit>
+      </UnitOfMeasureSetRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </UnitOfMeasureSetAddRs>
+  </QBXMLMsgsRq>
+</QBXML>

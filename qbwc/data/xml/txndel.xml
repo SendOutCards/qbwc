@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <TxnDelRq>
+      <!-- TxnDelType may have one of the following values: ARRefundCreditCard, Bill, BillPaymentCheck, BillPaymentCreditCard, BuildAssembly, Charge, Check, CreditCardCharge, CreditCardCredit, CreditMemo, Deposit, Estimate, InventoryAdjustment, Invoice, ItemReceipt, JournalEntry, PayrollLiabilityAdjustment [PRIVATE], PayrollPriorPayment [PRIVATE], PayrollYearToDateAdjustment [PRIVATE], PurchaseOrder, ReceivePayment, SalesOrder, SalesReceipt, SalesTaxPaymentCheck, TimeTracking, TransferInventory, VehicleMileage, VendorCredit -->
+      <TxnDelType>ENUMTYPE</TxnDelType>
+      <!-- required -->
+      <TxnID>IDTYPE</TxnID>
+      <!-- required -->
+    </TxnDelRq>
+    <TxnDelRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <!-- TxnDelType may have one of the following values: ARRefundCreditCard, Bill, BillPaymentCheck, BillPaymentCreditCard, BuildAssembly, Charge, Check, CreditCardCharge, CreditCardCredit, CreditMemo, Deposit, Estimate, InventoryAdjustment, Invoice, ItemReceipt, JournalEntry, PayrollLiabilityAdjustment [PRIVATE], PayrollPriorPayment [PRIVATE], PayrollYearToDateAdjustment [PRIVATE], PurchaseOrder, ReceivePayment, SalesOrder, SalesReceipt, SalesTaxPaymentCheck, TimeTracking, TransferInventory, VehicleMileage, VendorCredit -->
+      <TxnDelType>ENUMTYPE</TxnDelType>
+      <!-- optional -->
+      <TxnID>IDTYPE</TxnID>
+      <!-- optional -->
+      <TimeDeleted>DATETIMETYPE</TimeDeleted>
+      <!-- optional -->
+      <RefNumber>STRTYPE</RefNumber>
+      <!-- optional -->
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </TxnDelRs>
+  </QBXMLMsgsRq>
+</QBXML>

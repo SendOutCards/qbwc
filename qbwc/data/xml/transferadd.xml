@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <TransferAddRq>
+      <TransferAdd defMacro="MACROTYPE">
+        <!-- required -->
+        <TxnDate>DATETYPE</TxnDate>
+        <!-- optional -->
+        <TransferFromAccountRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </TransferFromAccountRef>
+        <TransferToAccountRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </TransferToAccountRef>
+        <ClassRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ClassRef>
+        <Amount>AMTTYPE</Amount>
+        <!-- optional -->
+        <Memo>STRTYPE</Memo>
+        <!-- optional -->
+      </TransferAdd>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </TransferAddRq>
+    <TransferAddRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <TransferRet>
+        <!-- optional -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- required -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- required -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <TxnDate>DATETYPE</TxnDate>
+        <!-- optional -->
+        <TransferFromAccountRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </TransferFromAccountRef>
+        <FromAccountBalance>AMTTYPE</FromAccountBalance>
+        <!-- optional -->
+        <TransferToAccountRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </TransferToAccountRef>
+        <ToAccountBalance>AMTTYPE</ToAccountBalance>
+        <!-- optional -->
+        <ClassRef>
+          <!-- optional -->
+          <ListID>IDTYPE</ListID>
+          <!-- optional -->
+          <FullName>STRTYPE</FullName>
+          <!-- optional -->
+        </ClassRef>
+        <Amount>AMTTYPE</Amount>
+        <!-- optional -->
+        <Memo>STRTYPE</Memo>
+        <!-- optional -->
+      </TransferRet>
+    </TransferAddRs>
+  </QBXMLMsgsRq>
+</QBXML>

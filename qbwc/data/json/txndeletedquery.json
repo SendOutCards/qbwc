@@ -1,0 +1,29 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "TxnDeletedQueryRq": {
+        "@metaData": "ENUMTYPE",
+        "TxnDelType": "ENUMTYPE",
+        "DeletedDateRangeFilter": {
+          "FromDeletedDate": "DATETIMETYPE",
+          "ToDeletedDate": "DATETIMETYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "TxnDeletedQueryRs": {
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "TxnDeletedRet": {
+          "TxnDelType": "ENUMTYPE",
+          "TxnID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeDeleted": "DATETIMETYPE",
+          "RefNumber": "STRTYPE"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <TxnVoidRq>
+      <!-- TxnVoidType may have one of the following values: ARRefundCreditCard, Bill, BillPaymentCheck, BillPaymentCreditCard, Charge, Check, CreditCardCharge, CreditCardCredit, CreditMemo, Deposit, InventoryAdjustment, Invoice, ItemReceipt, JournalEntry, SalesReceipt, VendorCredit -->
+      <TxnVoidType>ENUMTYPE</TxnVoidType>
+      <!-- required -->
+      <TxnID>IDTYPE</TxnID>
+      <!-- required -->
+    </TxnVoidRq>
+    <TxnVoidRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <!-- TxnVoidType may have one of the following values: ARRefundCreditCard, Bill, BillPaymentCheck, BillPaymentCreditCard, Charge, Check, CreditCardCharge, CreditCardCredit, CreditMemo, Deposit, InventoryAdjustment, Invoice, ItemReceipt, JournalEntry, SalesReceipt, VendorCredit -->
+      <TxnVoidType>ENUMTYPE</TxnVoidType>
+      <!-- optional -->
+      <TxnID>IDTYPE</TxnID>
+      <!-- optional -->
+      <TimeCreated>DATETIMETYPE</TimeCreated>
+      <!-- optional -->
+      <TimeModified>DATETIMETYPE</TimeModified>
+      <!-- optional -->
+      <RefNumber>STRTYPE</RefNumber>
+      <!-- optional -->
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </TxnVoidRs>
+  </QBXMLMsgsRq>
+</QBXML>

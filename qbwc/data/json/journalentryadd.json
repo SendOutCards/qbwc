@@ -1,0 +1,153 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "JournalEntryAddRq": {
+        "JournalEntryAdd": {
+          "@defMacro": "MACROTYPE",
+          "TxnDate": "DATETYPE",
+          "RefNumber": "STRTYPE",
+          "IsAdjustment": "BOOLTYPE",
+          "IsHomeCurrencyAdjustment": "BOOLTYPE",
+          "IsAmountsEnteredInHomeCurrency": "BOOLTYPE",
+          "CurrencyRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ExchangeRate": "FLOATTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "JournalDebitLine": {
+            "@defMacro": "MACROTYPE",
+            "TxnLineID": "IDTYPE",
+            "AccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Amount": "AMTTYPE",
+            "Memo": "STRTYPE",
+            "EntityRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ClassRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ItemSalesTaxRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "BillableStatus": "ENUMTYPE"
+          },
+          "JournalCreditLine": {
+            "@defMacro": "MACROTYPE",
+            "TxnLineID": "IDTYPE",
+            "AccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Amount": "AMTTYPE",
+            "Memo": "STRTYPE",
+            "EntityRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ClassRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ItemSalesTaxRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "BillableStatus": "ENUMTYPE"
+          }
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "JournalEntryAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "JournalEntryRet": {
+          "TxnID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "TxnNumber": "INTTYPE",
+          "TxnDate": "DATETYPE",
+          "RefNumber": "STRTYPE",
+          "IsAdjustment": "BOOLTYPE",
+          "IsHomeCurrencyAdjustment": "BOOLTYPE",
+          "IsAmountsEnteredInHomeCurrency": "BOOLTYPE",
+          "CurrencyRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ExchangeRate": "FLOATTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "JournalDebitLine": {
+            "@defMacro": "MACROTYPE",
+            "TxnLineID": "IDTYPE",
+            "AccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Amount": "AMTTYPE",
+            "Memo": "STRTYPE",
+            "EntityRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ClassRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ItemSalesTaxRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "BillableStatus": "ENUMTYPE"
+          },
+          "JournalCreditLine": {
+            "@defMacro": "MACROTYPE",
+            "TxnLineID": "IDTYPE",
+            "AccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Amount": "AMTTYPE",
+            "Memo": "STRTYPE",
+            "EntityRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ClassRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ItemSalesTaxRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "BillableStatus": "ENUMTYPE"
+          },
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

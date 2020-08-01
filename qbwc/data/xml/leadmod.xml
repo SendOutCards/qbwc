@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <LeadModRq>
+      <LeadMod>
+        <!-- required -->
+        <ListID>IDTYPE</ListID>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <FullName>STRTYPE</FullName>
+        <!-- required -->
+        <!-- Status may have one of the following values: Hot [Default], Warm, Cold -->
+        <Status>ENUMTYPE</Status>
+        <!-- optional -->
+        <CompanyName>STRTYPE</CompanyName>
+        <!-- optional -->
+        <MainPhone>STRTYPE</MainPhone>
+        <!-- optional -->
+        <AdditionalContactRef>
+          <!-- must occur 0 - 3 times -->
+          <ContactName>STRTYPE</ContactName>
+          <!-- required -->
+          <ContactValue>STRTYPE</ContactValue>
+          <!-- required -->
+        </AdditionalContactRef>
+        <LocationsMod>
+          <!-- optional, may repeat -->
+          <LocationID>INTTYPE</LocationID>
+          <!-- required -->
+          <Location>STRTYPE</Location>
+          <!-- required -->
+          <LeadAddress>
+            <!-- optional -->
+            <Addr1>STRTYPE</Addr1>
+            <!-- optional -->
+            <Addr2>STRTYPE</Addr2>
+            <!-- optional -->
+            <Addr3>STRTYPE</Addr3>
+            <!-- optional -->
+            <Addr4>STRTYPE</Addr4>
+            <!-- optional -->
+            <Addr5>STRTYPE</Addr5>
+            <!-- optional -->
+          </LeadAddress>
+        </LocationsMod>
+        <LeadContactsMod>
+          <!-- optional, may repeat -->
+          <LeadContactID>INTTYPE</LeadContactID>
+          <!-- required -->
+          <Salutation>STRTYPE</Salutation>
+          <!-- optional -->
+          <FirstName>STRTYPE</FirstName>
+          <!-- required -->
+          <MiddleName>STRTYPE</MiddleName>
+          <!-- optional -->
+          <LastName>STRTYPE</LastName>
+          <!-- optional -->
+          <JobTitle>STRTYPE</JobTitle>
+          <!-- optional -->
+          <AdditionalContactRef>
+            <!-- must occur 0 - 5 times -->
+            <ContactName>STRTYPE</ContactName>
+            <!-- required -->
+            <ContactValue>STRTYPE</ContactValue>
+            <!-- required -->
+          </AdditionalContactRef>
+          <IsPrimaryContact>BOOLTYPE</IsPrimaryContact>
+          <!-- optional -->
+        </LeadContactsMod>
+      </LeadMod>
+      <IncludeRetElement>STRTYPE</IncludeRetElement>
+      <!-- optional, may repeat -->
+    </LeadModRq>
+    <LeadModRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <LeadRet>
+        <!-- optional -->
+        <ListID>IDTYPE</ListID>
+        <!-- required -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- required -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <FullName>STRTYPE</FullName>
+        <!-- required -->
+        <!-- Status may have one of the following values: Hot [Default], Warm, Cold -->
+        <Status>ENUMTYPE</Status>
+        <!-- optional -->
+        <CompanyName>STRTYPE</CompanyName>
+        <!-- optional -->
+        <MainPhone>STRTYPE</MainPhone>
+        <!-- optional -->
+        <AdditionalContactRef>
+          <!-- must occur 0 - 3 times -->
+          <ContactName>STRTYPE</ContactName>
+          <!-- required -->
+          <ContactValue>STRTYPE</ContactValue>
+          <!-- required -->
+        </AdditionalContactRef>
+        <LocationsRet>
+          <!-- optional, may repeat -->
+          <LocationID>INTTYPE</LocationID>
+          <!-- required -->
+          <MainAddress>STRTYPE</MainAddress>
+          <!-- required -->
+          <Location>STRTYPE</Location>
+          <!-- required -->
+          <LeadAddress>
+            <!-- optional -->
+            <Addr1>STRTYPE</Addr1>
+            <!-- optional -->
+            <Addr2>STRTYPE</Addr2>
+            <!-- optional -->
+            <Addr3>STRTYPE</Addr3>
+            <!-- optional -->
+            <Addr4>STRTYPE</Addr4>
+            <!-- optional -->
+            <Addr5>STRTYPE</Addr5>
+            <!-- optional -->
+          </LeadAddress>
+        </LocationsRet>
+        <LeadContactsRet>
+          <!-- optional, may repeat -->
+          <LeadContactID>INTTYPE</LeadContactID>
+          <!-- required -->
+          <Salutation>STRTYPE</Salutation>
+          <!-- optional -->
+          <FirstName>STRTYPE</FirstName>
+          <!-- required -->
+          <MiddleName>STRTYPE</MiddleName>
+          <!-- optional -->
+          <LastName>STRTYPE</LastName>
+          <!-- optional -->
+          <JobTitle>STRTYPE</JobTitle>
+          <!-- optional -->
+          <AdditionalContactRef>
+            <!-- must occur 0 - 5 times -->
+            <ContactName>STRTYPE</ContactName>
+            <!-- required -->
+            <ContactValue>STRTYPE</ContactValue>
+            <!-- required -->
+          </AdditionalContactRef>
+          <IsPrimaryContact>BOOLTYPE</IsPrimaryContact>
+          <!-- optional -->
+        </LeadContactsRet>
+      </LeadRet>
+      <ErrorRecovery>
+        <!-- optional -->
+        <!-- BEGIN OR -->
+        <ListID>IDTYPE</ListID>
+        <!-- optional -->
+        <!-- OR -->
+        <OwnerID>GUIDTYPE</OwnerID>
+        <!-- optional -->
+        <!-- OR -->
+        <TxnID>IDTYPE</TxnID>
+        <!-- optional -->
+        <!-- END OR -->
+        <TxnNumber>INTTYPE</TxnNumber>
+        <!-- optional -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- optional -->
+        <ExternalGUID>GUIDTYPE</ExternalGUID>
+        <!-- optional -->
+      </ErrorRecovery>
+    </LeadModRs>
+  </QBXMLMsgsRq>
+</QBXML>

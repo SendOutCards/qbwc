@@ -1,57 +1,73 @@
-from datetime import datetime
-from typing import Union, List, Optional, Set
+import xmltodict
+import requests
+import json
 
-from qbwc.common import (
-    request, 
-    except_on_mutually_exclusive_params,
-    except_without_required_params
+from typing import Union, List
+
+from qbwc.generated import types
+from qbwc.generated.types import QBXMLMsgsRq, QBXMLMsgsRs
+from qbwc.config import uri, request_headers, debug
+from qbwc.helpers import (
+    dict_to_out, 
+    dict_to_in, 
+    split_pascal_case,
+    to_snake_case
 )
-from qbwc.types import (
-    ModifiedDateRangeFilter,
-    TxnDateRangeFilter
-)
+
+_base_xml = '''
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?>
+<QBXML>
+    <QBXMLMsgsRq onError="stopOnError">
+    </QBXMLMsgsRq>
+</QBXML>
+'''.strip()
 
 
-def query(
-    resource: str,
-    txn_ID: Optional[Union[str, List[str]]]=None, 
-    ref_number: Optional[Union[int, List[int]]]=None,
-    ref_number_case_sensitive: Optional[Union[int, List[int]]]=None,
-    max_returned: Optional[int]=None,
-    modified_date_range_filter: Optional[ModifiedDateRangeFilter]=None,
-    txn_date_range_filter: Optional[TxnDateRangeFilter]=None,
-    **kwargs
-) -> Union[dict, List[dict]]:
-    """
-    API Documentation:
-
-    https://developer.intuit.com/app/developer/qbdesktop/docs/api-reference/qbdesktop
-    """
-    kwargs = {
-        'txn_ID': txn_ID,
-        'ref_number': ref_number,
-        'ref_number_case_sensitive': ref_number_case_sensitive,
-        'max_returned': max_returned,
-        'modified_date_range_filter': modified_date_range_filter,
-        'txn_date_range_filter': txn_date_range_filter,
-        **kwargs
-    }
-    except_on_mutually_exclusive_params([{
-        'txn_ID',
-        'ref_number',
-        'ref_number_case_sensitive',
-        'max_returned'
-    }, {
-        'modified_date_range_filter',
-        'txn_date_range_filter'
-    }], kwargs)
-    return request(f'{resource}_query', kwargs)
+def _dicttoxml(d: dict, qbxmlversion: str='13.0'): 
+    xml = xmltodict.unparse(d) 
+    if qbxmlversion: 
+        header, xmldata = xml.split('\n', 1) 
+        xml = f'{header}\n<?qbxml version="{qbxmlversion}"?>\n{xmldata}' 
+    return xml
 
 
-def mod(resource: str, objs: Union[dict, List[dict]], required: Set[str]=set(), minimum_additional_fields: str=0):
-    except_without_required_params(
-        required | {'txn_ID', 'edit_sequence'}, 
-        minimum_additional_fields + 1,
-        objs
-    )
-    return request(f'{resource}_mod', objs)
+def _except_response_has_error(rs: dict) -> None:
+    for k, v in rs.items():
+        if isinstance(v, dict):
+            v = [v]
+        for i in v:
+            if i['@statusSeverity'] == 'Error':
+                e = Exception(json.dumps({
+                    k: v for k, v in i.items() if k.startswith('@')
+                }))
+                #e.data = rs
+                raise e
+    return
+
+
+def _remove_status_from_rs(rs: dict) -> None:
+    for k, v in rs.items():
+        if isinstance(v, dict):
+            v = [v]
+            for i in v:
+                for key in tuple(i.keys()):
+                    if key.startswith('@'):
+                        del i[key]
+    return
+
+
+def request(rq: QBXMLMsgsRq) -> QBXMLMsgsRs:
+    rq = dict_to_out(rq)
+    base = xmltodict.parse(_base_xml)
+    base['QBXML']['QBXMLMsgsRq'].update(rq)
+    xml = _dicttoxml(base)
+    if debug: print(xml)
+    r = requests.post(uri, data=xml, headers=request_headers)
+    r.raise_for_status()
+    c = r.content
+    rs = xmltodict.parse(c)['QBXML']['QBXMLMsgsRs']
+    _except_response_has_error(rs)
+    _remove_status_from_rs(rs)
+    rs = dict_to_in(rs)
+    return rs

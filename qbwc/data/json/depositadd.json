@@ -1,0 +1,144 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "DepositAddRq": {
+        "DepositAdd": {
+          "@defMacro": "MACROTYPE",
+          "TxnDate": "DATETYPE",
+          "DepositToAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Memo": "STRTYPE",
+          "CashBackInfoAdd": {
+            "@defMacro": "MACROTYPE",
+            "AccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Memo": "STRTYPE",
+            "Amount": "AMTTYPE"
+          },
+          "CurrencyRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ExchangeRate": "FLOATTYPE",
+          "ExternalGUID": "GUIDTYPE",
+          "DepositLineAdd": {
+            "@defMacro": "MACROTYPE",
+            "PaymentTxnID": {
+              "@useMacro": "MACROTYPE",
+              "#text": "IDTYPE"
+            },
+            "PaymentTxnLineID": {
+              "@useMacro": "MACROTYPE",
+              "#text": "IDTYPE"
+            },
+            "OverrideMemo": "STRTYPE",
+            "OverrideCheckNumber": "STRTYPE",
+            "OverrideClassRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "EntityRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "AccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Memo": "STRTYPE",
+            "CheckNumber": "STRTYPE",
+            "PaymentMethodRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ClassRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Amount": "AMTTYPE"
+          }
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "DepositAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "DepositRet": {
+          "TxnID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "TxnNumber": "INTTYPE",
+          "TxnDate": "DATETYPE",
+          "DepositToAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Memo": "STRTYPE",
+          "DepositTotal": "AMTTYPE",
+          "CurrencyRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "ExchangeRate": "FLOATTYPE",
+          "DepositTotalInHomeCurrency": "AMTTYPE",
+          "CashBackInfoRet": {
+            "TxnLineID": "IDTYPE",
+            "AccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Memo": "STRTYPE",
+            "Amount": "AMTTYPE"
+          },
+          "ExternalGUID": "GUIDTYPE",
+          "DepositLineRet": {
+            "TxnType": "ENUMTYPE",
+            "TxnID": "IDTYPE",
+            "TxnLineID": "IDTYPE",
+            "PaymentTxnLineID": "IDTYPE",
+            "EntityRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "AccountRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Memo": "STRTYPE",
+            "CheckNumber": "STRTYPE",
+            "PaymentMethodRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ClassRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "Amount": "AMTTYPE"
+          },
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

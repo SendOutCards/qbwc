@@ -1,0 +1,49 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "DataExtDelRq": {
+        "DataExtDel": {
+          "OwnerID": "GUIDTYPE",
+          "DataExtName": "STRTYPE",
+          "ListDataExtType": "ENUMTYPE",
+          "ListObjRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TxnDataExtType": "ENUMTYPE",
+          "TxnID": "IDTYPE",
+          "TxnLineID": "IDTYPE",
+          "OtherDataExtType": "ENUMTYPE"
+        }
+      },
+      "DataExtDelRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "DataExtDelRet": {
+          "OwnerID": "GUIDTYPE",
+          "DataExtName": "STRTYPE",
+          "ListDataExtType": "ENUMTYPE",
+          "ListObjRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "TxnDataExtType": "ENUMTYPE",
+          "TxnID": "IDTYPE",
+          "TxnLineID": "IDTYPE",
+          "OtherDataExtType": "ENUMTYPE",
+          "TimeDeleted": "DATETIMETYPE"
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

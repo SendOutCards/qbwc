@@ -1,0 +1,37 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "PayrollItemWageAddRq": {
+        "PayrollItemWageAdd": {
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "WageType": "ENUMTYPE",
+          "ExpenseAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          }
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "PayrollItemWageAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "PayrollItemWageRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "WageType": "ENUMTYPE",
+          "ExpenseAccountRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          }
+        }
+      }
+    }
+  }
+}

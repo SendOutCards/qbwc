@@ -1,0 +1,15 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "DataEventRecoveryInfoDelRq": {
+        "SubscriberID": "GUIDTYPE"
+      },
+      "DataEventRecoveryInfoDelRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE"
+      }
+    }
+  }
+}

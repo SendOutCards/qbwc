@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?><QBXML>
+  <QBXMLMsgsRq onError="stopOnError">
+    <ListMergeRq>
+      <!-- ListMergeType may have one of the following values: Account, Class, Customer, ItemDiscount, ItemGroup, ItemInventory, ItemNonInventory, ItemOtherCharge, ItemPayment, ItemSalesTax, ItemSalesTaxGroup, ItemService, ItemSubtotal, Vendor -->
+      <ListMergeType>ENUMTYPE</ListMergeType>
+      <!-- required -->
+      <MergeFrom>
+        <!-- required -->
+        <ListID>IDTYPE</ListID>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+      </MergeFrom>
+      <MergeTo>
+        <!-- required -->
+        <ListID>IDTYPE</ListID>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+      </MergeTo>
+      <SameShipAddrOk>BOOLTYPE</SameShipAddrOk>
+      <!-- optional -->
+    </ListMergeRq>
+    <ListMergeRs statusCode="INTTYPE" statusMessage="STRTYPE" statusSeverity="STRTYPE">
+      <!-- ListMergeType may have one of the following values: Account, Class, Customer, ItemDiscount, ItemGroup, ItemInventory, ItemNonInventory, ItemOtherCharge, ItemPayment, ItemSalesTax, ItemSalesTaxGroup, ItemService, ItemSubtotal, Vendor -->
+      <ListMergeType>ENUMTYPE</ListMergeType>
+      <!-- optional -->
+      <MergedFrom>
+        <!-- optional -->
+        <ListID>IDTYPE</ListID>
+        <!-- required -->
+        <TimeDeleted>DATETIMETYPE</TimeDeleted>
+        <!-- required -->
+        <FullName>STRTYPE</FullName>
+        <!-- required -->
+      </MergedFrom>
+      <MergedTo>
+        <!-- optional -->
+        <ListID>IDTYPE</ListID>
+        <!-- required -->
+        <TimeCreated>DATETIMETYPE</TimeCreated>
+        <!-- required -->
+        <TimeModified>DATETIMETYPE</TimeModified>
+        <!-- required -->
+        <EditSequence>STRTYPE</EditSequence>
+        <!-- required -->
+        <FullName>STRTYPE</FullName>
+        <!-- required -->
+      </MergedTo>
+    </ListMergeRs>
+  </QBXMLMsgsRq>
+</QBXML>

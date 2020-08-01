@@ -1,0 +1,26 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "BarCodeQueryRq": {
+        "@iterator": "ENUMTYPE",
+        "@iteratorID": "UUIDTYPE",
+        "@metaData": "ENUMTYPE",
+        "BarCodeValue": "STRTYPE"
+      },
+      "BarCodeQueryRs": {
+        "@iteratorID": "UUIDTYPE",
+        "@iteratorRemainingCount": "INTTYPE",
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "BarCodeRet": {
+          "ListType": "ENUMTYPE",
+          "ListID": "IDTYPE",
+          "FullName": "STRTYPE"
+        }
+      }
+    }
+  }
+}

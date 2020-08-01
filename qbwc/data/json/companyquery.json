@@ -1,0 +1,98 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "CompanyQueryRq": {
+        "IncludeRetElement": "STRTYPE",
+        "OwnerID": "GUIDTYPE"
+      },
+      "CompanyQueryRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "CompanyRet": {
+          "IsSampleCompany": "BOOLTYPE",
+          "CompanyName": "STRTYPE",
+          "LegalCompanyName": "STRTYPE",
+          "Address": {
+            "Addr1": "STRTYPE",
+            "Addr2": "STRTYPE",
+            "Addr3": "STRTYPE",
+            "Addr4": "STRTYPE",
+            "Addr5": "STRTYPE",
+            "City": "STRTYPE",
+            "State": "STRTYPE",
+            "PostalCode": "STRTYPE",
+            "Country": "STRTYPE",
+            "Note": "STRTYPE"
+          },
+          "AddressBlock": {
+            "Addr1": "STRTYPE",
+            "Addr2": "STRTYPE",
+            "Addr3": "STRTYPE",
+            "Addr4": "STRTYPE",
+            "Addr5": "STRTYPE"
+          },
+          "LegalAddress": {
+            "Addr1": "STRTYPE",
+            "Addr2": "STRTYPE",
+            "Addr3": "STRTYPE",
+            "Addr4": "STRTYPE",
+            "Addr5": "STRTYPE",
+            "City": "STRTYPE",
+            "State": "STRTYPE",
+            "PostalCode": "STRTYPE",
+            "Country": "STRTYPE",
+            "Note": "STRTYPE"
+          },
+          "CompanyAddressForCustomer": {
+            "Addr1": "STRTYPE",
+            "Addr2": "STRTYPE",
+            "Addr3": "STRTYPE",
+            "Addr4": "STRTYPE",
+            "Addr5": "STRTYPE",
+            "City": "STRTYPE",
+            "State": "STRTYPE",
+            "PostalCode": "STRTYPE",
+            "Country": "STRTYPE",
+            "Note": "STRTYPE"
+          },
+          "CompanyAddressBlockForCustomer": {
+            "Addr1": "STRTYPE",
+            "Addr2": "STRTYPE",
+            "Addr3": "STRTYPE",
+            "Addr4": "STRTYPE",
+            "Addr5": "STRTYPE"
+          },
+          "Phone": "STRTYPE",
+          "Fax": "STRTYPE",
+          "Email": "STRTYPE",
+          "CompanyWebSite": "STRTYPE",
+          "FirstMonthFiscalYear": "ENUMTYPE",
+          "FirstMonthIncomeTaxYear": "ENUMTYPE",
+          "CompanyType": "STRTYPE",
+          "EIN": "STRTYPE",
+          "SSN": "STRTYPE",
+          "TaxForm": "ENUMTYPE",
+          "SubscribedServices": {
+            "Service": {
+              "Name": "STRTYPE",
+              "Domain": "STRTYPE",
+              "ServiceStatus": "ENUMTYPE"
+            }
+          },
+          "AccountantCopy": {
+            "AccountantCopyExists": "BOOLTYPE",
+            "DividingDate": "DATETYPE"
+          },
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        }
+      }
+    }
+  }
+}

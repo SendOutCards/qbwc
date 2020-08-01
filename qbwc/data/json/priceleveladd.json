@@ -1,0 +1,64 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "PriceLevelAddRq": {
+        "PriceLevelAdd": {
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "PriceLevelFixedPercentage": "PERCENTTYPE",
+          "PriceLevelPerItem": {
+            "ItemRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "CustomPrice": "PRICETYPE",
+            "CustomPricePercent": "PERCENTTYPE",
+            "AdjustPercentage": "PERCENTTYPE",
+            "AdjustRelativeTo": "ENUMTYPE"
+          },
+          "CurrencyRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          }
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "PriceLevelAddRs": {
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "PriceLevelRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "PriceLevelType": "ENUMTYPE",
+          "PriceLevelFixedPercentage": "PERCENTTYPE",
+          "PriceLevelPerItemRet": {
+            "ItemRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "CustomPrice": "PRICETYPE",
+            "CustomPricePercent": "PERCENTTYPE"
+          },
+          "CurrencyRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          }
+        },
+        "ErrorRecovery": {
+          "ListID": "IDTYPE",
+          "OwnerID": "GUIDTYPE",
+          "TxnID": "IDTYPE",
+          "TxnNumber": "INTTYPE",
+          "EditSequence": "STRTYPE",
+          "ExternalGUID": "GUIDTYPE"
+        }
+      }
+    }
+  }
+}

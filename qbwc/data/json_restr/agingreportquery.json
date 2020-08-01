@@ -1,0 +1,273 @@
+{
+  "QBXMLMsgsRq": {
+    "AgingReportQueryRq": {
+      "AgingReportType": {
+        "@optional": false,
+        "@required": true,
+        "@may_repeat": false
+      },
+      "DisplayReport": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      },
+      "ReportPeriod": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "FromReportDate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ToReportDate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      },
+      "ReportDateMacro": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      },
+      "ReportAccountFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "AccountTypeFilter": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ListID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true
+        },
+        "FullName": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true
+        },
+        "ListIDWithChildren": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "FullNameWithChildren": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      },
+      "ReportEntityFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "EntityTypeFilter": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ListID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true
+        },
+        "FullName": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true
+        },
+        "ListIDWithChildren": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "FullNameWithChildren": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      },
+      "ReportItemFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "ItemTypeFilter": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ListID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true
+        },
+        "FullName": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true
+        },
+        "ListIDWithChildren": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "FullNameWithChildren": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      },
+      "ReportClassFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "ListID": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true
+        },
+        "FullName": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": true
+        },
+        "ListIDWithChildren": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "FullNameWithChildren": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      },
+      "ReportTxnTypeFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "TxnTypeFilter": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": true
+        }
+      },
+      "ReportModifiedDateRangeFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "FromReportModifiedDate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "ToReportModifiedDate": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        }
+      },
+      "ReportModifiedDateRangeMacro": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      },
+      "ReportDetailLevelFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      },
+      "ReportPostingStatusFilter": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      },
+      "IncludeColumn": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": true
+      },
+      "IncludeAccounts": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      },
+      "ReportAgingAsOf": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false
+      }
+    },
+    "AgingReportQueryRs": {
+      "ReportRet": {
+        "@optional": true,
+        "@required": false,
+        "@may_repeat": false,
+        "ReportTitle": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "ReportSubtitle": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "ReportBasis": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false
+        },
+        "NumRows": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "NumColumns": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "NumColTitleRows": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": false
+        },
+        "ColDesc": {
+          "@optional": false,
+          "@required": true,
+          "@may_repeat": true,
+          "ColType": {
+            "@optional": false,
+            "@required": true,
+            "@may_repeat": false
+          }
+        },
+        "ReportData": {
+          "@optional": true,
+          "@required": false,
+          "@may_repeat": false,
+          "DataRow": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "SubtotalRow": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          },
+          "TotalRow": {
+            "@optional": true,
+            "@required": false,
+            "@may_repeat": false
+          }
+        }
+      }
+    }
+  }
+}

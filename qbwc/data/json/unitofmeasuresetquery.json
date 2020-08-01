@@ -1,0 +1,53 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "UnitOfMeasureSetQueryRq": {
+        "@metaData": "ENUMTYPE",
+        "ListID": "IDTYPE",
+        "FullName": "STRTYPE",
+        "MaxReturned": "INTTYPE",
+        "ActiveStatus": "ENUMTYPE",
+        "FromModifiedDate": "DATETIMETYPE",
+        "ToModifiedDate": "DATETIMETYPE",
+        "NameFilter": {
+          "MatchCriterion": "ENUMTYPE",
+          "Name": "STRTYPE"
+        },
+        "NameRangeFilter": {
+          "FromName": "STRTYPE",
+          "ToName": "STRTYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "UnitOfMeasureSetQueryRs": {
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "UnitOfMeasureSetRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "UnitOfMeasureType": "ENUMTYPE",
+          "BaseUnit": {
+            "Name": "STRTYPE",
+            "Abbreviation": "STRTYPE"
+          },
+          "RelatedUnit": {
+            "Name": "STRTYPE",
+            "Abbreviation": "STRTYPE",
+            "ConversionRatio": "PRICETYPE"
+          },
+          "DefaultUnit": {
+            "UnitUsedFor": "ENUMTYPE",
+            "Unit": "STRTYPE"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "EmployeeQueryRq": {
+        "@metaData": "ENUMTYPE",
+        "ListID": "IDTYPE",
+        "FullName": "STRTYPE",
+        "MaxReturned": "INTTYPE",
+        "ActiveStatus": "ENUMTYPE",
+        "FromModifiedDate": "DATETIMETYPE",
+        "ToModifiedDate": "DATETIMETYPE",
+        "NameFilter": {
+          "MatchCriterion": "ENUMTYPE",
+          "Name": "STRTYPE"
+        },
+        "NameRangeFilter": {
+          "FromName": "STRTYPE",
+          "ToName": "STRTYPE"
+        },
+        "IncludeRetElement": "STRTYPE",
+        "OwnerID": "GUIDTYPE"
+      },
+      "EmployeeQueryRs": {
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "EmployeeRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "Name": "STRTYPE",
+          "IsActive": "BOOLTYPE",
+          "Salutation": "STRTYPE",
+          "FirstName": "STRTYPE",
+          "MiddleName": "STRTYPE",
+          "LastName": "STRTYPE",
+          "JobTitle": "STRTYPE",
+          "SupervisorRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "Department": "STRTYPE",
+          "Description": "STRTYPE",
+          "TargetBonus": "AMTTYPE",
+          "EmployeeAddress": {
+            "Addr1": "STRTYPE",
+            "Addr2": "STRTYPE",
+            "City": "STRTYPE",
+            "State": "STRTYPE",
+            "PostalCode": "STRTYPE"
+          },
+          "PrintAs": "STRTYPE",
+          "Phone": "STRTYPE",
+          "Mobile": "STRTYPE",
+          "Pager": "STRTYPE",
+          "PagerPIN": "STRTYPE",
+          "AltPhone": "STRTYPE",
+          "Fax": "STRTYPE",
+          "SSN": "STRTYPE",
+          "Email": "STRTYPE",
+          "AdditionalContactRef": {
+            "ContactName": "STRTYPE",
+            "ContactValue": "STRTYPE"
+          },
+          "EmergencyContacts": {
+            "PrimaryContact": {
+              "ContactName": "STRTYPE",
+              "ContactValue": "STRTYPE",
+              "Relation": "ENUMTYPE"
+            },
+            "SecondaryContact": {
+              "ContactName": "STRTYPE",
+              "ContactValue": "STRTYPE",
+              "Relation": "ENUMTYPE"
+            }
+          },
+          "EmployeeType": "ENUMTYPE",
+          "PartOrFullTime": "ENUMTYPE",
+          "Exempt": "ENUMTYPE",
+          "KeyEmployee": "ENUMTYPE",
+          "Gender": "ENUMTYPE",
+          "HiredDate": "DATETYPE",
+          "OriginalHireDate": "DATETYPE",
+          "AdjustedServiceDate": "DATETYPE",
+          "ReleasedDate": "DATETYPE",
+          "BirthDate": "DATETYPE",
+          "USCitizen": "ENUMTYPE",
+          "Ethnicity": "ENUMTYPE",
+          "Disabled": "ENUMTYPE",
+          "DisabilityDesc": "STRTYPE",
+          "OnFile": "ENUMTYPE",
+          "WorkAuthExpireDate": "DATETYPE",
+          "USVeteran": "ENUMTYPE",
+          "MilitaryStatus": "ENUMTYPE",
+          "AccountNumber": "STRTYPE",
+          "Notes": "STRTYPE",
+          "AdditionalNotesRet": {
+            "NoteID": "INTTYPE",
+            "Date": "DATETYPE",
+            "Note": "STRTYPE"
+          },
+          "BillingRateRef": {
+            "ListID": "IDTYPE",
+            "FullName": "STRTYPE"
+          },
+          "EmployeePayrollInfo": {
+            "PayPeriod": "ENUMTYPE",
+            "ClassRef": {
+              "ListID": "IDTYPE",
+              "FullName": "STRTYPE"
+            },
+            "ClearEarnings": "BOOLTYPE",
+            "Earnings": {
+              "PayrollItemWageRef": {
+                "ListID": "IDTYPE",
+                "FullName": "STRTYPE"
+              },
+              "Rate": "PRICETYPE",
+              "RatePercent": "PERCENTTYPE"
+            },
+            "IsUsingTimeDataToCreatePaychecks": "BOOLTYPE",
+            "UseTimeDataToCreatePaychecks": "ENUMTYPE",
+            "SickHours": {
+              "HoursAvailable": "TIMEINTERVALTYPE",
+              "AccrualPeriod": "ENUMTYPE",
+              "HoursAccrued": "TIMEINTERVALTYPE",
+              "MaximumHours": "TIMEINTERVALTYPE",
+              "IsResettingHoursEachNewYear": "BOOLTYPE",
+              "HoursUsed": "TIMEINTERVALTYPE",
+              "AccrualStartDate": "DATETYPE"
+            },
+            "VacationHours": {
+              "HoursAvailable": "TIMEINTERVALTYPE",
+              "AccrualPeriod": "ENUMTYPE",
+              "HoursAccrued": "TIMEINTERVALTYPE",
+              "MaximumHours": "TIMEINTERVALTYPE",
+              "IsResettingHoursEachNewYear": "BOOLTYPE",
+              "HoursUsed": "TIMEINTERVALTYPE",
+              "AccrualStartDate": "DATETYPE"
+            }
+          },
+          "ExternalGUID": "GUIDTYPE",
+          "DataExtRet": {
+            "OwnerID": "GUIDTYPE",
+            "DataExtName": "STRTYPE",
+            "DataExtType": "ENUMTYPE",
+            "DataExtValue": "STRTYPE"
+          }
+        }
+      }
+    }
+  }
+}

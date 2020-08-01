@@ -1,0 +1,73 @@
+{
+  "QBXML": {
+    "QBXMLMsgsRq": {
+      "@onError": "stopOnError",
+      "LeadQueryRq": {
+        "@iterator": "ENUMTYPE",
+        "@iteratorID": "UUIDTYPE",
+        "@metaData": "ENUMTYPE",
+        "ListID": "IDTYPE",
+        "Name": "STRTYPE",
+        "MaxReturned": "INTTYPE",
+        "FromModifiedDate": "DATETIMETYPE",
+        "ToModifiedDate": "DATETIMETYPE",
+        "NameFilter": {
+          "MatchCriterion": "ENUMTYPE",
+          "Name": "STRTYPE"
+        },
+        "NameRangeFilter": {
+          "FromName": "STRTYPE",
+          "ToName": "STRTYPE"
+        },
+        "IncludeRetElement": "STRTYPE"
+      },
+      "LeadQueryRs": {
+        "@iteratorID": "UUIDTYPE",
+        "@iteratorRemainingCount": "INTTYPE",
+        "@retCount": "INTTYPE",
+        "@statusCode": "INTTYPE",
+        "@statusMessage": "STRTYPE",
+        "@statusSeverity": "STRTYPE",
+        "LeadRet": {
+          "ListID": "IDTYPE",
+          "TimeCreated": "DATETIMETYPE",
+          "TimeModified": "DATETIMETYPE",
+          "EditSequence": "STRTYPE",
+          "FullName": "STRTYPE",
+          "Status": "ENUMTYPE",
+          "CompanyName": "STRTYPE",
+          "MainPhone": "STRTYPE",
+          "AdditionalContactRef": {
+            "ContactName": "STRTYPE",
+            "ContactValue": "STRTYPE"
+          },
+          "LocationsRet": {
+            "LocationID": "INTTYPE",
+            "MainAddress": "STRTYPE",
+            "Location": "STRTYPE",
+            "LeadAddress": {
+              "Addr1": "STRTYPE",
+              "Addr2": "STRTYPE",
+              "Addr3": "STRTYPE",
+              "Addr4": "STRTYPE",
+              "Addr5": "STRTYPE"
+            }
+          },
+          "LeadContactsRet": {
+            "LeadContactID": "INTTYPE",
+            "Salutation": "STRTYPE",
+            "FirstName": "STRTYPE",
+            "MiddleName": "STRTYPE",
+            "LastName": "STRTYPE",
+            "JobTitle": "STRTYPE",
+            "AdditionalContactRef": {
+              "ContactName": "STRTYPE",
+              "ContactValue": "STRTYPE"
+            },
+            "IsPrimaryContact": "BOOLTYPE"
+          }
+        }
+      }
+    }
+  }
+}
