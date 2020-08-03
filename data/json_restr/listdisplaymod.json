@@ -1,0 +1,16 @@
+{
+  "QBXMLMsgsRq": {
+    "ListDisplayModRq": {
+      "ListDisplayModType": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true
+      },
+      "ListID": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true
+      }
+    }
+  }
+}

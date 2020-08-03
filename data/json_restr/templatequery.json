@@ -1,0 +1,53 @@
+{
+  "QBXMLMsgsRq": {
+    "TemplateQueryRq": {
+      "IncludeRetElement": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "TemplateQueryRs": {
+      "TemplateRet": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeCreated": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeModified": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "Name": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "IsActive": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TemplateType": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "QBXMLMsgsRq": {
+    "PayrollItemWageAddRq": {
+      "PayrollItemWageAdd": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true,
+        "Name": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "IsActive": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "WageType": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "ExpenseAccountRef": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        }
+      },
+      "IncludeRetElement": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "PayrollItemWageAddRs": {
+      "PayrollItemWageRet": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeCreated": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeModified": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "Name": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "IsActive": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "WageType": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "ExpenseAccountRef": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        }
+      }
+    }
+  }
+}

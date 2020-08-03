@@ -1,0 +1,16 @@
+{
+  "QBXMLMsgsRq": {
+    "TxnDisplayModRq": {
+      "TxnDisplayModType": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true
+      },
+      "TxnID": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true
+      }
+    }
+  }
+}

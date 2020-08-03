@@ -1,0 +1,68 @@
+{
+  "QBXMLMsgsRq": {
+    "DataExtDefQueryRq": {
+      "OwnerID": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      },
+      "AssignToObject": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      },
+      "IncludeRetElement": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "DataExtDefQueryRs": {
+      "DataExtDefRet": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false,
+        "OwnerID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "DataExtID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "DataExtName": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "DataExtType": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "AssignToObject": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false
+        },
+        "DataExtListRequire": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "DataExtTxnRequire": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "DataExtFormatString": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        }
+      }
+    }
+  }
+}

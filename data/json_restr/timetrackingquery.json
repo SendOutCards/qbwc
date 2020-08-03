@@ -1,0 +1,213 @@
+{
+  "QBXMLMsgsRq": {
+    "TimeTrackingQueryRq": {
+      "TxnID": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      },
+      "MaxReturned": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "ModifiedDateRangeFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "FromModifiedDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ToModifiedDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "TxnDateRangeFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "FromTxnDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ToTxnDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "DateMacro": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "TimeTrackingEntityFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false
+        },
+        "FullName": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "IncludeRetElement": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "TimeTrackingQueryRs": {
+      "TimeTrackingRet": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false,
+        "TxnID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeCreated": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeModified": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TxnNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TxnDate": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "EntityRef": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "CustomerRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "ItemServiceRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "Duration": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "ClassRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "PayrollItemWageRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "Notes": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "BillableStatus": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ExternalGUID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "IsBillable": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "IsBilled": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      }
+    }
+  }
+}

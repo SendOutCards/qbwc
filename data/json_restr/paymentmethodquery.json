@@ -1,0 +1,118 @@
+{
+  "QBXMLMsgsRq": {
+    "PaymentMethodQueryRq": {
+      "ListID": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      },
+      "FullName": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      },
+      "MaxReturned": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "ActiveStatus": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "FromModifiedDate": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "ToModifiedDate": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "NameFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "MatchCriterion": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "Name": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        }
+      },
+      "NameRangeFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "FromName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ToName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "PaymentMethodType": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      },
+      "IncludeRetElement": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "PaymentMethodQueryRs": {
+      "PaymentMethodRet": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeCreated": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeModified": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "Name": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "IsActive": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "PaymentMethodType": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      }
+    }
+  }
+}

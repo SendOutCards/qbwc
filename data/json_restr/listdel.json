@@ -1,0 +1,38 @@
+{
+  "QBXMLMsgsRq": {
+    "ListDelRq": {
+      "ListDelType": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true
+      },
+      "ListID": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true
+      }
+    },
+    "ListDelRs": {
+      "ListDelType": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "ListID": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "TimeDeleted": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "FullName": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      }
+    }
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "QBXMLMsgsRq": {
+    "ToDoAddRq": {
+      "ToDoAdd": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true,
+        "Notes": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "IsActive": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Type": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Priority": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "CustomerRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "EmployeeRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "LeadRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "VendorRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "IsDone": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ReminderDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ReminderTime": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "IncludeRetElement": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "ToDoAddRs": {
+      "ToDoRet": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeCreated": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeModified": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "Notes": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "IsActive": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Type": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Priority": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "CustomerRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "EmployeeRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "LeadRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "VendorRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "IsDone": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "ReminderDate": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "ReminderTime": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "ErrorRecovery": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "OwnerID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TxnID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TxnNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ExternalGUID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      }
+    }
+  }
+}

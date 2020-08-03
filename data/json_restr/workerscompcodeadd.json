@@ -1,0 +1,158 @@
+{
+  "QBXMLMsgsRq": {
+    "WorkersCompCodeAddRq": {
+      "WorkersCompCodeAdd": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true,
+        "Name": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "IsActive": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Desc": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "RateEntry": {
+          "@may_repeat": true,
+          "@optional": false,
+          "@required": true,
+          "Rate": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "EffectiveDate": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          }
+        }
+      },
+      "IncludeRetElement": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "WorkersCompCodeAddRs": {
+      "WorkersCompCodeRet": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TimeCreated": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TimeModified": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Name": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "IsActive": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Desc": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "CurrentRate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "CurrentEffectiveDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "NextRate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "NextEffectiveDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "RateHistory": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false,
+          "Rate": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "EffectiveDate": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          }
+        }
+      },
+      "ErrorRecovery": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "OwnerID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TxnID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TxnNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ExternalGUID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      }
+    }
+  }
+}

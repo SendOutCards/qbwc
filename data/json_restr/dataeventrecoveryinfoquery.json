@@ -1,0 +1,28 @@
+{
+  "QBXMLMsgsRq": {
+    "DataEventRecoveryInfoQueryRq": {
+      "SubscriberID": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true
+      }
+    },
+    "DataEventRecoveryInfoQueryRs": {
+      "DataEventRecoveryInfoRet": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "SubscriberID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "DataEventRecoveryTime": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      }
+    }
+  }
+}

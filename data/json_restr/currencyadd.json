@@ -1,0 +1,173 @@
+{
+  "QBXMLMsgsRq": {
+    "CurrencyAddRq": {
+      "CurrencyAdd": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true,
+        "Name": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "IsActive": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "CurrencyCode": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "CurrencyFormat": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ThousandSeparator": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "ThousandSeparatorGrouping": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "DecimalPlaces": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "DecimalSeparator": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        }
+      },
+      "IncludeRetElement": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "CurrencyAddRs": {
+      "CurrencyRet": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TimeCreated": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TimeModified": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Name": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "IsActive": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "CurrencyCode": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "CurrencyFormat": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ThousandSeparator": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "ThousandSeparatorGrouping": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "DecimalPlaces": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "DecimalSeparator": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "IsUserDefinedCurrency": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ExchangeRate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "AsOfDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "ErrorRecovery": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "OwnerID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TxnID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TxnNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ExternalGUID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      }
+    }
+  }
+}

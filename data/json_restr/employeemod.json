@@ -1,0 +1,1062 @@
+{
+  "QBXMLMsgsRq": {
+    "EmployeeModRq": {
+      "EmployeeMod": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "IsActive": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Salutation": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "FirstName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "MiddleName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "LastName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "JobTitle": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "SupervisorRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "Department": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Description": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TargetBonus": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "EmployeeAddress": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "Addr1": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr2": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "City": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "State": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "PostalCode": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "PrintAs": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Phone": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Mobile": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Pager": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "PagerPIN": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "AltPhone": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Fax": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Email": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "AdditionalContactRef": {
+          "ContactName": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "ContactValue": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          }
+        },
+        "EmergencyContacts": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "PrimaryContact": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "ContactName": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "ContactValue": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "Relation": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "SecondaryContact": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "ContactName": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "ContactValue": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "Relation": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          }
+        },
+        "EmployeeType": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "PartOrFullTime": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Exempt": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "KeyEmployee": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "HiredDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "OriginalHireDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "AdjustedServiceDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ReleasedDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "BirthDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "USCitizen": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Ethnicity": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Disabled": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "DisabilityDesc": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "OnFile": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "WorkAuthExpireDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "USVeteran": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "MilitaryStatus": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "AccountNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Notes": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "AdditionalNotesMod": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false,
+          "NoteID": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "Note": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          }
+        },
+        "BillingRateRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "EmployeePayrollInfoMod": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "PayPeriod": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "ClassRef": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "ListID": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "FullName": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "ClearEarnings": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Earnings": {
+            "@may_repeat": true,
+            "@optional": true,
+            "@required": false,
+            "PayrollItemWageRef": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true,
+              "ListID": {
+                "@may_repeat": false,
+                "@optional": true,
+                "@required": false
+              },
+              "FullName": {
+                "@may_repeat": false,
+                "@optional": true,
+                "@required": false
+              }
+            },
+            "Rate": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "RatePercent": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "IsUsingTimeDataToCreatePaychecks": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "UseTimeDataToCreatePaychecks": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "SickHours": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "HoursAvailable": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "AccrualPeriod": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "HoursAccrued": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "MaximumHours": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "IsResettingHoursEachNewYear": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "HoursUsed": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "AccrualStartDate": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "VacationHours": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "HoursAvailable": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "AccrualPeriod": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "HoursAccrued": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "MaximumHours": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "IsResettingHoursEachNewYear": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "HoursUsed": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "AccrualStartDate": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          }
+        }
+      },
+      "IncludeRetElement": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "EmployeeModRs": {
+      "EmployeeRet": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeCreated": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeModified": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "Name": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "IsActive": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Salutation": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "FirstName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "MiddleName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "LastName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "JobTitle": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "SupervisorRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "Department": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Description": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TargetBonus": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "EmployeeAddress": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "Addr1": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr2": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "City": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "State": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "PostalCode": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "PrintAs": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Phone": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Mobile": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Pager": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "PagerPIN": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "AltPhone": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Fax": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "SSN": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Email": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "AdditionalContactRef": {
+          "ContactName": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "ContactValue": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          }
+        },
+        "EmergencyContacts": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "PrimaryContact": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "ContactName": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "ContactValue": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "Relation": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "SecondaryContact": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "ContactName": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "ContactValue": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "Relation": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          }
+        },
+        "EmployeeType": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "PartOrFullTime": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Exempt": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "KeyEmployee": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Gender": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "HiredDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "OriginalHireDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "AdjustedServiceDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ReleasedDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "BirthDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "USCitizen": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Ethnicity": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Disabled": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "DisabilityDesc": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "OnFile": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "WorkAuthExpireDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "USVeteran": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "MilitaryStatus": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "AccountNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Notes": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "AdditionalNotesRet": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false,
+          "NoteID": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "Date": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "Note": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          }
+        },
+        "BillingRateRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "EmployeePayrollInfo": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "PayPeriod": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "ClassRef": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "ListID": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "FullName": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "ClearEarnings": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Earnings": {
+            "@may_repeat": true,
+            "@optional": true,
+            "@required": false,
+            "PayrollItemWageRef": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true,
+              "ListID": {
+                "@may_repeat": false,
+                "@optional": true,
+                "@required": false
+              },
+              "FullName": {
+                "@may_repeat": false,
+                "@optional": true,
+                "@required": false
+              }
+            },
+            "Rate": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "RatePercent": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "IsUsingTimeDataToCreatePaychecks": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "UseTimeDataToCreatePaychecks": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "SickHours": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "HoursAvailable": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "AccrualPeriod": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "HoursAccrued": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "MaximumHours": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "IsResettingHoursEachNewYear": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "HoursUsed": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "AccrualStartDate": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "VacationHours": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "HoursAvailable": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "AccrualPeriod": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "HoursAccrued": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "MaximumHours": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "IsResettingHoursEachNewYear": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "HoursUsed": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "AccrualStartDate": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          }
+        },
+        "ExternalGUID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "DataExtRet": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false,
+          "OwnerID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "DataExtName": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "DataExtType": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "DataExtValue": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          }
+        }
+      },
+      "ErrorRecovery": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "OwnerID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TxnID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TxnNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ExternalGUID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      }
+    }
+  }
+}

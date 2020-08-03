@@ -10,8 +10,7 @@ from qbwc.config import uri, request_headers, debug
 from qbwc.helpers import (
     dict_to_out, 
     dict_to_in, 
-    split_pascal_case,
-    to_snake_case
+    split_pascal_case
 )
 
 _base_xml = '''
@@ -22,6 +21,10 @@ _base_xml = '''
     </QBXMLMsgsRq>
 </QBXML>
 '''.strip()
+
+
+class QBWCError(Exception):
+    pass
 
 
 def _dicttoxml(d: dict, qbxmlversion: str='13.0'): 
@@ -38,10 +41,9 @@ def _except_response_has_error(rs: dict) -> None:
             v = [v]
         for i in v:
             if i['@statusSeverity'] == 'Error':
-                e = Exception(json.dumps({
+                e = QBWCError(json.dumps({
                     k: v for k, v in i.items() if k.startswith('@')
                 }))
-                #e.data = rs
                 raise e
     return
 

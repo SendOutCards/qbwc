@@ -1,0 +1,148 @@
+{
+  "QBXMLMsgsRq": {
+    "BudgetSummaryReportQueryRq": {
+      "BudgetSummaryReportType": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true
+      },
+      "DisplayReport": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "FiscalYear": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true
+      },
+      "BudgetCriterion": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "ReportPeriod": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "FromReportDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ToReportDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "ReportDateMacro": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "ReportClassFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false
+        },
+        "FullName": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false
+        },
+        "ListIDWithChildren": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "FullNameWithChildren": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "SummarizeBudgetColumnsBy": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "SummarizeBudgetRowsBy": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "BudgetSummaryReportQueryRs": {
+      "ReportRet": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ReportTitle": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "ReportSubtitle": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "ReportBasis": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "NumRows": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "NumColumns": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "NumColTitleRows": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "ColDesc": {
+          "@may_repeat": true,
+          "@optional": false,
+          "@required": true,
+          "ColType": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          }
+        },
+        "ReportData": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "DataRow": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "SubtotalRow": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "TotalRow": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        }
+      }
+    }
+  }
+}

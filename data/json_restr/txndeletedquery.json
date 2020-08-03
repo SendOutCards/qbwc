@@ -1,0 +1,63 @@
+{
+  "QBXMLMsgsRq": {
+    "TxnDeletedQueryRq": {
+      "TxnDelType": {
+        "@may_repeat": true,
+        "@optional": false,
+        "@required": true
+      },
+      "DeletedDateRangeFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "FromDeletedDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ToDeletedDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "IncludeRetElement": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "TxnDeletedQueryRs": {
+      "TxnDeletedRet": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false,
+        "TxnDelType": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TxnID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeCreated": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeDeleted": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "RefNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      }
+    }
+  }
+}

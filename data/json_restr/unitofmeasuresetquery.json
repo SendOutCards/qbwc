@@ -1,0 +1,163 @@
+{
+  "QBXMLMsgsRq": {
+    "UnitOfMeasureSetQueryRq": {
+      "ListID": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      },
+      "FullName": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      },
+      "MaxReturned": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "ActiveStatus": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "FromModifiedDate": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "ToModifiedDate": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "NameFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "MatchCriterion": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "Name": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        }
+      },
+      "NameRangeFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "FromName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ToName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "IncludeRetElement": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "UnitOfMeasureSetQueryRs": {
+      "UnitOfMeasureSetRet": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TimeCreated": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TimeModified": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Name": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "IsActive": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "UnitOfMeasureType": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "BaseUnit": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "Name": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "Abbreviation": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          }
+        },
+        "RelatedUnit": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false,
+          "Name": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "Abbreviation": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "ConversionRatio": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          }
+        },
+        "DefaultUnit": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false,
+          "UnitUsedFor": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "Unit": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          }
+        }
+      }
+    }
+  }
+}

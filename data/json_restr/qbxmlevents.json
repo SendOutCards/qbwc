@@ -1,0 +1,226 @@
+{
+  "QBXMLSubscriptionMsgsRq": {
+    "QBXMLEventsRs": {
+      "DataEvent": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false,
+        "CompanyFilePath": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "HostInfo": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true,
+          "ProductName": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "MajorVersion": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "MinorVersion": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "Country": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          }
+        },
+        "ListEvent": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListEventType": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "ListEventOperation": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "AfterMergeListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "TxnEvent": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "TxnEventType": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "TxnEventOperation": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "TxnID": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "RefNumber": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "LastRestoreTime": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "LastCondenseTime": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "DataEventRecoveryTime": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "UIEvent": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "CompanyFilePath": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "HostInfo": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true,
+          "ProductName": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "MajorVersion": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "MinorVersion": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "Country": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          }
+        },
+        "CompanyFileEvent": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true,
+          "CompanyFileEventOperation": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "IsNewCompany": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "IsAutomaticLogin": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        }
+      },
+      "UIExtensionEvent": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "CompanyFilePath": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "HostInfo": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true,
+          "ProductName": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "MajorVersion": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "MinorVersion": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "Country": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          }
+        },
+        "EventTag": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "CurrentWindow": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "TxnType": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "TxnID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "ListType": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        }
+      }
+    }
+  }
+}

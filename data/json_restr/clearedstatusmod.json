@@ -1,0 +1,26 @@
+{
+  "QBXMLMsgsRq": {
+    "ClearedStatusModRq": {
+      "ClearedStatusMod": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true,
+        "TxnID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TxnLineID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ClearedStatus": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        }
+      }
+    }
+  }
+}

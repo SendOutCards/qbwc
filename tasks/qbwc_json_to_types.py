@@ -26,7 +26,7 @@ types = [
 ]
 
 # generate enum types
-qb_enum = json.load(open('qbwc/data/enum.json'))
+qb_enum = json.load(open('data/enum.json'))
 for type_, options in qb_enum.items():
 	enum_ = [f'class {type_}(Enum):']
 	for option in options:
@@ -37,8 +37,8 @@ for type_, options in qb_enum.items():
 
 
 # generate operation types
-endpoint_files = glob.glob('qbwc/data/json/*.json')
-endpoint_restr_files = glob.glob('qbwc/data/json_restr/*.json')
+endpoint_files = glob.glob('data/json/*.json')
+endpoint_restr_files = glob.glob('data/json_restr/*.json')
 types_defined = set()
 
 

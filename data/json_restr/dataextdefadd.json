@@ -1,0 +1,133 @@
+{
+  "QBXMLMsgsRq": {
+    "DataExtDefAddRq": {
+      "DataExtDefAdd": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true,
+        "OwnerID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "DataExtName": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "DataExtType": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "AssignToObject": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false
+        },
+        "DataExtListRequire": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "DataExtTxnRequire": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "DataExtFormatString": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "IncludeRetElement": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "DataExtDefAddRs": {
+      "DataExtDefRet": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "OwnerID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "DataExtID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "DataExtName": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "DataExtType": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "AssignToObject": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false
+        },
+        "DataExtListRequire": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "DataExtTxnRequire": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "DataExtFormatString": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        }
+      },
+      "ErrorRecovery": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "OwnerID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TxnID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TxnNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ExternalGUID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      }
+    }
+  }
+}

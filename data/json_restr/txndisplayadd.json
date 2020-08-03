@@ -1,0 +1,26 @@
+{
+  "QBXMLMsgsRq": {
+    "TxnDisplayAddRq": {
+      "TxnDisplayAddType": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true
+      },
+      "EntityRef": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "FullName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "QBXMLMsgsRq": {
+    "DataEventRecoveryInfoDelRq": {
+      "SubscriberID": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true
+      }
+    }
+  }
+}

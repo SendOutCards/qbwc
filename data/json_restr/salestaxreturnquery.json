@@ -1,0 +1,26 @@
+{
+  "QBXMLMsgsRq": {
+    "SalesTaxReturnQueryRs": {
+      "SalesTaxReturnRet": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "FullName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Desc": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      }
+    }
+  }
+}

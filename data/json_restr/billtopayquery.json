@@ -1,0 +1,213 @@
+{
+  "QBXMLMsgsRq": {
+    "BillToPayQueryRq": {
+      "PayeeEntityRef": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "FullName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "APAccountRef": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "FullName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "DueDate": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "CurrencyFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false
+        },
+        "FullName": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "IncludeRetElement": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "BillToPayQueryRs": {
+      "BillToPayRet": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false,
+        "BillToPay": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "TxnID": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "TxnType": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "APAccountRef": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "ListID": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "FullName": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "TxnDate": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "RefNumber": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "DueDate": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "AmountDue": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "CurrencyRef": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "ListID": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "FullName": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "ExchangeRate": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "AmountDueInHomeCurrency": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "CreditToApply": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "TxnID": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "TxnType": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "APAccountRef": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "ListID": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "FullName": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "TxnDate": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "RefNumber": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "CreditRemaining": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "CurrencyRef": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "ListID": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "FullName": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "ExchangeRate": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "CreditRemainingInHomeCurrency": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        }
+      }
+    }
+  }
+}

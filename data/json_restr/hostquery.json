@@ -1,0 +1,258 @@
+{
+  "QBXMLMsgsRq": {
+    "HostQueryRq": {
+      "IncludeListMetaData": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "IncludeMaxCapacity": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        }
+      },
+      "IncludeRetElement": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "HostQueryRs": {
+      "HostRet": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ProductName": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "MajorVersion": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "MinorVersion": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "Country": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "SupportedQBXMLVersion": {
+          "@may_repeat": true,
+          "@optional": false,
+          "@required": true
+        },
+        "IsAutomaticLogin": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "QBFileMode": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "ListMetaData": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "AccountMetaData": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "MaxCapacity": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          },
+          "BillingRateMetaData": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "MaxCapacity": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          },
+          "ClassMetaData": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "MaxCapacity": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          },
+          "CustomerMsgMetaData": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "MaxCapacity": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          },
+          "CustomerTypeMetaData": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "MaxCapacity": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          },
+          "EntityMetaData": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "MaxCapacity": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          },
+          "ItemMetaData": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "MaxCapacity": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          },
+          "JobTypeMetaData": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "MaxCapacity": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          },
+          "PaymentMethodMetaData": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "MaxCapacity": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          },
+          "PayrollItemMetaData": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "MaxCapacity": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          },
+          "PriceLevelMetaData": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "MaxCapacity": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          },
+          "SalesRepMetaData": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "MaxCapacity": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          },
+          "SalesTaxCodeMetaData": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "MaxCapacity": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          },
+          "ShipMethodMetaData": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "MaxCapacity": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          },
+          "TemplateMetaData": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "MaxCapacity": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          },
+          "TermsMetaData": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "MaxCapacity": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          },
+          "ToDoMetaData": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "MaxCapacity": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          },
+          "VehicleMetaData": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "MaxCapacity": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          },
+          "VendorTypeMetaData": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "MaxCapacity": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

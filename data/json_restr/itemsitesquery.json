@@ -1,0 +1,203 @@
+{
+  "QBXMLMsgsRq": {
+    "ItemSitesQueryRq": {
+      "ListID": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      },
+      "ItemTypeFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "ItemSiteFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ItemFilter": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": true,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": true,
+            "@optional": true,
+            "@required": false
+          },
+          "ListIDWithChildren": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullNameWithChildren": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "SiteFilter": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": true,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": true,
+            "@optional": true,
+            "@required": false
+          }
+        }
+      },
+      "MaxReturned": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "ActiveStatus": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "IncludeRetElement": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "ItemSitesQueryRs": {
+      "ItemSitesRet": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TimeCreated": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TimeModified": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ItemInventoryAssemblyRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "ItemInventoryRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "InventorySiteRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "InventorySiteLocationRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "ReorderLevel": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "QuantityOnHand": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "QuantityOnPurchaseOrders": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "QuantityOnSalesOrders": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "QuantityToBeBuiltByPendingBuildTxns": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "QuantityRequiredByPendingBuildTxns": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "QuantityOnPendingTransfers": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "AssemblyBuildPoint": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      }
+    }
+  }
+}

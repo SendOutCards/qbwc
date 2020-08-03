@@ -1,0 +1,448 @@
+{
+  "QBXMLMsgsRq": {
+    "BillPaymentCreditCardAddRq": {
+      "BillPaymentCreditCardAdd": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true,
+        "PayeeEntityRef": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "APAccountRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "TxnDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "CreditCardAccountRef": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "RefNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Memo": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ExchangeRate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ExternalGUID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "AppliedToTxnAdd": {
+          "@may_repeat": true,
+          "@optional": false,
+          "@required": true,
+          "TxnID": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "PaymentAmount": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "SetCredit": {
+            "@may_repeat": true,
+            "@optional": true,
+            "@required": false,
+            "CreditTxnID": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "AppliedAmount": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "Override": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "DiscountAmount": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "DiscountAccountRef": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "ListID": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "FullName": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "DiscountClassRef": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "ListID": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "FullName": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          }
+        }
+      },
+      "IncludeRetElement": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "BillPaymentCreditCardAddRs": {
+      "BillPaymentCreditCardRet": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "TxnID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TimeCreated": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TimeModified": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TxnNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "PayeeEntityRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "APAccountRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "TxnDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "CreditCardAccountRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "Amount": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "CurrencyRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "ExchangeRate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "AmountInHomeCurrency": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "RefNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Memo": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ExternalGUID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "AppliedToTxnRet": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false,
+          "TxnID": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "TxnType": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "TxnDate": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "RefNumber": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "BalanceRemaining": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Amount": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "DiscountAmount": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "DiscountAccountRef": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "ListID": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "FullName": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "DiscountClassRef": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "ListID": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "FullName": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "LinkedTxn": {
+            "@may_repeat": true,
+            "@optional": true,
+            "@required": false,
+            "TxnID": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "TxnType": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "TxnDate": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "RefNumber": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "LinkType": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "Amount": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          }
+        },
+        "DataExtRet": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false,
+          "OwnerID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "DataExtName": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "DataExtType": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "DataExtValue": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          }
+        }
+      },
+      "ErrorRecovery": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "OwnerID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TxnID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TxnNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ExternalGUID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      }
+    }
+  }
+}

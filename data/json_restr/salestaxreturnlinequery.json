@@ -1,0 +1,43 @@
+{
+  "QBXMLMsgsRq": {
+    "SalesTaxReturnLineQueryRq": {
+      "TaxAgencyVendorRef": {
+        "@may_repeat": true,
+        "@optional": false,
+        "@required": true,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "FullName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      }
+    },
+    "SalesTaxReturnLineQueryRs": {
+      "SalesTaxReturnLineRet": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "FullName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "LineType": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      }
+    }
+  }
+}

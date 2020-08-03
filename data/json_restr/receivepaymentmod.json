@@ -1,0 +1,758 @@
+{
+  "QBXMLMsgsRq": {
+    "ReceivePaymentModRq": {
+      "ReceivePaymentMod": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true,
+        "TxnID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "CustomerRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "ARAccountRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "TxnDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "RefNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TotalAmount": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ExchangeRate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "PaymentMethodRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "Memo": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "DepositToAccountRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "CreditCardTxnInfoMod": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "CreditCardTxnInputInfoMod": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "CreditCardNumber": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "ExpirationMonth": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "ExpirationYear": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "NameOnCard": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "CreditCardAddress": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "CreditCardPostalCode": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "CommercialCardCode": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "TransactionMode": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "CreditCardTxnType": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "CreditCardTxnResultInfoMod": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "ResultCode": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "ResultMessage": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "CreditCardTransID": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "MerchantAccountNumber": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "AuthorizationCode": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "AVSStreet": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "AVSZip": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "CardSecurityCodeMatch": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "ReconBatchID": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "PaymentGroupingCode": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "PaymentStatus": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "TxnAuthorizationTime": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "TxnAuthorizationStamp": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "ClientTransID": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          }
+        },
+        "AppliedToTxnMod": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false,
+          "TxnID": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "PaymentAmount": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "SetCredit": {
+            "@may_repeat": true,
+            "@optional": true,
+            "@required": false,
+            "CreditTxnID": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "AppliedAmount": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "Override": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "DiscountAmount": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "DiscountAccountRef": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "ListID": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "FullName": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "DiscountClassRef": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "ListID": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "FullName": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          }
+        }
+      },
+      "IncludeRetElement": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "ReceivePaymentModRs": {
+      "ReceivePaymentRet": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "TxnID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TimeCreated": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TimeModified": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TxnNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "CustomerRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "ARAccountRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "TxnDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "RefNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TotalAmount": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "CurrencyRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "ExchangeRate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TotalAmountInHomeCurrency": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "PaymentMethodRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "Memo": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "DepositToAccountRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "CreditCardTxnInfo": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "CreditCardTxnInputInfo": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "CreditCardNumber": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "ExpirationMonth": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "ExpirationYear": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "NameOnCard": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "CreditCardAddress": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "CreditCardPostalCode": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "CommercialCardCode": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "TransactionMode": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "CreditCardTxnType": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "CreditCardTxnResultInfo": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true,
+            "ResultCode": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "ResultMessage": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "CreditCardTransID": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "MerchantAccountNumber": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "AuthorizationCode": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "AVSStreet": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "AVSZip": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "CardSecurityCodeMatch": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "ReconBatchID": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "PaymentGroupingCode": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "PaymentStatus": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "TxnAuthorizationTime": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "TxnAuthorizationStamp": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "ClientTransID": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          }
+        },
+        "UnusedPayment": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "UnusedCredits": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ExternalGUID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "AppliedToTxnRet": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false,
+          "TxnID": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "TxnType": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "TxnDate": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "RefNumber": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "BalanceRemaining": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Amount": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "DiscountAmount": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "DiscountAccountRef": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "ListID": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "FullName": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "DiscountClassRef": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "ListID": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "FullName": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "LinkedTxn": {
+            "@may_repeat": true,
+            "@optional": true,
+            "@required": false,
+            "TxnID": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "TxnType": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "TxnDate": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "RefNumber": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "LinkType": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "Amount": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            }
+          }
+        },
+        "DataExtRet": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false,
+          "OwnerID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "DataExtName": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "DataExtType": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "DataExtValue": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          }
+        }
+      },
+      "ErrorRecovery": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "OwnerID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TxnID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TxnNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ExternalGUID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      }
+    }
+  }
+}

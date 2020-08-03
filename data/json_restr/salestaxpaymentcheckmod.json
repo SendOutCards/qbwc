@@ -1,0 +1,383 @@
+{
+  "QBXMLMsgsRq": {
+    "SalesTaxPaymentCheckModRq": {
+      "SalesTaxPaymentCheckMod": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true,
+        "TxnID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TxnDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "BankAccountRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "IsToBePrinted": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "RefNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Memo": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Address": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "Addr1": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr2": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr3": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr4": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr5": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "City": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "State": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "PostalCode": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Country": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Note": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        }
+      },
+      "IncludeRetElement": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "SalesTaxPaymentCheckModRs": {
+      "SalesTaxPaymentCheckRet": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "TxnID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeCreated": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeModified": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TxnNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "PayeeEntityRef": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "TxnDate": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "BankAccountRef": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true,
+          "ListID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "FullName": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "Amount": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "RefNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Memo": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Address": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "Addr1": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr2": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr3": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr4": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr5": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "City": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "State": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "PostalCode": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Country": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Note": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "AddressBlock": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "Addr1": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr2": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr3": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr4": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr5": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "IsToBePrinted": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ExternalGUID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "SalesTaxPaymentCheckLineRet": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false,
+          "TxnLineID": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "ItemSalesTaxRef": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "ListID": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            },
+            "FullName": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false
+            }
+          },
+          "Amount": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "DataExtRet": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false,
+          "OwnerID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "DataExtName": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "DataExtType": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "DataExtValue": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          }
+        }
+      },
+      "ErrorRecovery": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "OwnerID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TxnID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "TxnNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ExternalGUID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      }
+    }
+  }
+}

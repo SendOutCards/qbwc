@@ -1,0 +1,288 @@
+{
+  "QBXMLMsgsRq": {
+    "GeneralSummaryReportQueryRq": {
+      "GeneralSummaryReportType": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true
+      },
+      "DisplayReport": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "ReportPeriod": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "FromReportDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ToReportDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "ReportDateMacro": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "ReportAccountFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "AccountTypeFilter": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ListID": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false
+        },
+        "FullName": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false
+        },
+        "ListIDWithChildren": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "FullNameWithChildren": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "ReportEntityFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "EntityTypeFilter": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ListID": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false
+        },
+        "FullName": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false
+        },
+        "ListIDWithChildren": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "FullNameWithChildren": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "ReportItemFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ItemTypeFilter": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ListID": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false
+        },
+        "FullName": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false
+        },
+        "ListIDWithChildren": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "FullNameWithChildren": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "ReportClassFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false
+        },
+        "FullName": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false
+        },
+        "ListIDWithChildren": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "FullNameWithChildren": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "ReportTxnTypeFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "TxnTypeFilter": {
+          "@may_repeat": true,
+          "@optional": false,
+          "@required": true
+        }
+      },
+      "ReportModifiedDateRangeFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "FromReportModifiedDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ToReportModifiedDate": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "ReportModifiedDateRangeMacro": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "ReportDetailLevelFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "ReportPostingStatusFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "SummarizeColumnsBy": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "IncludeSubcolumns": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "ReportCalendar": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "ReturnRows": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "ReturnColumns": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "ReportBasis": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "GeneralSummaryReportQueryRs": {
+      "ReportRet": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "ReportTitle": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "ReportSubtitle": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "ReportBasis": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "NumRows": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "NumColumns": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "NumColTitleRows": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "ColDesc": {
+          "@may_repeat": true,
+          "@optional": false,
+          "@required": true,
+          "ColType": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          }
+        },
+        "ReportData": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "DataRow": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "SubtotalRow": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "TotalRow": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        }
+      }
+    }
+  }
+}

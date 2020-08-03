@@ -7,7 +7,7 @@ REQUIRED = 'required'
 REPEATABLE = 'may repeat'
 OPTIONS = {OPTIONAL, REQUIRED, REPEATABLE}
 
-xml_files = glob.glob('qbwc/data/xml/*.xml')
+xml_files = glob.glob('data/xml/*.xml')
 
 
 def add_restrictions(nesting, r, options):
@@ -53,6 +53,6 @@ for f in xml_files:
 			node = line[1:].split(split_c)[0]
 			nesting.append(node)
 	p = f.rsplit('/', 1)[1].rsplit('.', 1)[0]
-	with open(f'qbwc/data/json_restr/{p}.json', 'w') as out:
+	with open(f'data/json_restr/{p}.json', 'w') as out:
 		json.dump(restrictions, out, indent=2)
 

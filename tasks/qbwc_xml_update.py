@@ -34,7 +34,7 @@ for o in p:
 	xml = ''.join(xml).strip()
 	xmltodict.parse(xml)
 
-	with open(f'qbwc/data/xml/{o}.xml', 'wb') as out:
+	with open(f'data/xml/{o}.xml', 'wb') as out:
 		out.write(xml_format(xml))
 
 	print(f'finished {o}')

@@ -1,0 +1,293 @@
+{
+  "QBXMLMsgsRq": {
+    "OtherNameQueryRq": {
+      "ListID": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      },
+      "FullName": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      },
+      "MaxReturned": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "ActiveStatus": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "FromModifiedDate": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "ToModifiedDate": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false
+      },
+      "NameFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "MatchCriterion": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "Name": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        }
+      },
+      "NameRangeFilter": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "FromName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ToName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        }
+      },
+      "IncludeRetElement": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      },
+      "OwnerID": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false
+      }
+    },
+    "OtherNameQueryRs": {
+      "OtherNameRet": {
+        "@may_repeat": true,
+        "@optional": true,
+        "@required": false,
+        "ListID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeCreated": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeModified": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "EditSequence": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "Name": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "IsActive": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "CompanyName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Salutation": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "FirstName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "MiddleName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "LastName": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "OtherNameAddress": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "Addr1": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr2": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr3": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr4": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr5": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "City": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "State": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "PostalCode": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Country": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Note": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "OtherNameAddressBlock": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false,
+          "Addr1": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr2": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr3": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr4": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "Addr5": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "Phone": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "AltPhone": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Fax": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Email": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Contact": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "AltContact": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "AccountNumber": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "Notes": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ExternalGUID": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "DataExtRet": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false,
+          "OwnerID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "DataExtName": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "DataExtType": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "DataExtValue": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          }
+        }
+      }
+    }
+  }
+}

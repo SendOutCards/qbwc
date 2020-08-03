@@ -1,0 +1,168 @@
+{
+  "QBXMLSubscriptionMsgsRq": {
+    "DataEventSubscriptionAddRq": {
+      "DataEventSubscriptionAdd": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true,
+        "SubscriberID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "COMCallbackInfo": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true,
+          "AppName": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "ProgID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "CLSID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "DeliveryPolicy": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TrackLostEvents": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "DeliverOwnEvents": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ListEventSubscription": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false,
+          "ListEventType": {
+            "@may_repeat": true,
+            "@optional": false,
+            "@required": true
+          },
+          "ListEventOperation": {
+            "@may_repeat": true,
+            "@optional": false,
+            "@required": true
+          }
+        },
+        "TxnEventSubscription": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false,
+          "TxnEventType": {
+            "@may_repeat": true,
+            "@optional": false,
+            "@required": true
+          },
+          "TxnEventOperation": {
+            "@may_repeat": true,
+            "@optional": false,
+            "@required": true
+          }
+        }
+      }
+    },
+    "DataEventSubscriptionAddRs": {
+      "DataEventSubscriptionRet": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "SubscriberID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeCreated": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeLastProcessed": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "COMCallbackInfo": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true,
+          "AppName": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "ProgID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "CLSID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "DeliveryPolicy": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TrackLostEvents": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "DeliverOwnEvents": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "ListEventSubscription": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false,
+          "ListEventType": {
+            "@may_repeat": true,
+            "@optional": false,
+            "@required": true
+          },
+          "ListEventOperation": {
+            "@may_repeat": true,
+            "@optional": false,
+            "@required": true
+          }
+        },
+        "TxnEventSubscription": {
+          "@may_repeat": true,
+          "@optional": true,
+          "@required": false,
+          "TxnEventType": {
+            "@may_repeat": true,
+            "@optional": false,
+            "@required": true
+          },
+          "TxnEventOperation": {
+            "@may_repeat": true,
+            "@optional": false,
+            "@required": true
+          }
+        }
+      }
+    }
+  }
+}

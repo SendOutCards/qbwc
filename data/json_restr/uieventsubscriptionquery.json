@@ -1,0 +1,68 @@
+{
+  "QBXMLSubscriptionMsgsRq": {
+    "UIEventSubscriptionQueryRq": {
+      "SubscriberID": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true
+      }
+    },
+    "UIEventSubscriptionQueryRs": {
+      "UIEventSubscriptionRet": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "SubscriberID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeCreated": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeLastProcessed": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "COMCallbackInfo": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true,
+          "AppName": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "ProgID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "CLSID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "DeliveryPolicy": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "CompanyFileEventSubscription": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true,
+          "CompanyFileEventOperation": {
+            "@may_repeat": true,
+            "@optional": false,
+            "@required": true
+          }
+        }
+      }
+    }
+  }
+}

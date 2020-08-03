@@ -1,0 +1,318 @@
+{
+  "QBXMLSubscriptionMsgsRq": {
+    "UIExtensionSubscriptionAddRq": {
+      "UIExtensionSubscriptionAdd": {
+        "@may_repeat": false,
+        "@optional": false,
+        "@required": true,
+        "SubscriberID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "COMCallbackInfo": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true,
+          "AppName": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "ProgID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "CLSID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "MenuExtensionSubscription": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true,
+          "AddToMenu": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "Submenu": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "DisplayCondition": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false,
+              "VisibleIf": {
+                "@may_repeat": true,
+                "@optional": true,
+                "@required": false
+              },
+              "VisibleIfNot": {
+                "@may_repeat": true,
+                "@optional": true,
+                "@required": false
+              },
+              "EnabledIf": {
+                "@may_repeat": true,
+                "@optional": true,
+                "@required": false
+              },
+              "EnabledIfNot": {
+                "@may_repeat": true,
+                "@optional": true,
+                "@required": false
+              }
+            },
+            "MenuItem": {
+              "@may_repeat": true,
+              "@optional": false,
+              "@required": true,
+              "MenuText": {
+                "@may_repeat": false,
+                "@optional": false,
+                "@required": true
+              },
+              "EventTag": {
+                "@may_repeat": false,
+                "@optional": false,
+                "@required": true
+              },
+              "DisplayCondition": {
+                "@may_repeat": false,
+                "@optional": true,
+                "@required": false,
+                "VisibleIf": {
+                  "@may_repeat": true,
+                  "@optional": true,
+                  "@required": false
+                },
+                "VisibleIfNot": {
+                  "@may_repeat": true,
+                  "@optional": true,
+                  "@required": false
+                },
+                "EnabledIf": {
+                  "@may_repeat": true,
+                  "@optional": true,
+                  "@required": false
+                },
+                "EnabledIfNot": {
+                  "@may_repeat": true,
+                  "@optional": true,
+                  "@required": false
+                }
+              }
+            }
+          },
+          "MenuItem": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "MenuText": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "EventTag": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "DisplayCondition": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false,
+              "VisibleIf": {
+                "@may_repeat": true,
+                "@optional": true,
+                "@required": false
+              },
+              "VisibleIfNot": {
+                "@may_repeat": true,
+                "@optional": true,
+                "@required": false
+              },
+              "EnabledIf": {
+                "@may_repeat": true,
+                "@optional": true,
+                "@required": false
+              },
+              "EnabledIfNot": {
+                "@may_repeat": true,
+                "@optional": true,
+                "@required": false
+              }
+            }
+          }
+        }
+      }
+    },
+    "UIExtensionSubscriptionAddRs": {
+      "UIExtensionSubscriptionRet": {
+        "@may_repeat": false,
+        "@optional": true,
+        "@required": false,
+        "SubscriberID": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeCreated": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true
+        },
+        "TimeLastProcessed": {
+          "@may_repeat": false,
+          "@optional": true,
+          "@required": false
+        },
+        "COMCallbackInfo": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true,
+          "AppName": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "ProgID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          },
+          "CLSID": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false
+          }
+        },
+        "MenuExtensionSubscription": {
+          "@may_repeat": false,
+          "@optional": false,
+          "@required": true,
+          "AddToMenu": {
+            "@may_repeat": false,
+            "@optional": false,
+            "@required": true
+          },
+          "Submenu": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "DisplayCondition": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false,
+              "VisibleIf": {
+                "@may_repeat": true,
+                "@optional": true,
+                "@required": false
+              },
+              "VisibleIfNot": {
+                "@may_repeat": true,
+                "@optional": true,
+                "@required": false
+              },
+              "EnabledIf": {
+                "@may_repeat": true,
+                "@optional": true,
+                "@required": false
+              },
+              "EnabledIfNot": {
+                "@may_repeat": true,
+                "@optional": true,
+                "@required": false
+              }
+            },
+            "MenuItem": {
+              "@may_repeat": true,
+              "@optional": false,
+              "@required": true,
+              "MenuText": {
+                "@may_repeat": false,
+                "@optional": false,
+                "@required": true
+              },
+              "EventTag": {
+                "@may_repeat": false,
+                "@optional": false,
+                "@required": true
+              },
+              "DisplayCondition": {
+                "@may_repeat": false,
+                "@optional": true,
+                "@required": false,
+                "VisibleIf": {
+                  "@may_repeat": true,
+                  "@optional": true,
+                  "@required": false
+                },
+                "VisibleIfNot": {
+                  "@may_repeat": true,
+                  "@optional": true,
+                  "@required": false
+                },
+                "EnabledIf": {
+                  "@may_repeat": true,
+                  "@optional": true,
+                  "@required": false
+                },
+                "EnabledIfNot": {
+                  "@may_repeat": true,
+                  "@optional": true,
+                  "@required": false
+                }
+              }
+            }
+          },
+          "MenuItem": {
+            "@may_repeat": false,
+            "@optional": true,
+            "@required": false,
+            "MenuText": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "EventTag": {
+              "@may_repeat": false,
+              "@optional": false,
+              "@required": true
+            },
+            "DisplayCondition": {
+              "@may_repeat": false,
+              "@optional": true,
+              "@required": false,
+              "VisibleIf": {
+                "@may_repeat": true,
+                "@optional": true,
+                "@required": false
+              },
+              "VisibleIfNot": {
+                "@may_repeat": true,
+                "@optional": true,
+                "@required": false
+              },
+              "EnabledIf": {
+                "@may_repeat": true,
+                "@optional": true,
+                "@required": false
+              },
+              "EnabledIfNot": {
+                "@may_repeat": true,
+                "@optional": true,
+                "@required": false
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
