@@ -7,6 +7,5 @@ setup(
 	author='Tyler Lovely',
 	author_email='tyler.n.lovely@gmail.com',
 	packages=find_packages(),
-	install_requires=open('requirements.txt').readlines(),
-	include_package_data=True
+	install_requires=open('requirements.txt').readlines()
 )
