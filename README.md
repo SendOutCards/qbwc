@@ -4,11 +4,43 @@ QuickBooks Web Connector SDK (unofficial)
 
 NOTE: WIP
 
+## Development (WIP)
+
+1. `make dev`
+2. Make changes
+3. `make test`
+4. Manually test changes (see below) against a QBWC
+
+```bash
+QBWC_USER=user QBWC_PASSWORD=password QBWC_HOST=http://host.com QBWC_PORT=8166 ./env/bin/ipython
+```
+
+```python
+import qbwc
+
+<exercise code>
+```
+
+
+
+## Deploy
+
+1. `make test`
+2. Inc version in setup.py according to semantic versioning rules in it's own commit
+3. Make PR and merge
+4. Checkout master
+5. `git tag <version in setup.py>`
+6. `git push --tags` 
+7. `cp .pypirc.example ~/.pypirc`
+8. Edit `~/.pypirc`, populate `[soc]` section with credentials
+9. `make deploy`
+10. Done
+
 ## Basic Installation and Usage
 
 ```bash
-virtualenv -p python3.7 env
-./env/bin/pip install qbwc
+make env
+./env/bin/pip install -e .  # editable install
 QBWC_USER=user QBWC_PASSWORD=password QBWC_HOST=http://host.com QBWC_PORT=8166 ./env/bin/python
 ```
 
