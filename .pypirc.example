@@ -1,0 +1,7 @@
+[distutils]
+index-servers = soc
+
+[soc]
+repository: https://pypi.hq.sendoutcards.com/pypi
+username:
+password:
