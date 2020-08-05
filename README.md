@@ -21,7 +21,22 @@ import qbwc
 <exercise code>
 ```
 
+## Refresh XML from intuit.com
 
+`make xml` scraps api-reference site for qbwc from intuit.com and constructs and XML document per resource. 
+
+```bash
+make xml
+make types  # types must be regenerated
+```
+
+## Refresh qbwc/generated/types.py
+
+[Re]Generates intermediate files from XML and produces types.py
+
+```bash
+make types
+```
 
 ## Deploy
 
