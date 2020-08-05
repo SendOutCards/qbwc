@@ -3,544 +3,544 @@
     "JournalEntryAddRq": {
       "JournalEntryAdd": {
         "@may_repeat": false,
-        "@optional": false,
         "@required": true,
+        "@optional": false,
         "TxnDate": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "RefNumber": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "IsAdjustment": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "IsHomeCurrencyAdjustment": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "IsAmountsEnteredInHomeCurrency": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "CurrencyRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "ExchangeRate": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ExternalGUID": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "JournalDebitLine": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "TxnLineID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "AccountRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "Amount": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Memo": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "EntityRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "ClassRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "ItemSalesTaxRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "BillableStatus": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "JournalCreditLine": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "TxnLineID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "AccountRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "Amount": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Memo": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "EntityRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "ClassRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "ItemSalesTaxRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "BillableStatus": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         }
       },
       "IncludeRetElement": {
         "@may_repeat": true,
-        "@optional": true,
-        "@required": false
+        "@required": false,
+        "@optional": true
       }
     },
     "JournalEntryAddRs": {
       "JournalEntryRet": {
         "@may_repeat": false,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "TxnID": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "TimeCreated": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "TimeModified": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "EditSequence": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "TxnNumber": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "TxnDate": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "RefNumber": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "IsAdjustment": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "IsHomeCurrencyAdjustment": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "IsAmountsEnteredInHomeCurrency": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "CurrencyRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "ExchangeRate": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ExternalGUID": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "JournalDebitLine": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "TxnLineID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "AccountRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "Amount": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Memo": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "EntityRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "ClassRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "ItemSalesTaxRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "BillableStatus": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "JournalCreditLine": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "TxnLineID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "AccountRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "Amount": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Memo": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "EntityRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "ClassRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "ItemSalesTaxRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "BillableStatus": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "DataExtRet": {
           "@may_repeat": true,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "OwnerID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "DataExtName": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "DataExtType": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "DataExtValue": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           }
         }
       },
       "ErrorRecovery": {
         "@may_repeat": false,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "ListID": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "OwnerID": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "TxnID": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "TxnNumber": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "EditSequence": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ExternalGUID": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         }
       }
     }

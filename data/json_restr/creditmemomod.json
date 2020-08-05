@@ -3,2039 +3,2039 @@
     "CreditMemoModRq": {
       "CreditMemoMod": {
         "@may_repeat": false,
-        "@optional": false,
         "@required": true,
+        "@optional": false,
         "TxnID": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "EditSequence": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "CustomerRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "ClassRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "ARAccountRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "TemplateRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "TxnDate": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "RefNumber": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "BillAddress": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "Addr1": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr2": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr3": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr4": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr5": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "City": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "State": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "PostalCode": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Country": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Note": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "ShipAddress": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "Addr1": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr2": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr3": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr4": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr5": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "City": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "State": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "PostalCode": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Country": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Note": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "IsPending": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "PONumber": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "TermsRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "DueDate": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "SalesRepRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "FOB": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ShipDate": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ShipMethodRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "ItemSalesTaxRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "Memo": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "CustomerMsgRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "IsToBePrinted": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "IsToBeEmailed": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "IsTaxIncluded": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "CustomerSalesTaxCodeRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "Other": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ExchangeRate": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "CreditMemoLineMod": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "TxnLineID": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "ItemRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "Desc": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Quantity": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "UnitOfMeasure": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "OverrideUOMSetRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "Rate": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "RatePercent": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "PriceLevelRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "ClassRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "Amount": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "InventorySiteRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "InventorySiteLocationRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "SerialNumber": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "LotNumber": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "ServiceDate": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "SalesTaxCodeRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "OverrideItemAccountRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "Other1": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Other2": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "CreditMemoLineGroupMod": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "TxnLineID": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "ItemGroupRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "Quantity": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "UnitOfMeasure": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "OverrideUOMSetRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "CreditMemoLineMod": {
             "@may_repeat": true,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "TxnLineID": {
               "@may_repeat": false,
-              "@optional": false,
-              "@required": true
+              "@required": true,
+              "@optional": false
             },
             "ItemRef": {
               "@may_repeat": false,
-              "@optional": true,
               "@required": false,
+              "@optional": true,
               "ListID": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "FullName": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               }
             },
             "Desc": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "Quantity": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "UnitOfMeasure": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "OverrideUOMSetRef": {
               "@may_repeat": false,
-              "@optional": true,
               "@required": false,
+              "@optional": true,
               "ListID": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "FullName": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               }
             },
             "Rate": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "RatePercent": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "PriceLevelRef": {
               "@may_repeat": false,
-              "@optional": true,
               "@required": false,
+              "@optional": true,
               "ListID": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "FullName": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               }
             },
             "ClassRef": {
               "@may_repeat": false,
-              "@optional": true,
               "@required": false,
+              "@optional": true,
               "ListID": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "FullName": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               }
             },
             "Amount": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "InventorySiteRef": {
               "@may_repeat": false,
-              "@optional": true,
               "@required": false,
+              "@optional": true,
               "ListID": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "FullName": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               }
             },
             "InventorySiteLocationRef": {
               "@may_repeat": false,
-              "@optional": true,
               "@required": false,
+              "@optional": true,
               "ListID": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "FullName": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               }
             },
             "SerialNumber": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "LotNumber": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "ServiceDate": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "SalesTaxCodeRef": {
               "@may_repeat": false,
-              "@optional": true,
               "@required": false,
+              "@optional": true,
               "ListID": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "FullName": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               }
             },
             "OverrideItemAccountRef": {
               "@may_repeat": false,
-              "@optional": true,
               "@required": false,
+              "@optional": true,
               "ListID": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "FullName": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               }
             },
             "Other1": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "Other2": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           }
         }
       },
       "IncludeRetElement": {
         "@may_repeat": true,
-        "@optional": true,
-        "@required": false
+        "@required": false,
+        "@optional": true
       }
     },
     "CreditMemoModRs": {
       "CreditMemoRet": {
         "@may_repeat": false,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "TxnID": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "TimeCreated": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "TimeModified": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "EditSequence": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "TxnNumber": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "CustomerRef": {
           "@may_repeat": false,
-          "@optional": false,
           "@required": true,
+          "@optional": false,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "ClassRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "ARAccountRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "TemplateRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "TxnDate": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "RefNumber": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "BillAddress": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "Addr1": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr2": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr3": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr4": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr5": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "City": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "State": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "PostalCode": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Country": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Note": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "BillAddressBlock": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "Addr1": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr2": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr3": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr4": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr5": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "ShipAddress": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "Addr1": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr2": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr3": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr4": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr5": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "City": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "State": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "PostalCode": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Country": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Note": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "ShipAddressBlock": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "Addr1": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr2": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr3": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr4": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Addr5": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "IsPending": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "PONumber": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "TermsRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "DueDate": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "SalesRepRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "FOB": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ShipDate": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ShipMethodRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "Subtotal": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ItemSalesTaxRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "SalesTaxPercentage": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "SalesTaxTotal": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "TotalAmount": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "CreditRemaining": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "CurrencyRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "ExchangeRate": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "CreditRemainingInHomeCurrency": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "Memo": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "CustomerMsgRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "IsToBePrinted": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "IsToBeEmailed": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "IsTaxIncluded": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "CustomerSalesTaxCodeRef": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "ListID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FullName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "Other": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ExternalGUID": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "LinkedTxn": {
           "@may_repeat": true,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "TxnID": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "TxnType": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "TxnDate": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "RefNumber": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "LinkType": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Amount": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           }
         },
         "CreditMemoLineRet": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "TxnLineID": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "ItemRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "Desc": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Quantity": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "UnitOfMeasure": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "OverrideUOMSetRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "Rate": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "RatePercent": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "ClassRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "Amount": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "InventorySiteRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "InventorySiteLocationRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "SerialNumber": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "LotNumber": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "ServiceDate": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "SalesTaxCodeRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "Other1": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Other2": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "CreditCardTxnInfo": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "CreditCardTxnInputInfo": {
               "@may_repeat": false,
-              "@optional": false,
               "@required": true,
+              "@optional": false,
               "CreditCardNumber": {
                 "@may_repeat": false,
-                "@optional": false,
-                "@required": true
+                "@required": true,
+                "@optional": false
               },
               "ExpirationMonth": {
                 "@may_repeat": false,
-                "@optional": false,
-                "@required": true
+                "@required": true,
+                "@optional": false
               },
               "ExpirationYear": {
                 "@may_repeat": false,
-                "@optional": false,
-                "@required": true
+                "@required": true,
+                "@optional": false
               },
               "NameOnCard": {
                 "@may_repeat": false,
-                "@optional": false,
-                "@required": true
+                "@required": true,
+                "@optional": false
               },
               "CreditCardAddress": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "CreditCardPostalCode": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "CommercialCardCode": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "TransactionMode": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "CreditCardTxnType": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               }
             },
             "CreditCardTxnResultInfo": {
               "@may_repeat": false,
-              "@optional": false,
               "@required": true,
+              "@optional": false,
               "ResultCode": {
                 "@may_repeat": false,
-                "@optional": false,
-                "@required": true
+                "@required": true,
+                "@optional": false
               },
               "ResultMessage": {
                 "@may_repeat": false,
-                "@optional": false,
-                "@required": true
+                "@required": true,
+                "@optional": false
               },
               "CreditCardTransID": {
                 "@may_repeat": false,
-                "@optional": false,
-                "@required": true
+                "@required": true,
+                "@optional": false
               },
               "MerchantAccountNumber": {
                 "@may_repeat": false,
-                "@optional": false,
-                "@required": true
+                "@required": true,
+                "@optional": false
               },
               "AuthorizationCode": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "AVSStreet": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "AVSZip": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "CardSecurityCodeMatch": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "ReconBatchID": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "PaymentGroupingCode": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "PaymentStatus": {
                 "@may_repeat": false,
-                "@optional": false,
-                "@required": true
+                "@required": true,
+                "@optional": false
               },
               "TxnAuthorizationTime": {
                 "@may_repeat": false,
-                "@optional": false,
-                "@required": true
+                "@required": true,
+                "@optional": false
               },
               "TxnAuthorizationStamp": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "ClientTransID": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               }
             }
           },
           "DataExtRet": {
             "@may_repeat": true,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "OwnerID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "DataExtName": {
               "@may_repeat": false,
-              "@optional": false,
-              "@required": true
+              "@required": true,
+              "@optional": false
             },
             "DataExtType": {
               "@may_repeat": false,
-              "@optional": false,
-              "@required": true
+              "@required": true,
+              "@optional": false
             },
             "DataExtValue": {
               "@may_repeat": false,
-              "@optional": false,
-              "@required": true
+              "@required": true,
+              "@optional": false
             }
           }
         },
         "CreditMemoLineGroupRet": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "TxnLineID": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "ItemGroupRef": {
             "@may_repeat": false,
-            "@optional": false,
             "@required": true,
+            "@optional": false,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "Desc": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "Quantity": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "UnitOfMeasure": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "OverrideUOMSetRef": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "ListID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "FullName": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           },
           "IsPrintItemsInGroup": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "TotalAmount": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "CreditMemoLineRet": {
             "@may_repeat": true,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "TxnLineID": {
               "@may_repeat": false,
-              "@optional": false,
-              "@required": true
+              "@required": true,
+              "@optional": false
             },
             "ItemRef": {
               "@may_repeat": false,
-              "@optional": true,
               "@required": false,
+              "@optional": true,
               "ListID": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "FullName": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               }
             },
             "Desc": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "Quantity": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "UnitOfMeasure": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "OverrideUOMSetRef": {
               "@may_repeat": false,
-              "@optional": true,
               "@required": false,
+              "@optional": true,
               "ListID": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "FullName": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               }
             },
             "Rate": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "RatePercent": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "ClassRef": {
               "@may_repeat": false,
-              "@optional": true,
               "@required": false,
+              "@optional": true,
               "ListID": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "FullName": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               }
             },
             "Amount": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "InventorySiteRef": {
               "@may_repeat": false,
-              "@optional": true,
               "@required": false,
+              "@optional": true,
               "ListID": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "FullName": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               }
             },
             "InventorySiteLocationRef": {
               "@may_repeat": false,
-              "@optional": true,
               "@required": false,
+              "@optional": true,
               "ListID": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "FullName": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               }
             },
             "SerialNumber": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "LotNumber": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "ServiceDate": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "SalesTaxCodeRef": {
               "@may_repeat": false,
-              "@optional": true,
               "@required": false,
+              "@optional": true,
               "ListID": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "FullName": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               }
             },
             "Other1": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "Other2": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "CreditCardTxnInfo": {
               "@may_repeat": false,
-              "@optional": true,
               "@required": false,
+              "@optional": true,
               "CreditCardTxnInputInfo": {
                 "@may_repeat": false,
-                "@optional": false,
                 "@required": true,
+                "@optional": false,
                 "CreditCardNumber": {
                   "@may_repeat": false,
-                  "@optional": false,
-                  "@required": true
+                  "@required": true,
+                  "@optional": false
                 },
                 "ExpirationMonth": {
                   "@may_repeat": false,
-                  "@optional": false,
-                  "@required": true
+                  "@required": true,
+                  "@optional": false
                 },
                 "ExpirationYear": {
                   "@may_repeat": false,
-                  "@optional": false,
-                  "@required": true
+                  "@required": true,
+                  "@optional": false
                 },
                 "NameOnCard": {
                   "@may_repeat": false,
-                  "@optional": false,
-                  "@required": true
+                  "@required": true,
+                  "@optional": false
                 },
                 "CreditCardAddress": {
                   "@may_repeat": false,
-                  "@optional": true,
-                  "@required": false
+                  "@required": false,
+                  "@optional": true
                 },
                 "CreditCardPostalCode": {
                   "@may_repeat": false,
-                  "@optional": true,
-                  "@required": false
+                  "@required": false,
+                  "@optional": true
                 },
                 "CommercialCardCode": {
                   "@may_repeat": false,
-                  "@optional": true,
-                  "@required": false
+                  "@required": false,
+                  "@optional": true
                 },
                 "TransactionMode": {
                   "@may_repeat": false,
-                  "@optional": true,
-                  "@required": false
+                  "@required": false,
+                  "@optional": true
                 },
                 "CreditCardTxnType": {
                   "@may_repeat": false,
-                  "@optional": true,
-                  "@required": false
+                  "@required": false,
+                  "@optional": true
                 }
               },
               "CreditCardTxnResultInfo": {
                 "@may_repeat": false,
-                "@optional": false,
                 "@required": true,
+                "@optional": false,
                 "ResultCode": {
                   "@may_repeat": false,
-                  "@optional": false,
-                  "@required": true
+                  "@required": true,
+                  "@optional": false
                 },
                 "ResultMessage": {
                   "@may_repeat": false,
-                  "@optional": false,
-                  "@required": true
+                  "@required": true,
+                  "@optional": false
                 },
                 "CreditCardTransID": {
                   "@may_repeat": false,
-                  "@optional": false,
-                  "@required": true
+                  "@required": true,
+                  "@optional": false
                 },
                 "MerchantAccountNumber": {
                   "@may_repeat": false,
-                  "@optional": false,
-                  "@required": true
+                  "@required": true,
+                  "@optional": false
                 },
                 "AuthorizationCode": {
                   "@may_repeat": false,
-                  "@optional": true,
-                  "@required": false
+                  "@required": false,
+                  "@optional": true
                 },
                 "AVSStreet": {
                   "@may_repeat": false,
-                  "@optional": true,
-                  "@required": false
+                  "@required": false,
+                  "@optional": true
                 },
                 "AVSZip": {
                   "@may_repeat": false,
-                  "@optional": true,
-                  "@required": false
+                  "@required": false,
+                  "@optional": true
                 },
                 "CardSecurityCodeMatch": {
                   "@may_repeat": false,
-                  "@optional": true,
-                  "@required": false
+                  "@required": false,
+                  "@optional": true
                 },
                 "ReconBatchID": {
                   "@may_repeat": false,
-                  "@optional": true,
-                  "@required": false
+                  "@required": false,
+                  "@optional": true
                 },
                 "PaymentGroupingCode": {
                   "@may_repeat": false,
-                  "@optional": true,
-                  "@required": false
+                  "@required": false,
+                  "@optional": true
                 },
                 "PaymentStatus": {
                   "@may_repeat": false,
-                  "@optional": false,
-                  "@required": true
+                  "@required": true,
+                  "@optional": false
                 },
                 "TxnAuthorizationTime": {
                   "@may_repeat": false,
-                  "@optional": false,
-                  "@required": true
+                  "@required": true,
+                  "@optional": false
                 },
                 "TxnAuthorizationStamp": {
                   "@may_repeat": false,
-                  "@optional": true,
-                  "@required": false
+                  "@required": false,
+                  "@optional": true
                 },
                 "ClientTransID": {
                   "@may_repeat": false,
-                  "@optional": true,
-                  "@required": false
+                  "@required": false,
+                  "@optional": true
                 }
               }
             },
             "DataExtRet": {
               "@may_repeat": true,
-              "@optional": true,
               "@required": false,
+              "@optional": true,
               "OwnerID": {
                 "@may_repeat": false,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "DataExtName": {
                 "@may_repeat": false,
-                "@optional": false,
-                "@required": true
+                "@required": true,
+                "@optional": false
               },
               "DataExtType": {
                 "@may_repeat": false,
-                "@optional": false,
-                "@required": true
+                "@required": true,
+                "@optional": false
               },
               "DataExtValue": {
                 "@may_repeat": false,
-                "@optional": false,
-                "@required": true
+                "@required": true,
+                "@optional": false
               }
             }
           },
           "DataExtRet": {
             "@may_repeat": true,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "OwnerID": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "DataExtName": {
               "@may_repeat": false,
-              "@optional": false,
-              "@required": true
+              "@required": true,
+              "@optional": false
             },
             "DataExtType": {
               "@may_repeat": false,
-              "@optional": false,
-              "@required": true
+              "@required": true,
+              "@optional": false
             },
             "DataExtValue": {
               "@may_repeat": false,
-              "@optional": false,
-              "@required": true
+              "@required": true,
+              "@optional": false
             }
           }
         },
         "DataExtRet": {
           "@may_repeat": true,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "OwnerID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "DataExtName": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "DataExtType": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "DataExtValue": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           }
         }
       },
       "ErrorRecovery": {
         "@may_repeat": false,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "ListID": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "OwnerID": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "TxnID": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "TxnNumber": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "EditSequence": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ExternalGUID": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         }
       }
     }

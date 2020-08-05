@@ -3,59 +3,59 @@
     "TxnDeletedQueryRq": {
       "TxnDelType": {
         "@may_repeat": true,
-        "@optional": false,
-        "@required": true
+        "@required": true,
+        "@optional": false
       },
       "DeletedDateRangeFilter": {
         "@may_repeat": false,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "FromDeletedDate": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ToDeletedDate": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         }
       },
       "IncludeRetElement": {
         "@may_repeat": true,
-        "@optional": true,
-        "@required": false
+        "@required": false,
+        "@optional": true
       }
     },
     "TxnDeletedQueryRs": {
       "TxnDeletedRet": {
         "@may_repeat": true,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "TxnDelType": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "TxnID": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "TimeCreated": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "TimeDeleted": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "RefNumber": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         }
       }
     }

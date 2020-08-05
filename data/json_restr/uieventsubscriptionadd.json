@@ -3,46 +3,46 @@
     "UIEventSubscriptionAddRq": {
       "UIEventSubscriptionAdd": {
         "@may_repeat": false,
-        "@optional": false,
         "@required": true,
+        "@optional": false,
         "SubscriberID": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "COMCallbackInfo": {
           "@may_repeat": false,
-          "@optional": false,
           "@required": true,
+          "@optional": false,
           "AppName": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "ProgID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "CLSID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "DeliveryPolicy": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "CompanyFileEventSubscription": {
           "@may_repeat": false,
-          "@optional": false,
           "@required": true,
+          "@optional": false,
           "CompanyFileEventOperation": {
             "@may_repeat": true,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           }
         }
       }
@@ -50,56 +50,56 @@
     "UIEventSubscriptionAddRs": {
       "UIEventSubscriptionRet": {
         "@may_repeat": false,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "SubscriberID": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "TimeCreated": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "TimeLastProcessed": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "COMCallbackInfo": {
           "@may_repeat": false,
-          "@optional": false,
           "@required": true,
+          "@optional": false,
           "AppName": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "ProgID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "CLSID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "DeliveryPolicy": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "CompanyFileEventSubscription": {
           "@may_repeat": false,
-          "@optional": false,
           "@required": true,
+          "@optional": false,
           "CompanyFileEventOperation": {
             "@may_repeat": true,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           }
         }
       }

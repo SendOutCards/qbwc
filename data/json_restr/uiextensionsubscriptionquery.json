@@ -3,166 +3,166 @@
     "UIExtensionSubscriptionQueryRq": {
       "SubscriberID": {
         "@may_repeat": false,
-        "@optional": false,
-        "@required": true
+        "@required": true,
+        "@optional": false
       }
     },
     "UIExtensionSubscriptionQueryRs": {
       "UIExtensionSubscriptionRet": {
         "@may_repeat": false,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "SubscriberID": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "TimeCreated": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "TimeLastProcessed": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "COMCallbackInfo": {
           "@may_repeat": false,
-          "@optional": false,
           "@required": true,
+          "@optional": false,
           "AppName": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "ProgID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "CLSID": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         },
         "MenuExtensionSubscription": {
           "@may_repeat": false,
-          "@optional": false,
           "@required": true,
+          "@optional": false,
           "AddToMenu": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "Submenu": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "DisplayCondition": {
               "@may_repeat": false,
-              "@optional": true,
               "@required": false,
+              "@optional": true,
               "VisibleIf": {
                 "@may_repeat": true,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "VisibleIfNot": {
                 "@may_repeat": true,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "EnabledIf": {
                 "@may_repeat": true,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "EnabledIfNot": {
                 "@may_repeat": true,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               }
             },
             "MenuItem": {
               "@may_repeat": true,
-              "@optional": false,
               "@required": true,
+              "@optional": false,
               "MenuText": {
                 "@may_repeat": false,
-                "@optional": false,
-                "@required": true
+                "@required": true,
+                "@optional": false
               },
               "EventTag": {
                 "@may_repeat": false,
-                "@optional": false,
-                "@required": true
+                "@required": true,
+                "@optional": false
               },
               "DisplayCondition": {
                 "@may_repeat": false,
-                "@optional": true,
                 "@required": false,
+                "@optional": true,
                 "VisibleIf": {
                   "@may_repeat": true,
-                  "@optional": true,
-                  "@required": false
+                  "@required": false,
+                  "@optional": true
                 },
                 "VisibleIfNot": {
                   "@may_repeat": true,
-                  "@optional": true,
-                  "@required": false
+                  "@required": false,
+                  "@optional": true
                 },
                 "EnabledIf": {
                   "@may_repeat": true,
-                  "@optional": true,
-                  "@required": false
+                  "@required": false,
+                  "@optional": true
                 },
                 "EnabledIfNot": {
                   "@may_repeat": true,
-                  "@optional": true,
-                  "@required": false
+                  "@required": false,
+                  "@optional": true
                 }
               }
             }
           },
           "MenuItem": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "MenuText": {
               "@may_repeat": false,
-              "@optional": false,
-              "@required": true
+              "@required": true,
+              "@optional": false
             },
             "EventTag": {
               "@may_repeat": false,
-              "@optional": false,
-              "@required": true
+              "@required": true,
+              "@optional": false
             },
             "DisplayCondition": {
               "@may_repeat": false,
-              "@optional": true,
               "@required": false,
+              "@optional": true,
               "VisibleIf": {
                 "@may_repeat": true,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "VisibleIfNot": {
                 "@may_repeat": true,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "EnabledIf": {
                 "@may_repeat": true,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               },
               "EnabledIfNot": {
                 "@may_repeat": true,
-                "@optional": true,
-                "@required": false
+                "@required": false,
+                "@optional": true
               }
             }
           }

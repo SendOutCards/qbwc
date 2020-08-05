@@ -3,24 +3,24 @@
     "CompanyActivityQueryRq": {
       "IncludeRetElement": {
         "@may_repeat": true,
-        "@optional": true,
-        "@required": false
+        "@required": false,
+        "@optional": true
       }
     },
     "CompanyActivityQueryRs": {
       "CompanyActivityRet": {
         "@may_repeat": false,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "LastRestoreTime": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "LastCondenseTime": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         }
       }
     }

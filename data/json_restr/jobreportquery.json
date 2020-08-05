@@ -3,263 +3,263 @@
     "JobReportQueryRq": {
       "JobReportType": {
         "@may_repeat": false,
-        "@optional": false,
-        "@required": true
+        "@required": true,
+        "@optional": false
       },
       "DisplayReport": {
         "@may_repeat": false,
-        "@optional": true,
-        "@required": false
+        "@required": false,
+        "@optional": true
       },
       "ReportPeriod": {
         "@may_repeat": false,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "FromReportDate": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ToReportDate": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         }
       },
       "ReportDateMacro": {
         "@may_repeat": false,
-        "@optional": true,
-        "@required": false
+        "@required": false,
+        "@optional": true
       },
       "ReportAccountFilter": {
         "@may_repeat": false,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "AccountTypeFilter": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ListID": {
           "@may_repeat": true,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "FullName": {
           "@may_repeat": true,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ListIDWithChildren": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "FullNameWithChildren": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         }
       },
       "ReportEntityFilter": {
         "@may_repeat": false,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "EntityTypeFilter": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ListID": {
           "@may_repeat": true,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "FullName": {
           "@may_repeat": true,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ListIDWithChildren": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "FullNameWithChildren": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         }
       },
       "ReportItemFilter": {
         "@may_repeat": false,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "ItemTypeFilter": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ListID": {
           "@may_repeat": true,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "FullName": {
           "@may_repeat": true,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ListIDWithChildren": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "FullNameWithChildren": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         }
       },
       "ReportClassFilter": {
         "@may_repeat": false,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "ListID": {
           "@may_repeat": true,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "FullName": {
           "@may_repeat": true,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ListIDWithChildren": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "FullNameWithChildren": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         }
       },
       "ReportTxnTypeFilter": {
         "@may_repeat": false,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "TxnTypeFilter": {
           "@may_repeat": true,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         }
       },
       "ReportModifiedDateRangeFilter": {
         "@may_repeat": false,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "FromReportModifiedDate": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ToReportModifiedDate": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         }
       },
       "ReportModifiedDateRangeMacro": {
         "@may_repeat": false,
-        "@optional": true,
-        "@required": false
+        "@required": false,
+        "@optional": true
       },
       "ReportDetailLevelFilter": {
         "@may_repeat": false,
-        "@optional": true,
-        "@required": false
+        "@required": false,
+        "@optional": true
       },
       "ReportPostingStatusFilter": {
         "@may_repeat": false,
-        "@optional": true,
-        "@required": false
+        "@required": false,
+        "@optional": true
       },
       "SummarizeColumnsBy": {
         "@may_repeat": false,
-        "@optional": true,
-        "@required": false
+        "@required": false,
+        "@optional": true
       },
       "IncludeSubcolumns": {
         "@may_repeat": false,
-        "@optional": true,
-        "@required": false
+        "@required": false,
+        "@optional": true
       }
     },
     "JobReportQueryRs": {
       "ReportRet": {
         "@may_repeat": false,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "ReportTitle": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "ReportSubtitle": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "ReportBasis": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "NumRows": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "NumColumns": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "NumColTitleRows": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "ColDesc": {
           "@may_repeat": true,
-          "@optional": false,
           "@required": true,
+          "@optional": false,
           "ColType": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           }
         },
         "ReportData": {
           "@may_repeat": false,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "DataRow": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "SubtotalRow": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "TotalRow": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         }
       }

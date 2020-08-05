@@ -3,13 +3,13 @@
     "TxnDisplayModRq": {
       "TxnDisplayModType": {
         "@may_repeat": false,
-        "@optional": false,
-        "@required": true
+        "@required": true,
+        "@optional": false
       },
       "TxnID": {
         "@may_repeat": false,
-        "@optional": false,
-        "@required": true
+        "@required": true,
+        "@optional": false
       }
     }
   }

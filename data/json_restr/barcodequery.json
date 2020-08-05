@@ -3,29 +3,29 @@
     "BarCodeQueryRq": {
       "BarCodeValue": {
         "@may_repeat": true,
-        "@optional": true,
-        "@required": false
+        "@required": false,
+        "@optional": true
       }
     },
     "BarCodeQueryRs": {
       "BarCodeRet": {
         "@may_repeat": true,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "ListType": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "ListID": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "FullName": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         }
       }
     }

@@ -3,13 +3,13 @@
     "SubscriptionDelRq": {
       "SubscriberID": {
         "@may_repeat": false,
-        "@optional": false,
-        "@required": true
+        "@required": true,
+        "@optional": false
       },
       "SubscriptionType": {
         "@may_repeat": false,
-        "@optional": false,
-        "@required": true
+        "@required": true,
+        "@optional": false
       }
     }
   }

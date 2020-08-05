@@ -1,5 +1,5 @@
 env:
-	virtualenv -p python3 env &> /dev/null
+	virtualenv -p python3 env
 
 dev: env
 	./env/bin/pip install -e .
@@ -12,15 +12,16 @@ deploy: env test
 	./env/bin/python setup.py sdist bdist_wheel upload -r soc
 
 xml: dev
-	rm -r data/*.json
-	rm -r data/*/*.json
-	rm -r data/*/*.xml
+	rm -rf data/*.json
+	rm -rf data/*/*.json
+	rm -rf data/*/*.xml
+	rm qbwc/generated/types.py
 	./env/bin/python tasks/qbwc_xml_update.py
 
 types: dev
-	rm -r data/*.json
-	rm -r data/*/*.json
+	rm -rf data/*.json
+	rm -rf data/*/*.json
 	./env/bin/python tasks/qbwc_xml_to_json.py
 	./env/bin/python tasks/qbwc_xml_to_enum.py
 	./env/bin/python tasks/qbwc_xml_to_optional_required_repeatable.py
-	./env/bin/python tasks/qbwc_xml_to_types.py
+	./env/bin/python tasks/qbwc_json_to_types.py

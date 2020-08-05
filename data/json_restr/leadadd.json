@@ -3,327 +3,327 @@
     "LeadAddRq": {
       "LeadAdd": {
         "@may_repeat": false,
-        "@optional": false,
         "@required": true,
+        "@optional": false,
         "FullName": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "Status": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "CompanyName": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "MainPhone": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "AdditionalContactRef": {
           "ContactName": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "ContactValue": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           }
         },
         "Locations": {
           "@may_repeat": true,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "Location": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "LeadAddress": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "Addr1": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "Addr2": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "Addr3": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "Addr4": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "Addr5": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           }
         },
         "LeadContacts": {
           "@may_repeat": true,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "Salutation": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FirstName": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "MiddleName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "LastName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "JobTitle": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "AdditionalContactRef": {
             "ContactName": {
               "@may_repeat": false,
-              "@optional": false,
-              "@required": true
+              "@required": true,
+              "@optional": false
             },
             "ContactValue": {
               "@may_repeat": false,
-              "@optional": false,
-              "@required": true
+              "@required": true,
+              "@optional": false
             }
           },
           "IsPrimaryContact": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         }
       },
       "IncludeRetElement": {
         "@may_repeat": true,
-        "@optional": true,
-        "@required": false
+        "@required": false,
+        "@optional": true
       }
     },
     "LeadAddRs": {
       "LeadRet": {
         "@may_repeat": false,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "ListID": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "TimeCreated": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "TimeModified": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "EditSequence": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "FullName": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "Status": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "CompanyName": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "MainPhone": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "AdditionalContactRef": {
           "ContactName": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "ContactValue": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           }
         },
         "LocationsRet": {
           "@may_repeat": true,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "LocationID": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "MainAddress": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "Location": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "LeadAddress": {
             "@may_repeat": false,
-            "@optional": true,
             "@required": false,
+            "@optional": true,
             "Addr1": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "Addr2": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "Addr3": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "Addr4": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             },
             "Addr5": {
               "@may_repeat": false,
-              "@optional": true,
-              "@required": false
+              "@required": false,
+              "@optional": true
             }
           }
         },
         "LeadContactsRet": {
           "@may_repeat": true,
-          "@optional": true,
           "@required": false,
+          "@optional": true,
           "LeadContactID": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "Salutation": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "FirstName": {
             "@may_repeat": false,
-            "@optional": false,
-            "@required": true
+            "@required": true,
+            "@optional": false
           },
           "MiddleName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "LastName": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "JobTitle": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           },
           "AdditionalContactRef": {
             "ContactName": {
               "@may_repeat": false,
-              "@optional": false,
-              "@required": true
+              "@required": true,
+              "@optional": false
             },
             "ContactValue": {
               "@may_repeat": false,
-              "@optional": false,
-              "@required": true
+              "@required": true,
+              "@optional": false
             }
           },
           "IsPrimaryContact": {
             "@may_repeat": false,
-            "@optional": true,
-            "@required": false
+            "@required": false,
+            "@optional": true
           }
         }
       },
       "ErrorRecovery": {
         "@may_repeat": false,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "ListID": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "OwnerID": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "TxnID": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "TxnNumber": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "EditSequence": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         },
         "ExternalGUID": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         }
       }
     }

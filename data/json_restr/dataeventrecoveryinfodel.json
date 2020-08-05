@@ -3,8 +3,8 @@
     "DataEventRecoveryInfoDelRq": {
       "SubscriberID": {
         "@may_repeat": false,
-        "@optional": false,
-        "@required": true
+        "@required": true,
+        "@optional": false
       }
     }
   }

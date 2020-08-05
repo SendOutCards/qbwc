@@ -3,24 +3,24 @@
     "DataEventRecoveryInfoQueryRq": {
       "SubscriberID": {
         "@may_repeat": false,
-        "@optional": false,
-        "@required": true
+        "@required": true,
+        "@optional": false
       }
     },
     "DataEventRecoveryInfoQueryRs": {
       "DataEventRecoveryInfoRet": {
         "@may_repeat": false,
-        "@optional": true,
         "@required": false,
+        "@optional": true,
         "SubscriberID": {
           "@may_repeat": false,
-          "@optional": false,
-          "@required": true
+          "@required": true,
+          "@optional": false
         },
         "DataEventRecoveryTime": {
           "@may_repeat": false,
-          "@optional": true,
-          "@required": false
+          "@required": false,
+          "@optional": true
         }
       }
     }

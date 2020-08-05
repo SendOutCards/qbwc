@@ -83,11 +83,11 @@ for endpoint_file, endpoint_restr_file in zip(endpoint_files, endpoint_restr_fil
 				assemble_type(name, value, restr, types)
 			if name.endswith('Rq'):
 				msgs_rq_type.append(
-					f'    {name}: Optional[Union[{name}, List[{name}]]]'
+					f'    {name}: Union[{name}, List[{name}]]'
 				)
 			if name.endswith('Rs'):
 				msgs_rs_type.append(
-					f'    {name}: Optional[Union[{name}, List[{name}]]]'
+					f'    {name}: Union[{name}, List[{name}]]'
 				)
 	except KeyError as e:
 		print(e)
